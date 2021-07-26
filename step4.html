@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steg 4</title>
+
+    <link rel="stylesheet" href="styles/style1_overall.css">
+    <link rel="stylesheet" href="styles/style1mq_overall.css">
+    <link rel="stylesheet" href="styles/style2_header.css">
+    <link rel="stylesheet" href="styles/style2mq_header.css">
+    <link rel="stylesheet" href="styles/style3_nav.css">
+    <link rel="stylesheet" href="styles/style3mq_nav.css">
+    <link rel="stylesheet" href="styles/style4_mainGeneral.css">
+    <link rel="stylesheet" href="styles/style4mq_mainGeneral.css">
+    <link rel="stylesheet" href="styles/style5_mainControls.css">
+    <link rel="stylesheet" href="styles/style5mq_mainControls.css">
+    <link rel="stylesheet" href="styles/style6_footer.css">
+    <link rel="stylesheet" href="styles/style6mq_footer.css">
+    <link rel="stylesheet" href="styles/style7_startTab.css">
+    <link rel="stylesheet" href="styles/style7mq_startTab.css">
+    <link rel="stylesheet" href="styles/style8_moneyTab.css">
+    <link rel="stylesheet" href="styles/style8mq_moneyTab.css">
+    <link rel="stylesheet" href="styles/style9_electricityTab.css">
+    <link rel="stylesheet" href="styles/style9mq_electricityTab.css">
+    <link rel="stylesheet" href="styles/style10_heatTab.css">
+    <link rel="stylesheet" href="styles/style10mq_heatTab.css">
+    <link rel="stylesheet" href="styles/style11_foodTab.css">
+    <link rel="stylesheet" href="styles/style11mq_foodTab.css">
+    <link rel="stylesheet" href="styles/style12_waterTab.css">
+    <link rel="stylesheet" href="styles/style12mq_waterTab.css">
+    <link rel="stylesheet" href="styles/style13_endTab.css">
+    <link rel="stylesheet" href="styles/style13mq_endTab.css">
+    <link rel="stylesheet" href="styles/style14_infoPage.css">
+    <link rel="stylesheet" href="styles/style14mq_infoPage.css">
+
+    <script src="JS/func_images.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+
+<body onLoad="MM_preloadImages('images/logo_my_active.png','images/icon_info_active.png','images/control_play_active.png',
+'images/control_restart_active.png','images/control_back_active.png','images/control_reload_active.png', 
+'images/control_next_active.png','images/icon_yes_active.png', 'images/icon_yes_gray.png', 
+'images/icon_no_active.png', 'images/icon_no_active.png')">
+
+
+
+    <header class="headerPage">
+
+        <div class="headerLogo">
+            <a href="index.html" onMouseOut="MM_swapImgRestore()"
+                onMouseOver="MM_swapImage('id_myLogo_img','','images/logo_my_active.png',1)">
+                <img id="id_myLogo_img" src="images/logo_my.png" alt="Logo">
+            </a>
+        </div>
+
+        <!---->
+        <div class="headerTitle">
+            <div class="headerTitleFirst">
+                <h1>Över&shy;lev&shy;nads&shy;appen</h1>
+            </div>
+            <div class="headerTitleSecond">
+                <h4>Hur rustad är du för en samhällskris?</h4>
+            </div>
+        </div>
+
+        <div class="headerButtons">
+
+            <div class="headerButtonsInfo">
+
+                <a href="infoPage.html" onMouseOut="MM_swapImgRestore()"
+                    onMouseOver="MM_swapImage('id_info_img','','images/icon_info_active.png',1)">
+                    <img id="id_info_img" src="images/icon_info.png" width="auto" alt="Info button">
+                </a>
+
+            </div>
+
+            <div class="headerButtonsFlag">
+                <fieldset>
+                    <select name="sprak" id="sprak">
+                        <option value="swedish"><img src="images/icon_SE.png" alt="swedish flag"></option>
+                        <option value="english"><img src="images/icon_GB.png" alt="brittish flag"></option>
+                        <option value="greek"><img src="images/icon_GR.png" alt="greek flag"></option>
+                        <option value="german"><img src="images/icon_DE.png" alt="german flag"></option>
+                    </select>
+                </fieldset>
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <div class="wrapperMainAside">
+        <div class="wrapperNavMain">
+            <nav class="navPage">
+
+                <div class="navTab navStart colorActive_Start">
+                    <a href="index.html" class="changePreviousNavLink">
+                        <h4>Start:</h4>
+                        <h5>Välj scenario</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep1 colorActive_Step1">
+                    <a href="step1.html" class="changePreviousNavLink">
+                        <h4>Steg 1:</h4>
+                        <h5>Pengar</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep2 colorActive_Step2">
+                    <a href="step2.html" class="changePreviousNavLink">
+                        <h4>Steg 2:</h4>
+                        <h5>Elek&shy;tricitet</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep3 colorActive_Step3">
+                    <a href="step3.html" class="changePreviousNavLink">
+                        <h4>Steg 3:</h4>
+                        <h5>Upp&shy;värmning</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep4 navCurrent colorActive_Step4">
+                    <a href="#">
+                        <!-- <a href="step4.html"> -->
+                        <h4>Steg 4:</h4>
+                        <h5>Mat</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep5 colorInactive_Step5">
+                    <a href="#">
+                        <!-- <a href="step5.html"> -->
+                        <h4>Steg 5:</h4>
+                        <h5>Vatten</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navEnd colorInactive_End">
+                    <a href="#">
+                        <!-- <a href="result.html"> -->
+                        <h4>Slut:</h4>
+                        <h5>Ditt Resultat</h5>
+                    </a>
+                </div>
+
+            </nav>
+            <!--end of navPage-->
+
+            <main class="mainPage colorActive_Step4">
+
+                <div class="mainGeneral">
+
+                    <!-- only in index.html
+                    <div class="mainGeneralGreeting">
+                        <h3>Kan du överleva en samhällskris?</h3>
+                        <h3>Hur länge och hur bra?</h3>
+                        <h3>Testa dej själv i 5 steg!</h3>
+                    </div>-->
+
+                    <!-- only in Step1-Step5.html and Result.html-->
+                    <div class="mainGeneralInfo">
+                        <div class="mainGeneralInfoTitle">
+                            <h5>DITT SCENARIO</h5>
+                        </div>
+                        <div class="mainGeneralInfoBody">
+                            <div class="mainGeneralInfoBodyPre">
+                                <h5>Du har angett:</h5>
+                            </div>
+                            <div class="mainGeneralInfoBodyConditions">
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att banksystemet
+                                        <span class="nobr">
+                                            <span id="money_spanON_step4">
+                                                <span id="money_span_step4">inte</span> fungerar!
+                                            </span>
+                                            <span id="money_spanOFF_step4">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att elnätet
+                                        <span class="nobr">
+                                            <span id="el_spanON_step4">
+                                                <span id="el_span_step4">inte</span> fungerar!
+                                            </span>
+                                            <span id="el_spanOFF_step4">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att oljemarknaden
+                                        <span class="nobr">
+                                            <span id="heatOil_spanON_step4">
+                                                <span id="heatOil_span_step4">inte</span> fungerar!
+                                            </span>
+                                            <span id="heatOil_spanOFF_step4">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att fjärrvärme&shy;/naturgasnätet&shy;/pellets&shy;marknaden
+                                        <span class="nobr">
+                                            <span id="heatOther_spanON_step4">
+                                                <span id="heatOther_span_step4">inte</span> fungerar!
+                                            </span>
+                                            <span id="heatOther_spanOFF_step4">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att livsmedelskedjan
+                                        <span class="nobr">
+                                            <span id="food_spanON_step4">
+                                                <span id="food_span_step4">inte</span> fungerar!
+                                            </span>
+                                            <span id="food_spanOFF_step4">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att vattenledningsnätet
+                                        <span class="nobr">
+                                            <span id="water_spanON_step4">
+                                                <span id="water_span_step4">inte</span> fungerar!
+                                            </span>
+                                            <span id="water_spanOFF_step4">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mainGeneralInstructions">
+
+                        <!-- only in index.html 
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>Välj scenario och klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_play_mini.png" alt="Play mini icon">
+                            </div>
+                        </div>-->
+
+                        <!-- only in index.html and step1-step5.html -->
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>Fyll i dina svar och klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_next_mini.png" alt="Next mini icon">
+                            </div>
+                        </div>
+
+                        <!-- only in result.html 
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>För att börja om klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_restart_mini.png" alt="Restart mini icon">
+                            </div>
+                        </div>-->
+
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>För mer information klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/icon_info_mini.png" alt="Info mini icon">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- only in index.html-->
+                    <!-- se index.html 
+                    <div class="mainGeneralChooseScenario">
+                        <h2>Scenario-val in index.html</h2>
+                    </div>-->
+
+                    <!-- only in result.html-->
+                    <!-- se result.html 
+                    <div class="mainGeneralResult">
+                        <h2>RESULTS in results.html</h2>
+                    </div>-->
+
+                </div>
+
+
+
+                <!-- only in step1-step5.html-->
+                <!-- se step1-step5.html -->
+                <div class="mainContent">
+
+                    <div class="mainContentTopLine">
+                        <hr class="greenLine">
+                    </div>
+
+
+
+                    <div class="mainContentLeft">
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                        <form action="action_Page.php" method="post" id="form_foodDebit">
+                            <h2>Tillgång till Mat</h2>
+
+                            <!-- <h3>Bas&shy;resurser</h3> -->
+                            <fieldset class="basruta">
+                                <legend>Bas&shy;resurser</legend>
+                                <fieldset id="fieldset_foodDebitSpend">
+                                    <h4>PENGAR</h4>
+                                    <label>
+                                        Angivna utgifter för mat:
+                                        <input type="text" id="foodDebitSpend_cost" name="foodDebitSpend_cost"
+                                            class="food_scenario" readonly />
+                                        SEK/mån <a href="step1.html" class="changePreviousFormLink"> Ändra</a>
+                                    </label>
+
+                                    <label>
+                                        Summa utgifter enligt nedan:
+                                        <input type="text" id="foodDebitSpend_sumCost" name="foodDebitSpend_sumCost"
+                                            class="food_scenario" readonly />
+                                        SEK/mån
+                                    </label>
+
+                                </fieldset>
+
+                                <fieldset id="fieldset_foodDebitEnergy">
+
+                                    <h4>EL</h4>
+
+                                    <label>
+                                        Angiven elförbrukning, kyl:
+                                        <input type="text" id="foodDebitEnergy_fridgeEl" name="foodDebitEnergy_fridgeEl"
+                                            class="fridge_systemUnit" readonly />
+                                        kWh/dag <a href="step2.html" class="changePreviousFormLink"> Ändra</a>
+                                    </label>
+
+                                    <label>
+                                        Angiven elförbrukning, frys:
+                                        <input type="text" id="foodDebitEnergy_freezerEl"
+                                            name="foodDebitEnergy_freezerEl" class="freezer_systemUnit" readonly />
+                                        kWh/dag <a href="step2.html" class="changePreviousFormLink"> Ändra</a>
+                                    </label>
+
+                                    <!-- <label>
+                                        Summa elförbrukning enligt nedan:
+                                        <input type="text" id="elDebitEnergy_sumUnitEl"
+                                            name="elDebitEnergy_sumUnitEl" readonly />
+                                        kWh/dag
+                                    </label> -->
+
+                                </fieldset>
+                            </fieldset>
+
+
+
+                            <h3>Skafferi-mat</h3>
+
+
+                            <fieldset id="fieldset_foodDebitDry1" class="dryFoodUnit">
+
+                                <h4>VETEMJÖL</h4>
+
+                                <label>
+                                    Energiinnehåll:
+                                    <input type="text" id="foodDebitDry1_nutritionValue"
+                                        name="foodDebitDry1_nutritionValue" value="357" />
+                                    kcal/100g
+                                </label>
+
+                                <label>
+                                    Pris:
+                                    <input type="text" id="foodDebitDry1_price" name="foodDebitDry1_price"
+                                        class="food_scenario" />
+                                    SEK/kg
+                                </label>
+
+                                <label>
+                                    Månadskostnad:
+                                    <input type="text" id="foodDebitDry1_monthlyCost" name="foodDebitDry1_monthlyCost"
+                                        class="food_scenario" readonly />
+                                    SEK/månad
+                                </label>
+
+                                <label>
+                                    Matinköp:
+                                    <input type="text" id="foodDebitDry1_kgMonthlyBuy" name="foodDebitDry1_kgMonthlyBuy"
+                                        class="food_scenario" />
+                                    kg/månad
+                                </label>
+
+                                <label>
+                                    <span>Matlager:</span>
+                                    <input type="text" id="foodDebitDry1_kgStorage" name="foodDebitDry1_kgStorage"
+                                        class="" />
+                                    kg
+                                </label>
+
+                                <label>
+                                    Kalorimängd, inköp:
+                                    <input type="text" id="foodDebitDry1_kcalMonthlyBuy"
+                                        name="foodDebitDry1_kcalMonthlyBuy" class="food_scenario" readonly />
+                                    kcal/mån
+                                </label>
+
+                                <label>
+                                    <span>Kalorimängd, lager:</span>
+                                    <input type="text" id="foodDebitDry1_kcalStorage" name="foodDebitDry1_kcalStorage"
+                                        class="" readonly />
+                                    kcal
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="foodDebitDry1_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+
+
+                            <fieldset id="fieldset_foodDebitDry2" class="dryFoodUnit">
+
+                                <h4>PASTA</h4>
+
+                                <label>
+                                    Energiinnehåll:
+                                    <input type="text" id="foodDebitDry2_nutritionValue"
+                                        name="foodDebitDry2_nutritionValue" value="354" />
+                                    kcal/100g
+                                </label>
+
+                                <label>
+                                    Pris:
+                                    <input type="text" id="foodDebitDry2_price" name="foodDebitDry2_price"
+                                        class="food_scenario" />
+                                    SEK/kg
+                                </label>
+
+                                <label>
+                                    Månadskostnad:
+                                    <input type="text" id="foodDebitDry2_monthlyCost" name="foodDebitDry2_monthlyCost"
+                                        class="food_scenario" readonly />
+                                    SEK/månad
+                                </label>
+
+                                <label>
+                                    Matinköp:
+                                    <input type="text" id="foodDebitDry2_kgMonthlyBuy" name="foodDebitDry2_kgMonthlyBuy"
+                                        class="food_scenario" />
+                                    kg/månad
+                                </label>
+
+                                <label>
+                                    <span>Matlager:</span>
+                                    <input type="text" id="foodDebitDry2_kgStorage" name="foodDebitDry2_kgStorage"
+                                        class="" />
+                                    kg
+                                </label>
+
+                                <label>
+                                    Kalorimängd, inköp:
+                                    <input type="text" id="foodDebitDry2_kcalMonthlyBuy"
+                                        name="foodDebitDry2_kcalMonthlyBuy" class="food_scenario" readonly />
+                                    kcal/mån
+                                </label>
+
+                                <label>
+                                    <span>Kalorimängd, lager:</span>
+                                    <input type="text" id="foodDebitDry2_kcalStorage" name="foodDebitDry2_kcalStorage"
+                                        class="" readonly />
+                                    kcal
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="foodDebitDry2_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+
+
+                            <fieldset id="fieldset_foodDebitDry3" class="dryFoodUnit">
+
+                                <h4>BASMATIRIS</h4>
+
+                                <label>
+                                    Energiinnehåll:
+                                    <input type="text" id="foodDebitDry3_nutritionValue"
+                                        name="foodDebitDry3_nutritionValue" value="359" />
+                                    kcal/100g
+                                </label>
+
+                                <label>
+                                    Pris:
+                                    <input type="text" id="foodDebitDry3_price" name="foodDebitDry3_price"
+                                        class="food_scenario" />
+                                    SEK/kg
+                                </label>
+
+                                <label>
+                                    Månadskostnad:
+                                    <input type="text" id="foodDebitDry3_monthlyCost" name="foodDebitDry3_monthlyCost"
+                                        class="food_scenario" readonly />
+                                    SEK/månad
+                                </label>
+
+                                <label>
+                                    Matinköp:
+                                    <input type="text" id="foodDebitDry3_kgMonthlyBuy" name="foodDebitDry3_kgMonthlyBuy"
+                                        class="food_scenario" />
+                                    kg/månad
+                                </label>
+
+                                <label>
+                                    <span>Matlager:</span>
+                                    <input type="text" id="foodDebitDry3_kgStorage" name="foodDebitDry3_kgStorage"
+                                        class="" />
+                                    kg
+                                </label>
+
+                                <label>
+                                    Kalorimängd, inköp:
+                                    <input type="text" id="foodDebitDry3_kcalMonthlyBuy"
+                                        name="foodDebitDry3_kcalMonthlyBuy" class="food_scenario" readonly />
+                                    kcal/mån
+                                </label>
+
+                                <label>
+                                    <span>Kalorimängd, lager:</span>
+                                    <input type="text" id="foodDebitDry3_kcalStorage" name="foodDebitDry3_kcalStorage"
+                                        class="" readonly />
+                                    kcal
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="foodDebitDry3_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+
+
+                            <fieldset id="fieldset_foodDebitDry4" class="dryFoodUnit">
+
+                                <h4>BRUNA LINSER</h4>
+
+                                <label>
+                                    Energiinnehåll:
+                                    <input type="text" id="foodDebitDry4_nutritionValue"
+                                        name="foodDebitDry4_nutritionValue" value="309" />
+                                    kcal/100g
+                                </label>
+
+                                <label>
+                                    Pris:
+                                    <input type="text" id="foodDebitDry4_price" name="foodDebitDry4_price"
+                                        class="food_scenario" />
+                                    SEK/kg
+                                </label>
+
+                                <label>
+                                    Månadskostnad:
+                                    <input type="text" id="foodDebitDry4_monthlyCost" name="foodDebitDry4_monthlyCost"
+                                        class="food_scenario" readonly />
+                                    SEK/månad
+                                </label>
+
+                                <label>
+                                    Matinköp:
+                                    <input type="text" id="foodDebitDry4_kgMonthlyBuy" name="foodDebitDry4_kgMonthlyBuy"
+                                        class="food_scenario" />
+                                    kg/månad
+                                </label>
+
+                                <label>
+                                    <span>Matlager:</span>
+                                    <input type="text" id="foodDebitDry4_kgStorage" name="foodDebitDry4_kgStorage"
+                                        class="" />
+                                    kg
+                                </label>
+
+                                <label>
+                                    Kalorimängd, inköp:
+                                    <input type="text" id="foodDebitDry4_kcalMonthlyBuy"
+                                        name="foodDebitDry4_kcalMonthlyBuy" class="food_scenario" readonly />
+                                    kcal/mån
+                                </label>
+
+                                <label>
+                                    <span>Kalorimängd, lager:</span>
+                                    <input type="text" id="foodDebitDry4_kcalStorage" name="foodDebitDry4_kcalStorage"
+                                        class="" readonly />
+                                    kcal
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="foodDebitDry4_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+
+
+                            <fieldset id="fieldset_foodDebitDry5" class="dryFoodUnit">
+
+                                <h4>OLIVOLJA</h4>
+
+                                <label>
+                                    Energiinnehåll:
+                                    <input type="text" id="foodDebitDry5_nutritionValue"
+                                        name="foodDebitDry5_nutritionValue" value="828" />
+                                    kcal/100g
+                                </label>
+
+                                <label>
+                                    Pris:
+                                    <input type="text" id="foodDebitDry5_price" name="foodDebitDry5_price"
+                                        class="food_scenario" />
+                                    SEK/kg
+                                </label>
+
+                                <label>
+                                    Månadskostnad:
+                                    <input type="text" id="foodDebitDry5_monthlyCost" name="foodDebitDry5_monthlyCost"
+                                        class="food_scenario" readonly />
+                                    SEK/månad
+                                </label>
+
+                                <label>
+                                    Matinköp:
+                                    <input type="text" id="foodDebitDry5_kgMonthlyBuy" name="foodDebitDry5_kgMonthlyBuy"
+                                        class="food_scenario" />
+                                    kg/månad
+                                </label>
+
+                                <label>
+                                    <span>Matlager:</span>
+                                    <input type="text" id="foodDebitDry5_kgStorage" name="foodDebitDry5_kgStorage"
+                                        class="" />
+                                    kg
+                                </label>
+
+                                <label>
+                                    Kalorimängd, inköp:
+                                    <input type="text" id="foodDebitDry5_kcalMonthlyBuy"
+                                        name="foodDebitDry5_kcalMonthlyBuy" class="food_scenario" readonly />
+                                    kcal/mån
+                                </label>
+
+                                <label>
+                                    <span>Kalorimängd, lager:</span>
+                                    <input type="text" id="foodDebitDry5_kcalStorage" name="foodDebitDry5_kcalStorage"
+                                        class="" readonly />
+                                    kcal
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="foodDebitDry5_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+
+
+                            <fieldset id="fieldset_foodDebitDry6" class="dryFoodUnit">
+
+                                <h4>KIKÄRTER</h4>
+
+                                <label>
+                                    Energiinnehåll:
+                                    <input type="text" id="foodDebitDry6_nutritionValue"
+                                        name="foodDebitDry6_nutritionValue" value="314" />
+                                    kcal/100g
+                                </label>
+
+                                <label>
+                                    Pris:
+                                    <input type="text" id="foodDebitDry6_price" name="foodDebitDry6_price"
+                                        class="food_scenario" />
+                                    SEK/kg
+                                </label>
+
+                                <label>
+                                    Månadskostnad:
+                                    <input type="text" id="foodDebitDry6_monthlyCost" name="foodDebitDry6_monthlyCost"
+                                        class="food_scenario" readonly />
+                                    SEK/månad
+                                </label>
+
+                                <label>
+                                    Matinköp:
+                                    <input type="text" id="foodDebitDry6_kgMonthlyBuy" name="foodDebitDry6_kgMonthlyBuy"
+                                        class="food_scenario" />
+                                    kg/månad
+                                </label>
+
+                                <label>
+                                    <span>Matlager:</span>
+                                    <input type="text" id="foodDebitDry6_kgStorage" name="foodDebitDry6_kgStorage"
+                                        class="" />
+                                    kg
+                                </label>
+
+                                <label>
+                                    Kalorimängd, inköp:
+                                    <input type="text" id="foodDebitDry6_kcalMonthlyBuy"
+                                        name="foodDebitDry6_kcalMonthlyBuy" class="food_scenario" readonly />
+                                    kcal/mån
+                                </label>
+
+                                <label>
+                                    <span>Kalorimängd, lager:</span>
+                                    <input type="text" id="foodDebitDry6_kcalStorage" name="foodDebitDry6_kcalStorage"
+                                        class="" readonly />
+                                    kcal
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="foodDebitDry6_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_foodDebitDry7" class="dryFoodUnit">
+
+                                <h4>HONUNG</h4>
+
+                                <label>
+                                    Energiinnehåll:
+                                    <input type="text" id="foodDebitDry7_nutritionValue"
+                                        name="foodDebitDry7_nutritionValue" value="337" />
+                                    kcal/100g
+                                </label>
+
+                                <label>
+                                    Pris:
+                                    <input type="text" id="foodDebitDry7_price" name="foodDebitDry7_price"
+                                        class="food_scenario" />
+                                    SEK/kg
+                                </label>
+
+                                <label>
+                                    Månadskostnad:
+                                    <input type="text" id="foodDebitDry7_monthlyCost" name="foodDebitDry7_monthlyCost"
+                                        class="food_scenario" readonly />
+                                    SEK/månad
+                                </label>
+
+                                <label>
+                                    Matinköp:
+                                    <input type="text" id="foodDebitDry7_kgMonthlyBuy" name="foodDebitDry7_kgMonthlyBuy"
+                                        class="food_scenario" />
+                                    kg/månad
+                                </label>
+
+                                <label>
+                                    <span>Matlager:</span>
+                                    <input type="text" id="foodDebitDry7_kgStorage" name="foodDebitDry7_kgStorage"
+                                        class="" />
+                                    kg
+                                </label>
+
+                                <label>
+                                    Kalorimängd, inköp:
+                                    <input type="text" id="foodDebitDry7_kcalMonthlyBuy"
+                                        name="foodDebitDry7_kcalMonthlyBuy" class="food_scenario" readonly />
+                                    kcal/mån
+                                </label>
+
+                                <label>
+                                    <span>Kalorimängd, lager:</span>
+                                    <input type="text" id="foodDebitDry7_kcalStorage" name="foodDebitDry7_kcalStorage"
+                                        class="" readonly />
+                                    kcal
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="foodDebitDry7_delete">Ta
+                                        bort!</button>
+                                </label>
+
+
+                            </fieldset>
+
+
+                            <fieldset id="fieldset_foodDebitDryNew"></fieldset>
+
+
+                            <fieldset id="fieldset_foodDebitDryAdd">
+
+                                <h4>LÄGG TILL SKAFFERIMAT</h4>
+
+                                <input type="hidden" id="foodDebitDryAdd_hidden" name="foodDebitDryAdd_hidden"
+                                    value="dry"/>
+
+                                <label>
+                                    <button onclick="funcFoodAddUnit(event)" type="button" id="foodDebitDryAdd_new">LÄGG
+                                        TILL!</button>
+                                </label>
+
+                            </fieldset>
+
+
+
+
+                            <h3>Kyld mat</h3>
+
+                            <div id="div_foodDebitCool">
+                                <fieldset id="fieldset_foodDebitCool1" class="coolFoodUnit">
+
+                                    <h4>POTATIS</h4>
+
+                                    <label>
+                                        Energiinnehåll:
+                                        <input type="text" id="foodDebitCool1_nutritionValue"
+                                            name="foodDebitCool1_nutritionValue" value="65" />
+                                        kcal/100g
+                                    </label>
+
+                                    <label>
+                                        Pris:
+                                        <input type="text" id="foodDebitCool1_price" name="foodDebitCool1_price"
+                                            class="food_scenario" />
+                                        SEK/kg
+                                    </label>
+
+                                    <label>
+                                        Månadskostnad:
+                                        <input type="text" id="foodDebitCool1_monthlyCost"
+                                            name="foodDebitCool1_monthlyCost" class="food_scenario" readonly />
+                                        SEK/månad
+                                    </label>
+
+                                    <label>
+                                        Matinköp:
+                                        <input type="text" id="foodDebitCool1_kgMonthlyBuy"
+                                            name="foodDebitCool1_kgMonthlyBuy" class="food_scenario" />
+                                        kg/månad
+                                    </label>
+
+                                    <label>
+                                        <span>Matlager:</span>
+                                        <input type="text" id="foodDebitCool1_kgStorage" name="foodDebitCool1_kgStorage"
+                                            class="fridge_systemUnit" />
+                                        kg
+                                    </label>
+
+                                    <label>
+                                        Kalorimängd, inköp:
+                                        <input type="text" id="foodDebitCool1_kcalMonthlyBuy"
+                                            name="foodDebitCool1_kcalMonthlyBuy" class="food_scenario" readonly />
+                                        kcal/mån
+                                    </label>
+
+                                    <label>
+                                        <span>Kalorimängd, lager:</span>
+                                        <input type="text" id="foodDebitCool1_kcalStorage"
+                                            name="foodDebitCool1_kcalStorage" class="fridge_systemUnit" readonly />
+                                        kcal
+                                    </label>
+
+                                    <label>
+                                        <button onclick="funcDeleteUnit(event)" type="button"
+                                            id="foodDebitCool1_delete">Ta
+                                            bort!</button>
+                                    </label>
+
+                                </fieldset>
+
+
+
+                                <fieldset id="fieldset_foodDebitCool2" class="coolFoodUnit">
+
+                                    <h4>ÄGG</h4>
+
+                                    <label>
+                                        Energiinnehåll:
+                                        <input type="text" id="foodDebitCool2_nutritionValue"
+                                            name="foodDebitCool2_nutritionValue" value="118" />
+                                        kcal/100g
+                                    </label>
+
+                                    <label>
+                                        Pris:
+                                        <input type="text" id="foodDebitCool2_price" name="foodDebitCool2_price"
+                                            class="food_scenario" />
+                                        SEK/kg
+                                    </label>
+
+                                    <label>
+                                        Månadskostnad:
+                                        <input type="text" id="foodDebitCool2_monthlyCost"
+                                            name="foodDebitCool2_monthlyCost" class="food_scenario" readonly />
+                                        SEK/månad
+                                    </label>
+
+                                    <label>
+                                        Matinköp:
+                                        <input type="text" id="foodDebitCool2_kgMonthlyBuy"
+                                            name="foodDebitCool2_kgMonthlyBuy" class="food_scenario" />
+                                        kg/månad
+                                    </label>
+
+                                    <label>
+                                        <span>Matlager:</span>
+                                        <input type="text" id="foodDebitCool2_kgStorage" name="foodDebitCool2_kgStorage"
+                                            class="fridge_systemUnit" />
+                                        kg
+                                    </label>
+
+                                    <label>
+                                        Kalorimängd, inköp:
+                                        <input type="text" id="foodDebitCool2_kcalMonthlyBuy"
+                                            name="foodDebitCool2_kcalMonthlyBuy" class="food_scenario" readonly />
+                                        kcal/mån
+                                    </label>
+
+                                    <label>
+                                        <span>Kalorimängd, lager:</span>
+                                        <input type="text" id="foodDebitCool2_kcalStorage"
+                                            name="foodDebitCool2_kcalStorage" class="fridge_systemUnit" readonly />
+                                        kcal
+                                    </label>
+
+                                    <label>
+                                        <button onclick="funcDeleteUnit(event)" type="button"
+                                            id="foodDebitCool2_delete">Ta
+                                            bort!</button>
+                                    </label>
+
+
+                                </fieldset>
+
+
+
+                                <fieldset id="fieldset_foodDebitCool3" class="coolFoodUnit">
+
+                                    <h4>GOUDA-OST</h4>
+
+                                    <label>
+                                        Energiinnehåll:
+                                        <input type="text" id="foodDebitCool3_nutritionValue"
+                                            name="foodDebitCool3_nutritionValue" value="348" />
+                                        kcal/100g
+                                    </label>
+
+                                    <label>
+                                        Pris:
+                                        <input type="text" id="foodDebitCool3_price" name="foodDebitCool3_price"
+                                            class="food_scenario" />
+                                        SEK/kg
+                                    </label>
+
+                                    <label>
+                                        Månadskostnad:
+                                        <input type="text" id="foodDebitCool3_monthlyCost"
+                                            name="foodDebitCool3_monthlyCost" class="food_scenario" readonly />
+                                        SEK/månad
+                                    </label>
+
+                                    <label>
+                                        Matinköp:
+                                        <input type="text" id="foodDebitCool3_kgMonthlyBuy"
+                                            name="foodDebitCool3_kgMonthlyBuy" class="food_scenario" />
+                                        kg/månad
+                                    </label>
+
+                                    <label>
+                                        <span>Matlager:</span>
+                                        <input type="text" id="foodDebitCool3_kgStorage" name="foodDebitCool3_kgStorage"
+                                            class="fridge_systemUnit" />
+                                        kg
+                                    </label>
+
+                                    <label>
+                                        Kalorimängd, inköp:
+                                        <input type="text" id="foodDebitCool3_kcalMonthlyBuy"
+                                            name="foodDebitCool3_kcalMonthlyBuy" class="food_scenario" readonly />
+                                        kcal/mån
+                                    </label>
+
+                                    <label>
+                                        <span>Kalorimängd, lager:</span>
+                                        <input type="text" id="foodDebitCool3_kcalStorage"
+                                            name="foodDebitCool3_kcalStorage" class="fridge_systemUnit" readonly />
+                                        kcal
+                                    </label>
+
+                                    <label>
+                                        <button onclick="funcDeleteUnit(event)" type="button"
+                                            id="foodDebitCool3_delete">Ta
+                                            bort!</button>
+                                    </label>
+
+                                </fieldset>
+
+
+                                <fieldset id="fieldset_foodDebitCool4" class="coolFoodUnit">
+
+                                    <h4>GREKISK YOGHURT</h4>
+
+                                    <label>
+                                        Energiinnehåll:
+                                        <input type="text" id="foodDebitCool4_nutritionValue"
+                                            name="foodDebitCool4_nutritionValue" value="128" />
+                                        kcal/100g
+                                    </label>
+
+                                    <label>
+                                        Pris:
+                                        <input type="text" id="foodDebitCool4_price" name="foodDebitCool4_price"
+                                            class="food_scenario" />
+                                        SEK/kg
+                                    </label>
+
+                                    <label>
+                                        Månadskostnad:
+                                        <input type="text" id="foodDebitCool4_monthlyCost"
+                                            name="foodDebitCool4_monthlyCost" class="food_scenario" readonly />
+                                        SEK/månad
+                                    </label>
+
+                                    <label>
+                                        Matinköp:
+                                        <input type="text" id="foodDebitCool4_kgMonthlyBuy"
+                                            name="foodDebitCool4_kgMonthlyBuy" class="food_scenario" />
+                                        kg/månad
+                                    </label>
+
+                                    <label>
+                                        <span>Matlager:</span>
+                                        <input type="text" id="foodDebitCool4_kgStorage" name="foodDebitCool4_kgStorage"
+                                            class="fridge_systemUnit" />
+                                        kg
+                                    </label>
+
+                                    <label>
+                                        Kalorimängd, inköp:
+                                        <input type="text" id="foodDebitCool4_kcalMonthlyBuy"
+                                            name="foodDebitCool4_kcalMonthlyBuy" class="food_scenario" readonly />
+                                        kcal/mån
+                                    </label>
+
+                                    <label>
+                                        <span>Kalorimängd, lager:</span>
+                                        <input type="text" id="foodDebitCool4_kcalStorage"
+                                            name="foodDebitCool4_kcalStorage" class="fridge_systemUnit" readonly />
+                                        kcal
+                                    </label>
+
+                                    <label>
+                                        <button onclick="funcDeleteUnit(event)" type="button"
+                                            id="foodDebitCool4_delete">Ta
+                                            bort!</button>
+                                    </label>
+
+                                </fieldset>
+
+
+                                <fieldset id="fieldset_foodDebitCoolNew"></fieldset>
+
+
+                                <fieldset id="fieldset_foodDebitCoolAdd">
+
+                                    <h4>LÄGG TILL KYLD MAT</h4>
+
+                                    <input type="hidden" id="foodDebitCoolAdd_hidden" name="foodDebitCoolAdd_hidden"
+                                        value="cool" />
+
+                                    <label>
+                                        <button onclick="funcFoodAddUnit(event)" type="button"
+                                            id="foodDebitCoolAdd_new">LÄGG TILL!</button>
+                                    </label>
+
+                                    <input type="hidden" id="foodDebitCoolAdd_kcalMonthlyBuyFridge"
+                                        name="foodDebitCoolAdd_kcalMonthlyBuyFridge" disabled />
+
+                                    <input type="hidden" id="foodDebitCoolAdd_kcalStorageFridge"
+                                        name="foodDebitCoolAdd_kcalStorageFridge" disabled />
+
+                                </fieldset>
+                            </div>
+
+
+                            <h3>Fryst mat</h3>
+
+                            <div id="div_foodDebitFrozen">
+                                <fieldset id="fieldset_foodDebitFrozen1" class="frozenFoodUnit">
+
+                                    <h4>FISKPINNAR</h4>
+
+                                    <label>
+                                        Energiinnehåll:
+                                        <input type="text" id="foodDebitFrozen1_nutritionValue"
+                                            name="foodDebitFrozen1_nutritionValue" value="199" />
+                                        kcal/100g
+                                    </label>
+
+                                    <label>
+                                        Pris:
+                                        <input type="text" id="foodDebitFrozen1_price" name="foodDebitFrozen1_price"
+                                            class="food_scenario" />
+                                        SEK/kg
+                                    </label>
+
+                                    <label>
+                                        Månadskostnad:
+                                        <input type="text" id="foodDebitFrozen1_monthlyCost"
+                                            name="foodDebitFrozen1_monthlyCost" class="food_scenario" readonly />
+                                        SEK/månad
+                                    </label>
+
+                                    <label>
+                                        Matinköp:
+                                        <input type="text" id="foodDebitFrozen1_kgMonthlyBuy"
+                                            name="foodDebitFrozen1_kgMonthlyBuy" class="food_scenario" />
+                                        kg/månad
+                                    </label>
+
+                                    <label>
+                                        <span>Matlager:</span>
+                                        <input type="text" id="foodDebitFrozen1_kgStorage"
+                                            name="foodDebitFrozen1_kgStorage" class="freezer_systemUnit" />
+                                        kg
+                                    </label>
+
+                                    <label>
+                                        Kalorimängd, inköp:
+                                        <input type="text" id="foodDebitFrozen1_kcalMonthlyBuy"
+                                            name="foodDebitFrozen1_kcalMonthlyBuy" class="food_scenario" readonly />
+                                        kcal/mån
+                                    </label>
+
+                                    <label>
+                                        <span>Kalorimängd, lager:</span>
+                                        <input type="text" id="foodDebitFrozen1_kcalStorage"
+                                            name="foodDebitFrozen1_kcalStorage" class="freezer_systemUnit" readonly />
+                                        kcal
+                                    </label>
+
+                                    <label>
+                                        <button onclick="funcDeleteUnit(event)" type="button"
+                                            id="foodDebitFrozen1_delete">Ta bort!</button>
+                                    </label>
+
+                                </fieldset>
+
+
+
+                                <fieldset id="fieldset_foodDebitFrozen2" class="frozenFoodUnit">
+
+                                    <h4>TORSKFILÉ</h4>
+
+                                    <label>
+                                        Energiinnehåll:
+                                        <input type="text" id="foodDebitFrozen2_nutritionValue"
+                                            name="foodDebitFrozen2_nutritionValue" value="77" />
+                                        kcal/100g
+                                    </label>
+
+                                    <label>
+                                        Pris:
+                                        <input type="text" id="foodDebitFrozen2_price" name="foodDebitFrozen2_price"
+                                            class="food_scenario" />
+                                        SEK/kg
+                                    </label>
+
+                                    <label>
+                                        Månadskostnad:
+                                        <input type="text" id="foodDebitFrozen2_monthlyCost"
+                                            name="foodDebitFrozen2_monthlyCost" class="food_scenario" readonly />
+                                        SEK/månad
+                                    </label>
+
+                                    <label>
+                                        Matinköp:
+                                        <input type="text" id="foodDebitFrozen2_kgMonthlyBuy"
+                                            name="foodDebitFrozen2_kgMonthlyBuy" class="food_scenario" />
+                                        kg/månad
+                                    </label>
+
+                                    <label>
+                                        <span>Matlager:</span>
+                                        <input type="text" id="foodDebitFrozen2_kgStorage"
+                                            name="foodDebitFrozen2_kgStorage" class="freezer_systemUnit" />
+                                        kg
+                                    </label>
+
+                                    <label>
+                                        Kalorimängd, inköp:
+                                        <input type="text" id="foodDebitFrozen2_kcalMonthlyBuy"
+                                            name="foodDebitFrozen2_kcalMonthlyBuy" class="food_scenario" readonly />
+                                        kcal/mån
+                                    </label>
+
+                                    <label>
+                                        <span>Kalorimängd, lager:</span>
+                                        <input type="text" id="foodDebitFrozen2_kcalStorage"
+                                            name="foodDebitFrozen2_kcalStorage" class="freezer_systemUnit" readonly />
+                                        kcal
+                                    </label>
+
+                                    <label>
+                                        <button onclick="funcDeleteUnit(event)" type="button"
+                                            id="foodDebitFrozen2_delete">Ta bort!</button>
+                                    </label>
+
+                                </fieldset>
+
+
+
+                                <fieldset id="fieldset_foodDebitFrozen3" class="frozenFoodUnit">
+
+                                    <h4>GRÄDDGLASS</h4>
+
+                                    <label>
+                                        Energiinnehåll:
+                                        <input type="text" id="foodDebitFrozen3_nutritionValue"
+                                            name="foodDebitFrozen3_nutritionValue" value="192" />
+                                        kcal/100g
+                                    </label>
+
+                                    <label>
+                                        Pris:
+                                        <input type="text" id="foodDebitFrozen3_price" name="foodDebitFrozen3_price"
+                                            class="food_scenario" />
+                                        SEK/kg
+                                    </label>
+
+                                    <label>
+                                        Månadskostnad:
+                                        <input type="text" id="foodDebitFrozen3_monthlyCost"
+                                            name="foodDebitFrozen3_monthlyCost" class="food_scenario" readonly />
+                                        SEK/månad
+                                    </label>
+
+                                    <label>
+                                        Matinköp:
+                                        <input type="text" id="foodDebitFrozen3_kgMonthlyBuy"
+                                            name="foodDebitFrozen3_kgMonthlyBuy" class="food_scenario" />
+                                        kg/månad
+                                    </label>
+
+                                    <label>
+                                        <span>Matlager:</span>
+                                        <input type="text" id="foodDebitFrozen3_kgStorage"
+                                            name="foodDebitFrozen3_kgStorage" class="freezer_systemUnit" />
+                                        kg
+                                    </label>
+
+                                    <label>
+                                        Kalorimängd, inköp:
+                                        <input type="text" id="foodDebitFrozen3_kcalMonthlyBuy"
+                                            name="foodDebitFrozen3_kcalMonthlyBuy" class="food_scenario" readonly />
+                                        kcal/mån
+                                    </label>
+
+                                    <label>
+                                        <span>Kalorimängd, lager:</span>
+                                        <input type="text" id="foodDebitFrozen3_kcalStorage"
+                                            name="foodDebitFrozen3_kcalStorage" class="freezer_systemUnit" readonly />
+                                        kcal
+                                    </label>
+
+                                    <label>
+                                        <button onclick="funcDeleteUnit(event)" type="button"
+                                            id="foodDebitFrozen3_delete">Ta bort!</button>
+                                    </label>
+
+                                </fieldset>
+
+
+                                <fieldset id="fieldset_foodDebitFrozenNew"></fieldset>
+
+
+                                <fieldset id="fieldset_foodDebitFrozenAdd">
+
+                                    <h4>LÄGG TILL FRYST MAT</h4>
+
+                                    <input type="hidden" id="foodDebitFrozenAdd_hidden" name="foodDebitFrozenAdd_hidden"
+                                        value="frozen" />
+
+                                    <label>
+                                        <button onclick="funcFoodAddUnit(event)" type="button"
+                                            id="foodDebitFrozenAdd_new">LÄGG TILL!</button>
+                                    </label>
+
+                                    <input type="hidden" id="foodDebitFrozenAdd_kcalMonthlyBuyFreezer"
+                                        name="foodDebitFrozenAdd_kcalMonthlyBuyFreezer" disabled />
+
+                                    <input type="hidden" id="foodDebitFrozenAdd_kcalStorageFreezer"
+                                        name="foodDebitFrozenAdd_kcalStorageFreezer" disabled />
+
+                                </fieldset>
+                            </div>
+
+
+
+
+                            <h3>Total kaloritillgång</h3>
+
+                            <div class="totalruta">
+
+                                <fieldset id="fieldset_foodDebitTotal">
+
+                                    <label>
+                                        Inköpt mat:
+                                        <input type="text" id="foodDebitTotal_kcalMonthlyBuy"
+                                            name="foodDebitTotal_kcalMonthlyBuy" readonly />
+                                        kcal/mån
+                                    </label>
+
+                                    <label>
+                                        Dagligt matinköp:
+                                        <input type="text" id="foodDebitTotal_kcalDailyBuy"
+                                            name="foodDebitTotal_kcalDaylyBuy" readonly />
+                                        kcal/dag
+                                    </label>
+
+                                    <label>
+                                        Lagrad mat:
+                                        <input type="text" id="foodDebitTotal_kcalStorage"
+                                            name="foodDebitTotal_kcalStorage" readonly />
+                                        kcal
+                                    </label>
+
+                                </fieldset>
+
+                            </div>
+
+                        </form>
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                    </div>
+
+
+
+                    <div class="mainContentMiddleLine">
+                        <hr class="greenLine">
+                    </div>
+
+
+
+                    <div class="mainContentRight">
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                        <form action="action_Page.php" method="post" id="form_foodCredit">
+                            <h2>Kalori&shy;förbränning</h2>
+
+
+                            <fieldset id="fieldset_foodCreditPeople" class="basruta">
+                                <legend> Hus&shy;hållet </legend>
+                                <label>
+                                    Antal personer i hushållet:
+                                    <input type="text" id="foodCreditPeople_count" name="foodCreditPeople_count"
+                                        readonly />
+                                    <a href="step1.html" class="changePreviousFormLink"> Ändra</a>
+                                </label>
+                            </fieldset>
+
+
+                            <h3>Förbränning vid vila</h3>
+
+                            <fieldset id="fieldset_foodCreditRestPers1" class="ofardigtStycke">
+
+                                <h4>PERSON 1</h4>
+
+                                <label>
+                                    Vikt:
+                                    <input type="text" id="foodCreditRestPers1_weight"
+                                        name="foodCreditRestPers1_weight" />
+                                    kg
+                                </label>
+
+                                <label>
+                                    BMR <span class="smallText">(Basal Metabolic Rate)</span>:
+                                    <input type="text" id="foodCreditRestPers1_kcalDailyRest"
+                                        name="foodCreditRestPers1_kcalDailyRest" readonly />
+                                    kcal/dag
+                                </label>
+
+                            </fieldset>
+                            <fieldset id="fieldset_foodCreditRestNew"></fieldset>
+
+
+                            <h3>Förbränning vid aktivitet</h3>
+
+                            <fieldset id="fieldset_foodCreditActivePers1" class="ofardigtStycke">
+
+                                <h4>PERSON 1</h4>
+
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <label>MET<span class="smallText"> (Meta&shy;bolic Energy
+                                                        Turnover):</span></label>
+                                            </th>
+
+                                            <th>
+                                                <label>Tidslängd</label>
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+
+                                        <tr>
+                                            <td>
+                                                <label for="foodCreditActivePers1_MET1">
+                                                    MET=1 &nbsp; <span class="labelTextSmall">ingen aktivitet
+                                                        (vila)</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <label for="foodCreditActivePers1_MET1">Timmar/dag</label>
+                                                <input type="text" id="foodCreditActivePers1_MET1"
+                                                    name="foodCreditActivePers1_MET1" value="24" />
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <label for="foodCreditActivePers1_MET1_5">
+                                                    MET=1,5 &nbsp; <span class="labelTextSmall">mycket lätt
+                                                        (rull&shy;stols&shy;bunden)</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <label for="foodCreditActivePers1_MET1_5">Timmar<wbr>/dag</label>
+                                                    <input type="text" id="foodCreditActivePers1_MET1_5"
+                                                        name="foodCreditActivePers1_MET1_5" />
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <label for="foodCreditActivePers1_MET2_5">
+                                                    MET=2,5 &nbsp; <span class="labelTextSmall">lätt
+                                                        (mat&shy;lagning)</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <label for="foodCreditActivePers1_MET2_5">Timmar<wbr>/dag</label>
+                                                    <input type="text" id="foodCreditActivePers1_MET2_5"
+                                                        name="foodCreditActivePers1_MET2_5" />
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <label for="foodCreditActivePers1_MET5">
+                                                    MET=5 &nbsp; <span class="labelTextSmall">moderat
+                                                        (träd&shy;gårds&shy;arbete)</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <label for="foodCreditActivePers1_MET5">Timmar<wbr>/dag</label>
+                                                    <input type="text" id="foodCreditActivePers1_MET5"
+                                                        name="foodCreditActivePers1_MET5" />
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <label for="foodCreditActivePers1_MET7">
+                                                    MET=7 &nbsp; <span class="labelTextSmall">medelhård
+                                                        (badminton)</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <label for="foodCreditActivePers1_MET7">Timmar<wbr>/dag</label>
+                                                    <input type="text" id="foodCreditActivePers1_MET7"
+                                                        name="foodCreditActivePers1_MET7" />
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <label for="foodCreditActivePers1_MET10">
+                                                    MET=10 &nbsp; <span class="labelTextSmall">hård (löpning,
+                                                        9,6km/h)</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <label for="foodCreditActivePers1_MET10">Timmar<wbr>/dag</label>
+                                                    <input type="text" id="foodCreditActivePers1_MET10"
+                                                        name="foodCreditActivePers1_MET10" />
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <label for="foodCreditActivePers1_MET12">
+                                                    MET=12 &nbsp; <span class="labelTextSmall">mycket hård (cykling,
+                                                        30km/h)</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <label for="foodCreditActivePers1_MET12">Timmar<wbr>/dag</label>
+                                                    <input type="text" id="foodCreditActivePers1_MET12"
+                                                        name="foodCreditActivePers1_MET12" />
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <label for="foodCreditActivePers1_MET16">
+                                                    MET=16 &nbsp; <span class="labelTextSmall">sten&shy;hård
+                                                        (skid&shy;åkning, uppför)</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <label for="foodCreditActivePers1_MET16">Timmar<wbr>/dag</label>
+                                                    <input type="text" id="foodCreditActivePers1_MET16"
+                                                        name="foodCreditActivePers1_MET16" />
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <label for="foodCreditActivePers1_METsum">
+                                                    Summan av MET <span class="labelTextSmall">(max 24 timmar)</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <label for="foodCreditActivePers1_METsum">Timmar<wbr>/dag</label>
+                                                    <input type="text" id="foodCreditActivePers1_METsum"
+                                                        name="foodCreditActivePers1_METsum" readonly />
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+
+                                <label>
+                                    PAL <span class="smallText">(Physical Activity Level)</span>
+                                    <input type="text" id="foodCreditActivePers1_PAL" name="foodCreditActivePers1_PAL"
+                                        readonly />
+                                </label>
+
+                                <label>
+                                    Förbränning per dag
+                                    <input type="text" id="foodCreditActivePers1_kcalDailyActive"
+                                        name="foodCreditActivePers1_kcalDailyActive" readonly />
+                                    kcal/dag
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_foodCreditActiveNew"></fieldset>
+
+
+                            <h3>Extra förbränning p.g.a kyla</h3>
+
+                            <fieldset id="fieldset_foodCreditCold" class="ofardigtStycke">
+
+                                <label>
+                                    Innetemperatur
+                                    <input type="text" id="foodCreditCold_roomTemp" name="foodCreditCold_roomTemp"
+                                        readonly />
+                                    grader C
+                                </label>
+
+                                <label>
+                                    Extra förbränning pga kyla
+                                    <input type="text" id="foodCreditCold_kcalDailyCold"
+                                        name="foodCreditCold_kcalDailyCold" readonly />
+                                    kcal/dag/pers
+                                </label>
+
+                            </fieldset>
+
+
+                            <h3>Kropps&shy;fett&shy;reserver</h3>
+
+
+                            <fieldset id="fieldset_foodCreditFatPers1" class="ofardigtStycke">
+
+                                <h4>PERSON 1</h4>
+
+                                <label>
+                                    Fettmassa
+                                    <input type="text" id="foodCreditFatPers1_kgFat" name="foodCreditFatPers1_kgFat" />
+                                    kg
+                                </label>
+
+                                <label>
+                                    Energilagring i fettet
+                                    <input type="text" id="foodCreditFatPers1_kcalFat" name="foodCreditFatPers1_kcalFat"
+                                        readonly />
+                                    kcal
+                                </label>
+
+                                <label>
+                                    Max möjlig fett&shy;förbränning
+                                    <input type="text" id="foodCreditFatPers1_kcalDailyFat"
+                                        name="foodCreditFatPers1_kcalDailyFat" readonly />
+                                    kcal/dag
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_foodCreditFatNew"></fieldset>
+
+
+                            <h3>Totalt kaloribehov </h3>
+
+                            <div class="totalruta">
+
+                                <fieldset id="fieldset_foodCreditPart">
+
+                                    <h4>ALLA PERSONERS KALORIBEHOV </h4>
+
+                                    <label>
+                                        Pga aktivitet:
+                                        <input type="text" id="foodCreditPart_kcalDailyActive"
+                                            name="foodCreditPart_kcalDailyActive" readonly />
+                                        kcal/dag
+                                    </label>
+
+                                    <label>
+                                        Pga kyla:
+                                        <input type="text" id="foodCreditPart_kcalDailyCold"
+                                            name="foodCreditPart_kcalDailyCold" readonly />
+                                        kcal/dag
+                                    </label>
+
+                                    <label>
+                                        Max fett&shy;förbränning:
+                                        <input type="text" id="foodCreditPart_kcalDailyFat"
+                                            name="foodCreditPart_kcalDailyFat" readonly />
+                                        kcal/dag
+                                    </label>
+
+                                    <label>
+                                        Lagrat Kroppsfett:
+                                        <input type="text" id="foodCreditPart_kcalStorage"
+                                            name="foodCreditPart_kcalStorage" readonly />
+                                        kcal
+                                    </label>
+
+                                </fieldset>
+
+
+
+                                <fieldset id="fieldset_foodCreditTotalBrutto">
+
+                                    <h4>AKTIVITET + KYLA</h4>
+
+                                    <label>
+                                        Kaloribehov, brutto:
+                                        <input type="text" id="foodCreditTotalBrutto_kcalDailyTotal"
+                                            name="foodCreditTotalBrutto_kcalDailyTotal" readonly />
+                                        kcal/dag
+                                    </label>
+
+                                </fieldset>
+
+
+                                <fieldset id="fieldset_foodCreditTotalNetto">
+
+                                    <h4>AKTIVITET + KYLA - FETT</h4>
+
+                                    <label>
+                                        Kaloribehov, netto:
+                                        <input type="text" id="foodCreditTotalNetto_kcalDailyTotal"
+                                            name="foodCreditTotalNetto_kcalDailyTotal" readonly />
+                                        kcal/dag
+                                    </label>
+
+                                </fieldset>
+
+                            </div>
+
+
+                        </form>
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                    </div>
+
+
+
+                    <div class="mainContentBottomLine">
+                        <hr class="greenLine">
+                    </div>
+
+                </div>
+                <!--end of mainContent-->
+
+
+                <div class="mainControls">
+
+                    <!-- only in index.html and step1-5.html-->
+                    <div class="mainControlsLeftLine1">
+                        <hr class="greenLine">
+                    </div>
+
+                    <!-- only in result.html
+                    <div class="mainControlsLeftLine2">
+                        <hr class="greenLine">
+                    </div> -->
+
+                    <!-- only in step1-step5.html and result.html-->
+                    <div class="mainControlsButton mainControlsRestart">
+                        <a href="index.html" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_restart_img','','images/control_restart_active.png',1)">
+                            <img id="id_restart_img" src="images/control_restart.png" alt="Restart Button">
+                        </a>
+                    </div>
+
+                    <!-- only in step1-step5.html and result.html-->
+                    <div class="mainControlsButton mainControlsBack">
+                        <a href="step3.html" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_back_img','','images/control_back_active.png',1)">
+                            <img id="id_back_img" src="images/control_back.png" alt="Back Button">
+                        </a>
+                    </div>
+
+                    <!-- only in index.html
+                    <div class="mainControlsStart">
+
+                        <div class="mainControlsStartLeft">
+                            <h3>KLICKA</h>
+                        </div>
+
+                        <div class="mainControlsButton mainControlsStartPlay">
+                            <a href="step1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('id_play_img','','images/control_play_active.png',1)">
+                                <img id="id_play_img" src="images/control_play.png" alt="Play Button">
+                            </a>
+                        </div>
+
+                        <div class="mainControlsStartRight">
+                            <h3>HÄR!</h3>
+                        </div>
+                    </div>-->
+
+                    <!-- only in step1-step5.html -->
+                    <div class="mainControlsButton mainControlsReload">
+                        <a href="#" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_reload_img','','images/control_reload_active.png',1)">
+                            <img id="id_reload_img" src="images/control_reload.png" alt="Reload Button">
+                        </a>
+                    </div>
+
+                    <!-- only in step1-step5.html-->
+                    <div class="mainControlsButton mainControlsNext">
+                        <a href="step5.html" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_next_img','','images/control_next_active.png',1)">
+                            <img id="id_next_img" src="images/control_next.png" alt="Next Button">
+                        </a>
+                    </div>
+
+                    <!-- only in result.html
+                    <div class="mainControlsRightLine2">
+                        <hr class="greenLine">
+                    </div>    -->
+
+                    <!-- only in index.html and step1-5.html-->
+                    <div class="mainControlsRightLine1">
+                        <hr class="greenLine">
+                    </div>
+
+                </div>
+                <!--end of mainControls-->
+
+            </main>
+            <!--end of mainPage-->
+        </div>
+        <!--end of wrapperNavMain-->
+
+
+        <aside class="asidePage">
+            <h4>Externa länkar:</h4>
+        </aside>
+
+
+    </div>
+    <!--end of wrapperMainAside-->
+
+
+
+    <footer class="footerPage">
+
+        <div class="footerInfo">
+            <div class="footerInfoName">
+                <h5> Rebeka Amanatidou</h5>
+            </div>
+            <div class="footerInfoProject">
+                <h5>Projektarbete i kursen Webbprogrammering</h5>
+            </div>
+        </div>
+
+
+        <div class="footerSchool">
+            <div class="footerSchoolLogo">
+                <a target="_blank" href="https://glimnet.se">
+                    <img src="images/logo_glimakra.png" alt="Glimåkra folkhöskola logo">
+                </a>
+            </div>
+            <div class="footerSchoolName">
+                <a target="_blank" href="https://glimnet.se">
+                    <h5>Glimåkra folkhögskola</h5>
+                </a>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- <script type="module" src="JS/functions.js"></script> -->
+
+    <!-- <script src="JS/button_functions.js"></script> -->
+
+    <script src="JS/func_language.js"></script>
+
+    <script src="JS/step4_dataLoad.js"></script>
+    <script src="JS/func_scenario.js"></script>
+
+    <script src="JS/step4_events.js"></script>
+    <script src="JS/step4_calculate.js"></script>
+
+    <script src="JS/func_controls.js"></script>
+
+</body>
+
+</html>

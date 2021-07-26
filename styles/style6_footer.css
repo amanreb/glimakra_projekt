@@ -1,0 +1,92 @@
+/* CLASSES IN FILE
+div.footerInfo
+div.footerInfoName
+div.footerInfoProject
+div.footerSchool
+div.footerSchoolLogo
+div.footerSchoolName */
+
+
+/*
+Code Sections:
+1.INFO
+2.SCHOOL 
+3.TEXT*/
+
+
+
+
+
+
+
+/* 1.INFO */
+
+div.footerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left:10px;
+    margin-right:100px;
+}
+
+/* div.footerInfoName {} */
+
+/* div.footerInfoProject {} */
+
+
+
+
+
+/* 2.SCHOOL */
+
+div.footerSchool {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 20px;
+    align-items: center;
+}
+
+div.footerSchoolLogo {
+    flex:none;
+}
+
+div.footerSchoolName {
+    /* align-self: center; */
+    margin-left: 10px;
+    width:min-content;
+}
+
+footer img {
+    width: auto;
+}
+
+
+
+/* 3.TEXT */
+
+div.footerInfo h5 {
+    font-family: Comic Sans Ms, sans-serif;
+    font-size: 12px;
+    color:black;
+}
+
+div.footerSchool h5 {
+    font-family: Comic Sans Ms, sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    color:white;
+    text-shadow:
+    1px 1px 2px black,
+    -1px -1px 2px black,
+    1px -1px 2px black,
+    -1px 1px 2px black,
+    1px 1px 2px black,
+    -1px -1px 2px black,
+    1px -1px 2px black,
+    -1px 1px 2px black;
+}
+
+div.footerSchool a {
+    text-decoration: none;
+}

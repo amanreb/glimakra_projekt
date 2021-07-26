@@ -1,0 +1,279 @@
+/* CLASSES IN FILE
+div.mainControlsButton
+div.mainControlsLeftLine1
+div.mainControlsLeftLine2
+div.mainControlsRestart
+div.mainControlsBack
+div.mainControlsStart
+div.mainControlsStartLeft
+div.mainControlsStartPlay
+div.mainControlsStartRight
+div.mainControlsReload
+div.mainControlsNext
+div.mainControlsRightLine1
+div.mainControlsRightLine2
+ */
+
+
+
+/*
+Code Sections:
+1.LINES
+2.BUTTONS 
+3.TEXT*/
+
+
+
+
+
+
+/* mobile */
+@media(min-width:320px), (max-width:320px) {
+
+    /* 1.LINES */
+
+    div.mainControlsLeftLine1 {
+        flex: 20;
+        margin-left: 10px;
+        margin-right: 7px;
+    }
+
+    div.mainControlsRightLine1 {
+        flex: 20;
+        margin-left: 7px;
+        margin-right: 10px;
+    }
+
+    div.mainControlsLeftLine2 {
+        flex: 76;
+        margin-left: 10px;
+        margin-right: 7px;
+    }
+
+    div.mainControlsRightLine2 {
+        flex: 76;
+        margin-left: 7px;
+        margin-right: 10px;
+    }
+
+
+    /* 2.BUTTONS  */
+
+    div.mainControlsButton {
+        flex: 50;
+        max-width: 70px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+
+    /* 3.START BUTTON */
+
+    div.mainControlsStart h3 {
+        font-size: 14px;
+    }
+
+    div.mainControlsStartLeft {
+        width: 60px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    div.mainControlsStartRight {
+        width: 60px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+}
+
+
+/* mobile landscape */
+@media(min-width:578px) {
+
+    /* 1.LINES */
+
+    div.mainControlsLeftLine1 {
+        flex: auto;
+        margin-left: 15px;
+        margin-right: 12px;
+    }
+
+    div.mainControlsRightLine1 {
+        flex: auto;
+        margin-left: 12px;
+        margin-right: 15px;
+    }
+
+    div.mainControlsLeftLine2 {
+        flex: auto;
+        margin-left: 15px;
+        margin-right: 12px;
+    }
+
+    div.mainControlsRightLine2 {
+        flex: auto;
+        margin-left: 12px;
+        margin-right: 15px;
+    }
+
+
+    /* 2.BUTTONS  */
+
+    div.mainControlsButton {
+        flex: none;
+        max-width: 100px;
+        width: 100px;
+        /* margin-left: 3px;
+        margin-right: 3px; */
+    }
+
+
+    /* 3.START BUTTON */
+
+    div.mainControlsStart h3 {
+        font-size: 24px;
+    }
+
+    div.mainControlsStartLeft {
+        width: 100px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+    div.mainControlsStartRight {
+        width: 100px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+}
+
+
+
+/* tablet */
+@media(min-width:768px) {
+
+    /* 1.LINES */
+
+    div.mainControlsLeftLine1 {
+        /* flex: auto; */
+        margin-left: 25px;
+        margin-right: 18px;
+    }
+
+    div.mainControlsRightLine1 {
+        /* flex: auto; */
+        margin-left: 18px;
+        margin-right: 25px;
+    }
+
+    div.mainControlsLeftLine2 {
+        /* flex: auto; */
+        margin-left: 25px;
+        margin-right: 18px;
+    }
+
+    div.mainControlsRightLine2 {
+        /* flex: auto; */
+        margin-left: 18px;
+        margin-right: 25px;
+    }
+
+
+    /* 2.BUTTONS  */
+
+    div.mainControlsButton {
+        /* flex: none; */
+        max-width: 115px;
+        width: 115px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+
+    /* 3.START BUTTON */
+
+    div.mainControlsStart h3 {
+        font-size: 32px;
+    }
+
+    div.mainControlsStartLeft {
+        width: 140px;
+        /* margin-left: 7px; */
+        /* margin-right:7px; */
+    }
+
+    div.mainControlsStartRight {
+        width: 140px;
+        /* margin-left: 7px; */
+        /* margin-right:7px; */
+    }
+
+}
+
+
+
+/* screen */
+@media(min-width:1200px) {
+
+    /* 1.LINES */
+
+    div.mainControlsLeftLine1 {
+        /* flex: auto; */
+        margin-left: 34px;
+        margin-right: 27px;
+    }
+
+    div.mainControlsRightLine1 {
+        /* flex: auto; */
+        margin-left: 27px;
+        margin-right: 34px;
+    }
+
+    div.mainControlsLeftLine2 {
+        /* flex: auto; */
+        margin-left: 34px;
+        margin-right: 27px;
+    }
+
+    div.mainControlsRightLine2 {
+        /* flex: auto; */
+        margin-left: 27px;
+        margin-right: 34px;
+    }
+
+
+    /* 2.BUTTONS  */
+
+    div.mainControlsButton {
+        /* flex: none; */
+        max-width: 128px;
+        width: 128px;
+        /* margin-left: 7px; */
+        /* margin-right: 7px; */
+    }
+
+
+    /* 3.START BUTTON */
+
+    div.mainControlsStart h3 {
+        font-size: 40px;
+    }
+
+    div.mainControlsStartLeft {
+        width: 160px;
+        /* margin-left: 7px; */
+        /* margin-right:7px; */
+    }
+
+    div.mainControlsStartRight {
+        width: 160px;
+        /* margin-left: 7px; */
+        /* margin-right:7px; */
+    }
+
+}
+
+/* big screen */
+@media(min-width:1600px) {}

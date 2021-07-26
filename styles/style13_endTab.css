@@ -1,0 +1,293 @@
+div.mainGeneralResult .resultIntro h4 {
+    font-size: 24px;
+    text-indent: -10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-family: Comic Sans Ms, sans-serif;
+    text-align: left;
+    /* text-decoration: underline; */
+}
+div.mainGeneralResult .gridResult h4 {
+    font-size: 24px;
+    line-height:25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: Comic Sans Ms, sans-serif;
+    text-align: left;
+    /* text-decoration: underline; */
+}
+
+div.mainGeneralResult h1 {
+    font-size: 64px;
+    text-align: left;
+    font-family: Comic Sans Ms, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+div.mainGeneralResult h2 {
+    font-size: 48px;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-family: Comic Sans Ms, sans-serif;
+}
+
+div.mainGeneralResult h3 {
+    font-size: 30px;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-family: Comic Sans Ms, sans-serif;
+}
+
+
+div.mainGeneralResult hr.greenLine {
+    background-color: #0c5b31;
+    border: 2.5px solid black;
+    margin-top: 50px;
+    width: 100%;
+    height: 7px;
+}
+
+span.underscore {
+    text-decoration: underline;
+}
+
+
+
+
+/* div#resultSummary {
+    margin-bottom: 40px;
+}
+
+div#resultConditions {
+    margin-bottom: 40px;
+} */
+
+
+
+/* GRID */
+
+/* grid-containern */
+div.gridContainer {
+    display: grid;
+    /* grid-template-columns: 2 0 1 1 1 1 1 1 3 ; */
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.gridContainer.gridSurvive {
+    grid-template-columns: 100px 0px 1fr 1fr 1fr 1fr 1fr 1fr 200px;
+}
+
+div.gridContainer.gridComfort {
+    grid-template-columns: 120px 0px 1fr 1fr 1fr 1fr 1fr 250px;
+}
+
+div.gridContainer.gridEconomy {
+    grid-template-columns: 120px 0px 1fr 1fr 1fr 1fr 1fr 250px;
+}
+
+
+
+/* grid-item */
+.gridContainer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridContainer.gridSurvive div.gBox{
+    height: 63px;
+    min-width:45px;
+}
+
+
+.gridContainer.gridComfort div.gBox{
+    height: 120px;
+    min-width:110px;
+}
+
+
+.gridContainer.gridEconomy div.gBox{
+    height: 63px;
+}
+
+
+/* .gridContainer div:not(.gridLabel):not(.gridBox0):not(.gridTitle):not(.gridResult) */
+.gridContainer div.gBox {
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+/* div.gridBox0 {
+    display: "none";
+    border: "none"
+} */
+
+
+.resultSpanGridSurvive {
+    grid-column: 9;
+    grid-row: 1 / span 5;
+    /* width: 100px; */
+    /* height:250px; */
+  }
+
+.resultSpanGridComfort {
+    grid-column: 8;
+    grid-row: 1 / span 6;
+}
+
+.resultSpanGridEconomy {
+    grid-column: 8;
+    grid-row: 1 / span 4;
+}
+
+
+
+/* -----------------------COLORS------------------------- */
+
+/* gridSurvive */
+
+div.gridSurvive div.gBox {
+    background-color: #525553;
+}
+
+/* div.gridSurvive .active.gBox.gridBox1:not(.gridTitle){ */
+div.gridSurvive .active.gBox {
+    background-color: #820202
+}
+
+div.gridSurvive .active.gBox.gridBox2 {
+    background-color: #a6030e
+}
+
+div.gridSurvive .active.gBox.gridBox3 {
+    background-color: #b3081f
+}
+
+div.gridSurvive .active.gBox.gridBox4 {
+    background-color: #cf1f3c
+}
+
+div.gridSurvive .active.gBox.gridBox5 {
+    background-color: #df3954
+}
+
+div.gridSurvive .active.gBox.gridBox6 {
+    background-color: #e86680
+}
+
+
+
+/* gridComfort */
+
+div.gridComfort .gBox:not(.gridTitle):not(.active) {
+    background-image:url(/images/svart_genomskinlig.png);
+    background-repeat:repeat;
+}
+
+div.gridComfort .gBox.gridBox1 {
+    background-color: #820265
+}
+
+div.gridComfort .gBox.gridBox2 {
+    background-color: #1a03a6
+}
+
+div.gridComfort .gBox.gridBox3 {
+    background-color: #08b3a9
+}
+
+div.gridComfort .gBox.gridBox4 {
+    background-color: #39df60
+}
+
+div.gridComfort .gBox.gridBox5 {
+    background-color: #e8dd66
+}
+
+
+
+
+/* gridEconomy */
+
+
+
+div.gridEconomy .gBox.gridBox1.gridRow1 {
+    background-color: #2b2727;
+}
+
+div.gridEconomy .gBox.gridBox2.gridRow1 {
+    background-color: #3b3535;
+}
+
+div.gridEconomy .gBox.gridBox3.gridRow1 {
+    background-color: #4d4545;
+}
+
+
+div.gridEconomy .gBox.gridBox4.gridRow1 {
+    background-color: #615757;
+}
+
+div.gridEconomy .gBox.gridBox5.gridRow1 {
+    background-color: #786c6c;
+}
+
+div.gridEconomy .gBox.gridBox1.gridRow2 {
+    background-color: #47291c
+}
+
+
+div.gridEconomy .gBox.gridBox2.gridRow2 {
+    background-color: #5c3524
+}
+
+div.gridEconomy .gBox.gridBox3.gridRow2 {
+    background-color: #73422d
+}
+
+div.gridEconomy .gBox.gridBox4.gridRow2 {
+    background-color: #8c5037
+}
+
+div.gridEconomy .gBox.gridBox5.gridRow2 {
+    background-color: #ab6243
+}
+
+div.gridEconomy .gBox.gridBox1.gridRow3 {
+    background-color: #57240a
+}
+
+
+div.gridEconomy .gBox.gridBox2.gridRow3 {
+    background-color: #702e0d
+}
+
+div.gridEconomy .gBox.gridBox3.gridRow3 {
+    background-color: #8c3a11
+}
+
+div.gridEconomy .gBox.gridBox4.gridRow3 {
+    background-color: #ab4715
+}
+
+div.gridEconomy .gBox.gridBox5.gridRow3 {
+    background-color: #cc5418
+}
+
+div.gridEconomy div.gBox.empty {
+    background-color: #d8d8d8   !important;
+}
+
+/* ----------------------------------------------------------------------- */
+
+
+
+

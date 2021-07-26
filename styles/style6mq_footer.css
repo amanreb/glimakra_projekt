@@ -1,0 +1,71 @@
+
+
+/* CLASSES IN FILE
+div.footerInfo
+div.footerInfoName
+div.footerInfoProject
+div.footerSchool
+div.footerSchoolLogo
+div.footerSchoolName */
+
+
+/*
+Code Sections:
+1.INFO
+2.SCHOOL 
+3.TEXT*/
+
+
+
+
+
+
+
+/* mobile */
+@media(min-width:320px), (max-width:320px) {
+    
+    div.footerInfo {
+        margin-right:10px;
+        max-width:150px;
+    }
+
+    div.footerSchoolName {
+        width:min-content;
+        flex:none;
+    }
+
+}
+
+
+/* mobile landscape */
+@media(min-width:578px) {
+
+    div.footerInfo {
+        margin-right:100px;
+        max-width:none;
+    }
+ 
+    div.footerSchoolName {
+        width:max-content;
+        flex:auto;
+    }
+}
+
+
+/* tablet */
+@media(min-width:768px) {
+ 
+}
+
+
+
+/* screen */
+@media(min-width:1200px) {
+
+}
+
+
+/* big screen */
+@media(min-width:1600px) {
+
+}

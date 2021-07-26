@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+
+    <link rel="stylesheet" href="styles/style1_overall.css">
+    <link rel="stylesheet" href="styles/style1mq_overall.css">
+    <link rel="stylesheet" href="styles/style2_header.css">
+    <link rel="stylesheet" href="styles/style2mq_header.css">
+    <link rel="stylesheet" href="styles/style3_nav.css">
+    <link rel="stylesheet" href="styles/style3mq_nav.css">
+    <link rel="stylesheet" href="styles/style4_mainGeneral.css">
+    <link rel="stylesheet" href="styles/style4mq_mainGeneral.css">
+    <link rel="stylesheet" href="styles/style5_mainControls.css">
+    <link rel="stylesheet" href="styles/style5mq_mainControls.css">
+    <link rel="stylesheet" href="styles/style6_footer.css">
+    <link rel="stylesheet" href="styles/style6mq_footer.css">
+    <link rel="stylesheet" href="styles/style7_startTab.css">
+    <link rel="stylesheet" href="styles/style7mq_startTab.css">
+    <link rel="stylesheet" href="styles/style8_moneyTab.css">
+    <link rel="stylesheet" href="styles/style8mq_moneyTab.css">
+    <link rel="stylesheet" href="styles/style9_electricityTab.css">
+    <link rel="stylesheet" href="styles/style9mq_electricityTab.css">
+    <link rel="stylesheet" href="styles/style10_heatTab.css">
+    <link rel="stylesheet" href="styles/style10mq_heatTab.css">
+    <link rel="stylesheet" href="styles/style11_foodTab.css">
+    <link rel="stylesheet" href="styles/style11mq_foodTab.css">
+    <link rel="stylesheet" href="styles/style12_waterTab.css">
+    <link rel="stylesheet" href="styles/style12mq_waterTab.css">
+    <link rel="stylesheet" href="styles/style13_endTab.css">
+    <link rel="stylesheet" href="styles/style13mq_endTab.css">
+    <link rel="stylesheet" href="styles/style14_infoPage.css">
+    <link rel="stylesheet" href="styles/style14mq_infoPage.css">
+
+    <script src="JS/func_images.js"></script>
+    
+</head>
+
+
+<body onLoad="MM_preloadImages('images/logo_my_active.png','images/icon_info_active.png','images/control_play_active.png',
+'images/control_restart_active.png','images/control_back_active.png','images/control_reload_active.png', 
+'images/control_next_active.png','images/icon_yes_active.png', 'images/icon_no_active.png')">
+
+
+
+    <header class="headerPage">
+
+        <div class="headerLogo">
+            <a href="index.html" onMouseOut="MM_swapImgRestore()"
+                onMouseOver="MM_swapImage('id_myLogo_img','','images/logo_my_active.png',1)">
+                <img id="id_myLogo_img" src="images/logo_my.png" alt="Logo">
+            </a>
+        </div>
+
+        <!---->
+        <div class="headerTitle">
+            <div class="headerTitleFirst">
+                <h1>Över&shy;lev&shy;nads&shy;appen</h1>
+            </div>
+            <div class="headerTitleSecond">
+                <h4>Hur rustad är du för en samhällskris?</h4>
+            </div>
+        </div>
+
+        <div class="headerButtons">
+
+            <div class="headerButtonsInfo">
+
+                <a href="infoPage.html" onMouseOut="MM_swapImgRestore()"
+                    onMouseOver="MM_swapImage('id_info_img','','images/icon_info_active.png',1)">
+                    <img id="id_info_img" src="images/icon_info.png" width="auto" alt="Info button">
+                </a>
+
+            </div>
+
+            <div class="headerButtonsFlag">
+                <fieldset>
+                    <select name="sprak" id="sprak">
+                        <option value="swedish"><img src="images/icon_SE.png" alt="swedish flag"></option>
+                        <option value="english"><img src="images/icon_GB.png" alt="brittish flag"></option>
+                        <option value="greek"><img src="images/icon_GR.png" alt="greek flag"></option>
+                        <option value="german"><img src="images/icon_DE.png" alt="german flag"></option>
+                    </select>
+                </fieldset>
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <div class="wrapperMainAside">
+        <div class="wrapperNavMain">
+            <nav class="navPage">
+
+                <div class="navTab navStart navCurrent colorActive_Start">
+                    <a href="#">
+                        <!--<a href="index.html"> -->
+                        <h4>Start:</h4>
+                        <h5>Välj scenario</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep1 colorInactive_Step1">
+                    <a href="#">
+                        <!--<a href="step1.html"> -->
+                        <h4>Steg 1:</h4>
+                        <h5>Pengar</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep2 colorInactive_Step2">
+                    <a href="#">
+                        <!-- <a href="step2.html">  -->
+                        <h4>Steg 2:</h4>
+                        <h5>Elek&shy;tricitet</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep3 colorInactive_Step3">
+                    <a href="#">
+                        <!-- <a href="step3.html">   -->
+                        <h4>Steg 3:</h4>
+                        <h5>Upp&shy;värmning</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep4 colorInactive_Step4">
+                    <a href="#">
+                        <!-- <a href="step4.html">   -->
+                        <h4>Steg 4:</h4>
+                        <h5>Mat</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep5 colorInactive_Step5">
+                    <a href="#">
+                        <!-- <a href="step5.html">  -->
+                        <h4>Steg 5:</h4>
+                        <h5>Vatten</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navEnd colorInactive_End">
+                    <a href="#">
+                        <!-- <a href="result.html">  -->
+                        <h4>Slut:</h4>
+                        <h5>Ditt Resultat</h5>
+                    </a>
+                </div>
+
+            </nav>
+            <!--end of navPage-->
+
+            <main class="mainPage colorActive_Start">
+
+                <div class="mainGeneral">
+
+                    <!-- only in index.html-->
+                    <div class="mainGeneralGreeting">
+                        <h3>Kan du överleva en samhällskris?</h3>
+                        <h3>Hur länge och hur bra?</h3>
+                        <h3>Testa dej själv i 5 steg!</h3>
+                    </div>
+
+                    <!-- only in Step1-Step5.html and Result.html
+                    <div class="mainGeneralInfo">
+                        <div class="mainGeneralInfoTitle">
+                            <h5>DITT SCENARIO</h5>
+                        </div>
+                        <div class="mainGeneralInfoBody">
+                            <div class="mainGeneralInfoBodyPre">
+                                <h5>Du har angett:</h5>
+                            </div>
+
+                            <div class="mainGeneralInfoBodyConditions">
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5 id="">att banksystemet <span id="bank_system">inte</span> fungerar!
+                                        <a href="index.html">Ändra</a>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att elnätet <span id="el_system">inte</span> fungerar!
+                                        <a href="index.html">Ändra</a>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att ditt primära uppvärmnings&shy;system
+                                        att fjärrvärmenätet&shy;/naturgasnätet&shy;/bränsle&shy;marknaden
+                                        <span id="heat_system">inte</span> fungerar!
+                                        <a href="index.html">Ändra</a>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att livsmedelskedjan <span id="food_system">inte</span> fungerar!
+                                        <a href="index.html">Ändra</a>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att vattenledningsnätet <span id="water_system">inte</span> fungerar!
+                                        <a href="index.html">Ändra</a>
+                                    </h5>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>-->
+
+
+                    <div class="mainGeneralInstructions">
+
+                        <!-- only in index.html -->
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>Välj scenario och klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_play_mini.png" alt="Play mini icon">
+                            </div>
+                        </div>
+
+                        <!-- only in index.html and step1-step5.html 
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>Fyll i dina svar och klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_next_mini.png" alt="Next mini icon">
+                            </div>
+                        </div>-->
+
+                        <!-- only in result.html 
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>För att börja om klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_restart_mini.png" alt="Restart mini icon">
+                            </div>
+                        </div>-->
+
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>För mer information klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/icon_info_mini.png" alt="Info mini icon">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- only in index.html-->
+                    <!-- se index.html -->
+                    <div class="mainGeneralChooseScenario">
+
+
+                        <!-- ----------------------------------------------------- -->
+                        <!-- -------------------------------------------------------- -->
+                        <form action="#" method="post" id="form_scenario">
+
+
+
+                            <div class="scenarioForm">
+                                <h4 class="scenarioTitle">Vilka av de följande samhällstjänsterna fungerar i ditt
+                                    scenario:</h4>
+
+                                <div class="scenarioFormLine">
+
+                                    <div class="scenarioFormLineYesNo">
+                                        <div class="scenarioFormLineYes">
+                                            <input type="radio" id="scenario_moneyTrue" name="scenario_money"
+                                                value="true" onclick="MM_swapImgRestoreThis('img_noGray_money'); 
+                                                MM_swapImage('img_yesGray_money','','images/icon_yes_active.png',1)">
+                                            <img id="img_yesGray_money" src="images/icon_yes_gray.png"
+                                                alt="yes icon, inactive">
+                                        </div>
+
+                                        <div class="scenarioFormLineNo">
+                                            <input type="radio" id="scenario_moneyFalse" name="scenario_money"
+                                                value="false" onclick="MM_swapImgRestoreThis('img_yesGray_money');
+                                                MM_swapImage('img_noGray_money','','images/icon_no_active.png',1)">
+                                            <img id="img_noGray_money" src="images/icon_no_gray.png"
+                                                alt="no icon, inactive">
+                                        </div>
+                                    </div>
+
+                                    <div class="scenarioFormLineText">
+                                        <h4 id="hej">1. BANKER</h4>
+                                    </div>
+                                </div>
+
+
+                                <div class="scenarioFormLine">
+
+                                    <div class="scenarioFormLineYesNo">
+                                        <div class="scenarioFormLineYes">
+                                            <input type="radio" id="scenario_elTrue" name="scenario_el" value="true"
+                                                onclick="MM_swapImgRestoreThis('img_noGray_el');
+                                                MM_swapImage('img_yesGray_el','','images/icon_yes_active.png',1)">
+                                            <img id="img_yesGray_el" src="images/icon_yes_gray.png"
+                                                alt="yes icon, inactive">
+                                        </div>
+
+                                        <div class="scenarioFormLineNo">
+                                            <input type="radio" id="scenario_elFalse" name="scenario_el" value="false"
+                                                onclick="MM_swapImgRestoreThis('img_yesGray_el');
+                                                 MM_swapImage('img_noGray_el','','images/icon_no_active.png',1)">
+                                            <img id="img_noGray_el" src="images/icon_no_gray.png"
+                                                alt="no icon, inactive">
+                                        </div>
+                                    </div>
+
+                                    <div class="scenarioFormLineText">
+                                        <h4>2. ELNÄTET</h4>
+                                    </div>
+                                </div>
+
+
+                                <div class="scenarioFormLine">
+
+                                    <div class="scenarioFormLineYesNo">
+                                        <div class="scenarioFormLineYes">
+                                            <input type="radio" id="scenario_heatTrue" name="scenario_heat" value="true"
+                                                onclick="MM_swapImgRestoreThis('img_noGray_heat');
+                                                MM_swapImage('img_yesGray_heat','','images/icon_yes_active.png',1)">
+                                            <img id="img_yesGray_heat" src="images/icon_yes_gray.png"
+                                                alt="yes icon, inactive">
+                                        </div>
+
+                                        <div class="scenarioFormLineNo">
+                                            <input type="radio" id="scenario_heatFalse" name="scenario_heat"
+                                                value="false" onclick="MM_swapImgRestoreThis('img_yesGray_heat');
+                                                MM_swapImage('img_noGray_heat','','images/icon_no_active.png',1)">
+                                            <img id="img_noGray_heat" src="images/icon_no_gray.png"
+                                                alt="no icon, inactive">
+                                        </div>
+                                    </div>
+
+                                    <div class="scenarioFormLineText">
+                                       <!-- <h4>3. DITT PRIMÄRA UPPVÄRMNINGS&shy;SYSTEM</h4>-->
+                                         <h4>3. FJÄRRVÄRME-<wbr>/NATURGASNÄTET, PELLETS-<wbr>/OLJEMARKNADEN
+                                            <br> <span class="smallText"> (Ditt primära uppvärmningssystem)</span></h4> 
+                                    </div>
+                                </div>
+
+
+                                <div class="scenarioFormLine">
+
+                                    <div class="scenarioFormLineYesNo">
+                                        <div class="scenarioFormLineYes">
+                                            <input type="radio" id="scenario_foodTrue" name="scenario_food" value="true"
+                                                onclick="MM_swapImgRestoreThis('img_noGray_food');
+                                                MM_swapImage('img_yesGray_food','','images/icon_yes_active.png',1)">
+                                            <img id="img_yesGray_food" src="images/icon_yes_gray.png"
+                                                alt="yes icon, inactive">
+                                        </div>
+
+                                        <div class="scenarioFormLineNo">
+                                            <input type="radio" id="scenario_foodFalse" name="scenario_food"
+                                                value="false" onclick="MM_swapImgRestoreThis('img_yesGray_food');
+                                                MM_swapImage('img_noGray_food','','images/icon_no_active.png',1)">
+                                            <img id="img_noGray_food" src="images/icon_no_gray.png"
+                                                alt="no icon, inactive">
+                                        </div>
+                                    </div>
+
+                                    <div class="scenarioFormLineText">
+                                        <h4>4. LIVSMEDELS&shy;KEDJAN</h4>
+                                    </div>
+                                </div>
+
+
+                                <div class="scenarioFormLine">
+
+                                    <div class="scenarioFormLineYesNo">
+                                        <div class="scenarioFormLineYes">
+                                            <input type="radio" id="scenario_waterTrue" name="scenario_water"
+                                                value="true" onclick="MM_swapImgRestoreThis('img_noGray_water');
+                                                MM_swapImage('img_yesGray_water','','images/icon_yes_active.png',1)">
+                                            <img id="img_yesGray_water" src="images/icon_yes_gray.png"
+                                                alt="yes icon, inactive">
+                                        </div>
+
+                                        <div class="scenarioFormLineNo">
+                                            <input type="radio" id="scenario_waterFalse" name="scenario_water"
+                                                value="false" onclick="MM_swapImgRestoreThis('img_yesGray_water');
+                                                MM_swapImage('img_noGray_water','','images/icon_no_active.png',1)">
+                                            <img id="img_noGray_water" src="images/icon_no_gray.png"
+                                                alt="no icon, inactive">
+                                        </div>
+                                    </div>
+
+                                    <div class="scenarioFormLineText">
+                                        <h4>5. VATTENLEDNINGS&shy;NÄTET</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+
+                        </form>
+                        <!-- -------------------------------------------------------- -->
+                        <!-- -------------------------------------------------------- -->
+
+                                                                       
+                    </div>
+
+                    <!-- only in result.html-->
+                    <!-- se result.html 
+                    <div class="mainGeneralResult">
+                        <h2>RESULTS in results.html</h2>
+                    </div>-->
+
+                </div>
+
+
+
+                <!-- only in step1-step5.html-->
+                <!-- se step1-step5.html 
+                <div class="mainContent">
+
+                    <div class="mainContentTopLine">
+                        <hr class="greenLine">
+                    </div>
+
+                    <div class="mainContentLeft">
+                        <h2>Left side Step1-step5.html</h2>
+                    </div>
+
+                    <div class="mainContentMiddleLine">
+                        <hr class="greenLine">
+                    </div>
+
+                    <div class="mainContentRight">
+                        <h2>Right side Step1-step5.html</h2>
+                    </div>
+
+                    <div class="mainContentBottomLine">
+                        <hr class="greenLine">
+                    </div>
+
+                </div>-->
+                <!--end of mainContent-->
+
+
+                <div class="mainControls">
+
+                    <!-- only in index.html and step1-5.html-->
+                    <div class="mainControlsLeftLine1">
+                        <hr class="greenLine">
+                    </div>
+
+                    <!-- only in result.html
+                    <div class="mainControlsLeftLine2">
+                        <hr class="greenLine">
+                    </div> -->
+
+                    <!-- only in step1-step5.html and result.html
+                    <div class="mainControlsButton mainControlsRestart">
+                        <a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('id_restart_img','','images/control_restart_active.png',1)">
+                            <img id="id_restart_img" src="images/control_restart.png" alt="Restart Button">
+                        </a>
+                    </div>-->
+
+                    <!-- only in step1-step5.html and result.html
+                    <div class="mainControlsButton mainControlsBack"> 
+                        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('id_back_img','','images/control_back_active.png',1)">
+                            <img id="id_back_img" src="images/control_back.png" alt="Back Button">
+                        </a>
+                    </div>-->
+
+                    <!-- only in index.html-->
+                    <div class="mainControlsStart">
+
+                        <div class="mainControlsStartLeft">
+                            <h3>KLICKA</h>
+                        </div>
+
+                        <div class="mainControlsButton mainControlsStartPlay">
+                            <a href="step1.html" onMouseOut="MM_swapImgRestore()"
+                                onMouseOver="MM_swapImage('id_play_img','','images/control_play_active.png',1)">
+                                <img id="id_play_img" src="images/control_play.png" alt="Play Button">
+                            </a>
+                        </div>
+
+                        <div class="mainControlsStartRight">
+                            <h3>HÄR!</h3>
+                        </div>
+                    </div>
+
+                    <!-- only in step1-step5.html
+                    <div class="mainControlsButton mainControlsReload">
+                        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('id_reload_img','','images/control_reload_active.png',1)">
+                            <img id="id_reload_img" src="images/control_reload.png" alt="Reload Button">
+                        </a>
+                    </div> -->
+
+                    <!-- only in step1-step5.html
+                    <div class="mainControlsButton mainControlsNext">
+                        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('id_next_img','','images/control_next_active.png',1)">
+                            <img id="id_next_img" src="images/control_next.png" alt="Next Button">
+                        </a>
+                    </div> -->
+
+                    <!-- only in result.html
+                    <div class="mainControlsRightLine2">
+                        <hr class="greenLine">
+                    </div>    -->
+
+                    <!-- only in index.html and step1-5.html-->
+                    <div class="mainControlsRightLine1">
+                        <hr class="greenLine">
+                    </div>
+
+                </div>
+                <!--end of mainControls-->
+
+            </main>
+            <!--end of mainPage-->
+        </div>
+        <!--end of wrapperNavMain-->
+
+
+        <aside class="asidePage">
+            <h4>Externa länkar:</h4>
+        </aside>
+
+
+    </div>
+    <!--end of wrapperMainAside-->
+
+
+
+    <footer class="footerPage">
+
+        <div class="footerInfo">
+            <div class="footerInfoName">
+                <h5> Rebeka Amanatidou</h5>
+            </div>
+            <div class="footerInfoProject">
+                <h5>Projektarbete i kursen Webbprogrammering</h5>
+            </div>
+        </div>
+
+
+        <div class="footerSchool">
+            <div class="footerSchoolLogo">
+                <a target="_blank" href="https://glimnet.se">
+                    <img src="images/logo_glimakra.png" alt="Glimåkra folkhöskola logo">
+                </a>
+            </div>
+            <div class="footerSchoolName">
+                <a target="_blank" href="https://glimnet.se">
+                    <h5>Glimåkra folkhögskola</h5>
+                </a>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <!-- <script type="module" src="JS/functions.js"></script> -->
+    <script src="JS/startPage_dataLoad.js"></script>
+    <script src="JS/func_controls.js"></script>
+
+</body>
+
+</html>
+
+

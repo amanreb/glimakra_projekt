@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="translate" data-en="Hello" data-sv="Hej">Lorem</h1>
+    <p class="translate" data-en="This is page" data-sv="Det här är en sida">Lorem ipsunm</p>
+    <script>
+        let language = 'sv';
+        // self invoked function
+        (function translate() {
+            let elements = document.querySelectorAll(".translate");
+            elements.forEach(element => {
+                console.log("language", language);
+                element.textContent = element.getAttribute("data-" + language);
+            })
+        })();
+    </script>
+</body>
+</html>

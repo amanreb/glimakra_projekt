@@ -1,0 +1,128 @@
+/* CLASSES IN FILE
+div.navTab
+div.navTab_triangleStroke
+div.navTab_triangleFill
+div.navStart
+div.navStep1
+div.navStep2
+div.navStep3
+div.navStep4
+div.navStep5
+div.navEnd */
+
+
+/*
+Code Sections:
+ 1.TABS
+2.TRIANGLE
+3.TEXT */
+
+
+
+
+
+
+
+/* mobile */
+@media(min-width:320px), (max-width:320px) {
+
+
+    
+    /* 3.TEXT */
+
+    nav.navPage h4 {
+        font-size: 12px;
+        line-height: 16px;
+        /* letter-spacing: -2px; */
+    }
+
+    nav.navPage h5 {
+        font-size: 8px;
+        line-height:8px;
+        /* letter-spacing: -1px; */
+        /* margin:0; */
+        /* padding:0; */
+        /* margin-block-start: auto; */
+        /* margin-block-end: auto; */
+
+        /* justify-content: center;
+            vertical-align: middle; */
+
+    }
+
+
+
+
+}
+
+
+/* mobile landscape */
+@media(min-width:578px) {
+
+
+
+
+    /* 3.TEXT */
+    nav.navPage h4 {
+        font-size:16px;
+    }
+
+    nav.navPage h5 {
+        font-size:10px;
+    }
+
+}
+
+
+/* tablet */
+@media(min-width:768px) {
+
+
+
+    /* 3.TEXT */
+    nav.navPage h4 {
+        font-size:20px;
+    }
+
+    nav.navPage h5 {
+        font-size:14px;
+    }
+ 
+}
+
+
+
+
+
+/* screen */
+@media(min-width:1200px) {
+
+
+    /* 3.TEXT */
+    nav.navPage h4 {
+        font-size:24px;
+    }
+
+    nav.navPage h5 {
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+
+
+
+/* big screen */
+@media(min-width:1600px) {
+
+
+
+
+    /* 3.TEXT */
+    /* nav.navPage h4 {} */
+    /* nav.navPage h5 {} */
+
+}

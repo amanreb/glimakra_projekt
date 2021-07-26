@@ -1,0 +1,31 @@
+/* mobile */
+@media(min-width:320px), (max-width:320px) {
+    
+
+}
+
+
+/* mobile landscape */
+@media(min-width:578px) {
+
+
+}
+
+
+/* tablet */
+@media(min-width:768px) {
+ 
+}
+
+
+
+/* screen */
+@media(min-width:1200px) {
+
+}
+
+
+/* big screen */
+@media(min-width:1600px) {
+
+}

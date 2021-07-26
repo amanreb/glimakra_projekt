@@ -1,0 +1,106 @@
+/* CLASSES IN FILE
+div.mainControlsButton
+div.mainControlsLeftLine1
+div.mainControlsLeftLine2
+div.mainControlsRestart
+div.mainControlsBack
+div.mainControlsStart
+div.mainControlsStartLeft
+div.mainControlsStartPlay
+div.mainControlsStartRight
+div.mainControlsReload
+div.mainControlsNext
+div.mainControlsRightLine1
+div.mainControlsRightLine2
+ */
+
+
+
+/*
+Code Sections:
+1.LINES
+2.BUTTONS 
+3.TEXT*/
+
+
+
+
+
+
+/* 1.LINES */
+
+div.mainControlsLeftLine1,
+div.mainControlsRightLine1,
+div.mainControlsLeftLine2,
+div.mainControlsRightLine2 {
+    align-self: center;
+}
+
+
+div.mainControls hr.greenLine {
+    background-color: #0c5b31;
+    border: 2.5px solid black;
+    height: 7px;
+}
+
+
+
+
+/* 2.BUTTONS  */
+
+div.mainControlsButton {
+    font-size: 0;
+}
+
+
+
+
+/* 3.START BUTTON */
+
+div.mainControlsStart {
+    display:flex;
+    flex-direction:row;
+}
+
+div.mainControlsStartLeft {
+    align-self: center;
+    flex:1;
+    text-align: center;
+}
+
+/* div.mainControlsStartPlay {} */
+
+div.mainControlsStartRight {
+    align-self: center;
+    flex:1;
+    text-align: center;
+}
+
+
+/* div.mainControlsStartLeft h3 {
+    letter-spacing: -1px;
+}
+
+div.mainControlsStartRight h3 {
+    letter-spacing: 2px;
+} */
+
+div.mainControlsStart h3 {
+    
+    font-style: italic;
+    font-weight: bold;
+    font-family: Segoe Print, sans-serif;
+    
+    transform: scaleY(1.2);
+    /* -webkit-text-stroke: 0.2px #6fff90; */
+    /* -webkit-text-stroke: 0.5px #6fff90; */
+    text-shadow:
+        1px 1px  #6fff90,
+        -1px -1px  #6fff90,
+        1px -1px  #6fff90,
+        -1px 1px  #6fff90 
+    
+}
+
+
+

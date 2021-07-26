@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="JS/code_test.js"></script>
+</head>
+
+<body onload="myFunction()">
+
+
+    <form action="#1" method="post" id="form_moneyDebit">
+        <h2>Dina Resurser</h2>
+
+        <fieldset id="fieldset_moneyDebitAssets">
+
+            <h4>TILLGÅNGAR</h4>
+
+            <label>
+                Pengar på banken:
+                <input type="text" name="moneyDebitAssets_bank" id="moneyDebitAssets_bank" value="1500" />
+                SEK
+            </label>
+
+            <label>
+                Tillgängliga kontanter:
+                <input type="text" name="moneyDebitAssets_cash" />
+                SEK
+            </label>
+        </fieldset>
+        <input type="submit" value="Go...">
+    </form>
+
+    <button id="st1">Next</button>
+
+
+
+    <script>
+        let run1 = document.querySelector("input[type='submit']");
+        run1.addEventListener("click", function (event) {
+            event.preventDefault();
+        });
+
+        let run2 = document.getElementById("st1");
+
+        run2.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            console.log("click", event);
+
+            let form_moneyDebit = document.getElementById("form_moneyDebit");
+            console.log("form_moneyDebit", form_moneyDebit);
+
+            let data = new FormData(form_moneyDebit);
+            console.log("data", data);
+            /* 
+                        let form = document.querySelector("form");
+                        let data1 = new FormData(form);
+                        console.log("data1", data1);
+             */
+            /*             // logs "title", "Go to the beach", etc.
+                        for (let [key, value] of data) {
+                            console.log(key);
+                            console.log(value);
+                        }
+             */ // logs "title", "Go to the beach", etc.
+
+            for (let [key, value] of data) {
+                console.log(key);
+                console.log(value);
+                localStorage.setItem(key, value)
+            }
+
+            localStorage.setItem("Namn", "Rebeka");
+
+            var money = localStorage.getItem("moneyDebitAssets_bank");
+            console.log("money", money);
+
+        })
+
+        let moneyDebitAssets_bank = document.getElementById("moneyDebitAssets_bank");
+
+        moneyDebitAssets_bank.value = 10;
+
+    </script>
+
+
+
+
+</body>
+
+</html>

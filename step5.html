@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steg 5</title>
+
+    <link rel="stylesheet" href="styles/style1_overall.css">
+    <link rel="stylesheet" href="styles/style1mq_overall.css">
+    <link rel="stylesheet" href="styles/style2_header.css">
+    <link rel="stylesheet" href="styles/style2mq_header.css">
+    <link rel="stylesheet" href="styles/style3_nav.css">
+    <link rel="stylesheet" href="styles/style3mq_nav.css">
+    <link rel="stylesheet" href="styles/style4_mainGeneral.css">
+    <link rel="stylesheet" href="styles/style4mq_mainGeneral.css">
+    <link rel="stylesheet" href="styles/style5_mainControls.css">
+    <link rel="stylesheet" href="styles/style5mq_mainControls.css">
+    <link rel="stylesheet" href="styles/style6_footer.css">
+    <link rel="stylesheet" href="styles/style6mq_footer.css">
+    <link rel="stylesheet" href="styles/style7_startTab.css">
+    <link rel="stylesheet" href="styles/style7mq_startTab.css">
+    <link rel="stylesheet" href="styles/style8_moneyTab.css">
+    <link rel="stylesheet" href="styles/style8mq_moneyTab.css">
+    <link rel="stylesheet" href="styles/style9_electricityTab.css">
+    <link rel="stylesheet" href="styles/style9mq_electricityTab.css">
+    <link rel="stylesheet" href="styles/style10_heatTab.css">
+    <link rel="stylesheet" href="styles/style10mq_heatTab.css">
+    <link rel="stylesheet" href="styles/style11_foodTab.css">
+    <link rel="stylesheet" href="styles/style11mq_foodTab.css">
+    <link rel="stylesheet" href="styles/style12_waterTab.css">
+    <link rel="stylesheet" href="styles/style12mq_waterTab.css">
+    <link rel="stylesheet" href="styles/style13_endTab.css">
+    <link rel="stylesheet" href="styles/style13mq_endTab.css">
+    <link rel="stylesheet" href="styles/style14_infoPage.css">
+    <link rel="stylesheet" href="styles/style14mq_infoPage.css">
+
+    <script src="JS/func_images.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+
+<body onLoad="MM_preloadImages('images/logo_my_active.png','images/icon_info_active.png','images/control_play_active.png',
+'images/control_restart_active.png','images/control_back_active.png','images/control_reload_active.png', 
+'images/control_next_active.png','images/icon_yes_active.png', 'images/icon_yes_gray.png', 
+'images/icon_no_active.png', 'images/icon_no_active.png')">
+
+
+
+    <header class="headerPage">
+
+        <div class="headerLogo">
+            <a href="index.html" onMouseOut="MM_swapImgRestore()"
+                onMouseOver="MM_swapImage('id_myLogo_img','','images/logo_my_active.png',1)">
+                <img id="id_myLogo_img" src="images/logo_my.png" alt="Logo">
+            </a>
+        </div>
+
+        <!---->
+        <div class="headerTitle">
+            <div class="headerTitleFirst">
+                <h1>Över&shy;lev&shy;nads&shy;appen</h1>
+            </div>
+            <div class="headerTitleSecond">
+                <h4>Hur rustad är du för en samhällskris?</h4>
+            </div>
+        </div>
+
+        <div class="headerButtons">
+
+            <div class="headerButtonsInfo">
+
+                <a href="infoPage.html" onMouseOut="MM_swapImgRestore()"
+                    onMouseOver="MM_swapImage('id_info_img','','images/icon_info_active.png',1)">
+                    <img id="id_info_img" src="images/icon_info.png" width="auto" alt="Info button">
+                </a>
+
+            </div>
+
+            <div class="headerButtonsFlag">
+                <fieldset>
+                    <select name="sprak" id="sprak">
+                        <option value="swedish"><img src="images/icon_SE.png" alt="swedish flag"></option>
+                        <option value="english"><img src="images/icon_GB.png" alt="brittish flag"></option>
+                        <option value="greek"><img src="images/icon_GR.png" alt="greek flag"></option>
+                        <option value="german"><img src="images/icon_DE.png" alt="german flag"></option>
+                    </select>
+                </fieldset>
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <div class="wrapperMainAside">
+        <div class="wrapperNavMain">
+            <nav class="navPage">
+
+                <div class="navTab navStart  colorActive_Start">
+                    <a href="index.html" class="changePreviousNavLink">
+                        <h4>Start:</h4>
+                        <h5>Välj scenario</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep1 colorActive_Step1">
+                    <a href="step1.html" class="changePreviousNavLink">
+                        <h4>Steg 1:</h4>
+                        <h5>Pengar</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep2 colorActive_Step2">
+                    <a href="step2.html" class="changePreviousNavLink">
+                        <h4>Steg 2:</h4>
+                        <h5>Elek&shy;tricitet</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep3 colorActive_Step3">
+                    <a href="step3.html" class="changePreviousNavLink">
+                        <h4>Steg 3:</h4>
+                        <h5>Upp&shy;värmning</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep4 colorActive_Step4">
+                    <a href="step4.html" class="changePreviousNavLink">
+                        <h4>Steg 4:</h4>
+                        <h5>Mat</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep5 navCurrent colorActive_Step5">
+                    <a href="#">
+                        <!-- <a href="step5.html"> -->
+                        <h4>Steg 5:</h4>
+                        <h5>Vatten</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navEnd colorInactive_End">
+                    <a href="#">
+                        <!-- <a href="result.html">  -->
+                        <h4>Slut:</h4>
+                        <h5>Ditt Resultat</h5>
+                    </a>
+                </div>
+
+            </nav>
+            <!--end of navPage-->
+
+            <main class="mainPage colorActive_Step5">
+
+                <div class="mainGeneral">
+
+                    <!-- only in index.html
+                    <div class="mainGeneralGreeting">
+                        <h3>Kan du överleva en samhällskris?</h3>
+                        <h3>Hur länge och hur bra?</h3>
+                        <h3>Testa dej själv i 5 steg!</h3>
+                    </div>-->
+
+                    <!-- only in Step1-Step5.html and Result.html-->
+                    <div class="mainGeneralInfo">
+                        <div class="mainGeneralInfoTitle">
+                            <h5>DITT SCENARIO</h5>
+                        </div>
+                        <div class="mainGeneralInfoBody">
+                            <div class="mainGeneralInfoBodyPre">
+                                <h5>Du har angett:</h5>
+                            </div>
+                            <div class="mainGeneralInfoBodyConditions">
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att banksystemet
+                                        <span class="nobr">
+                                            <span id="money_spanON_step5">
+                                                <span id="money_span_step5">inte</span> fungerar!
+                                            </span>
+                                            <span id="money_spanOFF_step5">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att elnätet
+                                        <span class="nobr">
+                                            <span id="el_spanON_step5">
+                                                <span id="el_span_step5">inte</span> fungerar!
+                                            </span>
+                                            <span id="el_spanOFF_step5">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att oljemarknaden
+                                        <span class="nobr">
+                                            <span id="heatOil_spanON_step5">
+                                                <span id="heatOil_span_step5">inte</span> fungerar!
+                                            </span>
+                                            <span id="heatOil_spanOFF_step5">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att fjärrvärme&shy;/naturgasnätet&shy;/pellets&shy;marknaden
+                                        <span class="nobr">
+                                            <span id="heatOther_spanON_step5">
+                                                <span id="heatOther_span_step5">inte</span> fungerar!
+                                            </span>
+                                            <span id="heatOther_spanOFF_step5">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att livsmedelskedjan
+                                        <span class="nobr">
+                                            <span id="food_spanON_step5">
+                                                <span id="food_span_step5">inte</span> fungerar!
+                                            </span>
+                                            <span id="food_spanOFF_step5">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att vattenledningsnätet
+                                        <span class="nobr">
+                                            <span id="water_spanON_step5">
+                                                <span id="water_span_step5">inte</span> fungerar!
+                                            </span>
+                                            <span id="water_spanOFF_step5">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mainGeneralInstructions">
+
+                        <!-- only in index.html 
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>Välj scenario och klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_play_mini.png" alt="Play mini icon">
+                            </div>
+                        </div>-->
+
+                        <!-- only in index.html and step1-step5.html -->
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>Fyll i dina svar och klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_next_mini.png" alt="Next mini icon">
+                            </div>
+                        </div>
+
+                        <!-- only in result.html 
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>För att börja om klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_restart_mini.png" alt="Restart mini icon">
+                            </div>
+                        </div>-->
+
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>För mer information klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/icon_info_mini.png" alt="Info mini icon">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- only in index.html-->
+                    <!-- se index.html 
+                    <div class="mainGeneralChooseScenario">
+                        <h2>Scenario-val in index.html</h2>
+                    </div>-->
+
+                    <!-- only in result.html-->
+                    <!-- se result.html
+                    <div class="mainGeneralResult">
+                        <h2>RESULTS in results.html</h2>
+                    </div> -->
+
+                </div>
+
+
+
+                <!-- only in step1-step5.html-->
+                <!-- se step1-step5.html -->
+                <div class="mainContent">
+
+                    <div class="mainContentTopLine">
+                        <hr class="greenLine">
+                    </div>
+
+
+
+                    <div class="mainContentLeft">
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                        <form action="action_Page.php" method="post" id="form_waterDebit">
+                            <h2>Tillgång till Vatten</h2>
+
+                            <!-- <h3>Bas&shy;resurser</h3> -->
+                            <fieldset class="basruta">
+                                <legend> Bas&shy;resurser </legend>
+                                <fieldset id="fieldset_waterDebitSpend">
+
+                                    <h4>PENGAR</h4>
+
+                                    <label>
+                                        Angivna utgifter för vatten:
+                                        <input type="text" id="waterDebitSpend_cost" name="waterDebitSpend_cost"
+                                            class="foodANDwater_scenario" readonly />
+                                        SEK/mån <a href="step1.html" class="changePreviousFormLink"> Ändra</a>
+                                    </label>
+
+                                    <label>
+                                        - varav vatten&shy;räkning:
+                                        <input type="text" id="waterDebitSpend_costTap" name="waterDebitSpend_costTap"
+                                            class="water_scenario" value="600" />
+                                        SEK/mån
+                                    </label>
+
+                                    <label>
+                                        - och flaskvatten:
+                                        <input type="text" id="waterDebitSpend_costBottle"
+                                            name="waterDebitSpend_costBottle" class="food_scenario" value="0" />
+                                        SEK/mån
+                                    </label>
+
+                                    <label>
+                                        Summa utgifter enligt nedan:
+                                        <input type="text" id="waterDebitSpend_sumUnitCost"
+                                            name="waterDebitSpend_sumUnitCost" class="" readonly />
+                                        SEK/mån
+                                    </label>
+
+                                </fieldset>
+
+                                <fieldset id="fieldset_waterDebitEnergy">
+
+                                    <h4>EL</h4>
+
+                                    <label>
+                                        Angiven elförbrukning, vattenpump:
+                                        <input type="text" id="waterDebitEnergy_waterPumpEl"
+                                            name="waterDebitEnergy_waterPumpEl" class="waterPump_systemUnit" readonly />
+                                        kWh/dag <a href="step2.html" class="changePreviousFormLink"> Ändra</a>
+                                    </label>
+
+                                    <label>
+                                        Summa elförbrukning enligt nedan:
+                                        <input type="text" id="waterDebitEnergy_sumUnitEl"
+                                            name="waterDebitEnergy_sumUnitEl" readonly />
+                                        kWh/dag
+                                    </label>
+
+                                </fieldset>
+                            </fieldset>
+
+                            <h3>Vattenkällor</h3>
+
+                            <fieldset id="fieldset_waterDebitTap">
+
+                                <h4>KRANVATTEN</h4>
+
+                                <label>
+                                    Vatten&shy;räkning, enligt ovan:
+                                    <input type="text" id="waterDebitTap_unitCost" class="water_scenario"
+                                        name="waterDebitTap_unitCost" readonly />
+                                    SEK/mån
+                                </label>
+
+                                <label>
+                                    Fasta konstnaden:
+                                    <input type="text" id="waterDebitTap_fixedCost" name="waterDebitTap_fixedCost"
+                                        class="water_scenario" value="50" />
+                                    SEK/mån
+                                </label>
+
+                                <label>
+                                    Rörliga kostnaden:
+                                    <input type="text" id="waterDebitTap_m3VariableCost"
+                                        name="waterDebitTap_m3VariableCost" class="water_scenario" value="5" />
+                                    SEK/m3
+                                </label>
+
+                                <label>
+                                    Volym:
+                                    <input type="text" id="waterDebitTap_literMonthlyDrinkable"
+                                        name="waterDebitTap_literMonthlyDrinkable" class="water_scenario" readonly />
+                                    liter/månad
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_waterDebitBottle">
+
+                                <h4>FLASKVATTEN</h4>
+
+                                <label>
+                                    Utgifter för flask&shy;vatten, enligt ovan:
+                                    <input type="text" id="waterDebitBottle_unitCost" class="food_scenario"
+                                        name="waterDebitBottle_unitCost" readonly />
+                                    SEK/mån
+                                </label>
+
+                                <label>
+                                    Pris:
+                                    <input type="text" id="waterDebitBottle_literVariableCost"
+                                        name="waterDebitBottle_literVariableCost" class="food_scenario" value="2" />
+                                    SEK/liter
+                                </label>
+
+                                <label>
+                                    Volym (köp):
+                                    <input type="text" id="waterDebitBottle_literMonthlyDrinkable"
+                                        name="waterDebitBottle_literMonthlyDrinkable" class="food_scenario" readonly />
+                                    liter/mån
+                                </label>
+
+                                <label>
+                                    Volym (lager):
+                                    <input type="text" id="waterDebitBottle_literStorage"
+                                        name="waterDebitBottle_literStorage" />
+                                    liter
+                                </label>
+
+
+                            </fieldset>
+
+
+
+                            <fieldset id="fieldset_waterDebitOther">
+
+                                <h4>BRUNNSVATTEN</h4>
+
+
+                                <div class="rowWrapper">
+                                    <label class="squareRadioLineLabel">Tillgängligt:</label>
+                                    <div class="squareRadioLine">
+                                        <input type="radio" id="waterDebitOther_accessTrue"
+                                            name="waterDebitOther_access" value="true">
+                                        <label for="waterDebitOther_accessTrue">
+                                            <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                            JA
+                                        </label>
+                                        <input type="radio" id="waterDebitOther_accessFalse"
+                                            name="waterDebitOther_access" value="false" checked>
+                                        <label for="waterDebitOther_accessFalse">
+                                            <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                            NEJ
+                                        </label>
+                                    </div>
+                                </div>
+
+
+                                <div id="waterDebitOther_extra">
+
+                                    <div class="rowWrapper">
+                                        <label class="squareRadioLineLabel">Drickbart:</label>
+                                        <div class="squareRadioLine">
+                                            <input type="radio" id="waterDebitOther_drinkableTrue"
+                                                name="waterDebitOther_drinkable" value="true">
+                                            <label for="waterDebitOther_drinkableTrue">
+                                                <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                                JA
+                                            </label>
+                                            <input type="radio" id="waterDebitOther_drinkableFalse"
+                                                name="waterDebitOther_drinkable" value="false" checked>
+                                            <label for="waterDebitOther_drinkableFalse">
+                                                <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                                NEJ
+                                            </label>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="rowWrapper">
+                                        <label class="squareRadioLineLabel">Med pump:</label>
+                                        <div class="squareRadioLine">
+                                            <input type="radio" id="waterDebitOther_pumpTrue"
+                                                name="waterDebitOther_pump" value="true"
+                                                class="waterPumpEl_scenario waterPump_systemUnit">
+                                            <label for="waterDebitOther_pumpTrue">
+                                                <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                                JA
+                                            </label>
+                                            <input type="radio" id="waterDebitOther_pumpFalse"
+                                                name="waterDebitOther_pump" value="false" checked>
+                                            <label for="waterDebitOther_pumpFalse">
+                                                <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                                NEJ
+                                            </label>
+                                        </div>
+                                    </div>
+
+
+                                    <div id="waterDebitOther_divNoPump">
+
+                                        <label id="waterDebitOther_labelDrinkable">
+                                            Volym, drickbart:
+                                            <input type="text" id="waterDebitOther_literMonthlyDrinkable"
+                                                name="waterDebitOther_literMonthlyDrinkable" />
+                                            liter/månad
+                                        </label>
+
+                                        <label id="waterDebitOther_labelUnDrinkable">
+                                            Volym, ej drickbart:
+                                            <input type="text" id="waterDebitOther_literMonthly"
+                                                name="waterDebitOther_literMonthly" />
+                                            liter/månad
+                                        </label>
+
+                                    </div>
+
+
+                                </div>
+                                <!--end Bool -->
+
+                            </fieldset>
+
+
+                            <h3>Pumpdrift</h3>
+
+                            <fieldset id="fieldset_waterDebitPump" class="ofardigtStycke">
+
+
+                                <label>
+                                    El&shy;för&shy;brukning, enligt ovan:
+                                    <input type="text" id="waterDebitPump_unitEl" name="waterDebitPump_unitEl"
+                                        class="waterPump_systemUnit" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    Verkningsgrad, pump:
+                                    <input type="text" id="waterDebitPump_efficiency" name="waterDebitPump_efficiency"
+                                        class="" value="60" />
+                                    %
+                                </label>
+
+                                <label>
+                                    Vattenflöde:
+                                    <input type="text" id="waterDebitPump_waterFlow" name="waterDebitPump_waterFlow"
+                                        class="waterPump_systemUnit" readonly />
+                                    liter/minut
+                                </label>
+
+                                <label>
+                                    Höjd över vattnet:
+                                    <input type="text" id="waterDebitPump_height" name="waterDebitPump_height"
+                                        class="" />
+                                    meter
+                                </label>
+
+                                <label>
+                                    Tryckförluster i systemet:
+                                    <input type="text" id="waterDebitPump_pressureLoss"
+                                        name="waterDebitPump_pressureLoss" class="" value="10" />
+                                    kPa
+                                </label>
+
+                                <label>
+                                    Flödesarea, kran:
+                                    <input type="text" id="waterDebitPump_flowArea" name="waterDebitPump_flowArea"
+                                        class="" value="3" />
+                                    cm2
+                                </label>
+
+                                <label>
+                                    Pumpeffekt:
+                                    <input type="text" id="waterDebitPump_pumpPower" name="waterDebitPump_pumpPower"
+                                        class="" />
+                                    kW
+                                </label>
+
+                                <label>
+                                    Drifttid:
+                                    <input type="text" id="waterDebitPump_pumpTime" name="waterDebitPump_pumpTime"
+                                        class="waterPump_systemUnit" readonly />
+                                    timmar/dag
+                                </label>
+
+
+                                <label id="waterDebitPump_labelDrinkable">
+                                    Volym, drickbart:
+                                    <input type="text" id="waterDebitPump_literMonthlyDrinkable"
+                                        name="waterDebitPump_literMonthlyDrinkable" class="waterPump_systemUnit"
+                                        readonly />
+                                    liter/månad
+                                </label>
+
+                                <label id="waterDebitPump_labelUnDrinkable">
+                                    Volym, ej drickbart:
+                                    <input type="text" id="waterDebitPump_literMonthly"
+                                        name="waterDebitPump_literMonthly" class="waterPump_systemUnit" readonly />
+                                    liter/månad
+                                </label>
+
+
+                            </fieldset>
+
+
+                            <h3>Total volym vatten</h3>
+
+                            <div class="totalruta">
+
+                                <fieldset id="fieldset_waterDebitTotal">
+
+                                    <label>
+                                        Volym drickbart:
+                                        <input type="text" id="waterDebitTotal_literMonthlyDrinkable"
+                                            name="waterDebitTotal_literMonthlyDrinkable" readonly />
+                                        liter/månad
+                                    </label>
+
+                                    <label>
+                                        Volym ej drickbart:
+                                        <input type="text" id="waterDebitTotal_literMonthly"
+                                            name="waterDebitTotal_literMonthly" readonly />
+                                        liter/månad
+                                    </label>
+
+                                    <label>
+                                        Daglig volym drickbart:
+                                        <input type="text" id="waterDebitTotal_literDailyDrinkable"
+                                            name="waterDebitTotal_literDailyDrinkable" readonly />
+                                        liter/dag
+                                    </label>
+
+                                    <label>
+                                        Daglig volym ej drickbart:
+                                        <input type="text" id="waterDebitTotal_literDaily"
+                                            name="waterDebitTotal_literDaily" readonly />
+                                        liter/dag
+                                    </label>
+
+                                    <label>
+                                        Vattenlager:
+                                        <input type="text" id="waterDebitTotal_literStorage"
+                                            name="waterDebitTotal_literStorage" readonly />
+                                        liter
+                                    </label>
+
+                                </fieldset>
+
+                            </div>
+
+
+                        </form>
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                    </div>
+
+
+
+                    <div class="mainContentMiddleLine">
+                        <hr class="greenLine">
+                    </div>
+
+
+
+                    <div class="mainContentRight">
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                        <form action="action_Page.php" method="post" id="form_waterCredit">
+                            <h2>Vatten&shy;förbrukning</h2>
+
+                            <fieldset id="fieldset_waterCreditPeople" class="basruta">
+                                <legend> Hus&shy;hållet </legend>
+                                <label>
+                                    Antal personer i hushållet:
+                                    <input type="text" id="waterCreditPeople_count" name="waterCreditPeople_count"
+                                        readonly />
+                                    <a href="step1.html" class="changePreviousFormLink"> Ändra</a>
+                                </label>
+                            </fieldset>
+
+
+                            <h3>Vattenbehovet</h3>
+
+                            <fieldset id="fieldset_waterCreditDrink">
+
+                                <h4>DRICKSVATTEN</h4>
+
+                                <label>
+                                    Dricksvatten:
+                                    <input type="text" id="waterCreditDrink_literPersonDaily"
+                                        name="waterCreditDrink_literPersonDaily" value="2" />
+                                    liter/person/dag
+                                </label>
+
+                                <label>
+                                    Månadsförbrukning:
+                                    <input type="text" id="waterCreditDrink_literMonthlyDrinkable"
+                                        name="waterCreditDrink_literMonthlyDrinkable" readonly />
+                                    liter/månad
+                                </label>
+
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_waterCreditCook">
+
+                                <h4>MATLAGNINGS&shy;VATTEN</h4>
+
+                                <label>
+                                    För matlagning:
+                                    <input type="text" id="waterCreditCook_literPersonDaily"
+                                        name="waterCreditCook_literPersonDaily" value="1" />
+                                    liter/person/dag
+                                </label>
+
+                                <label>
+                                    Månadsförbrukning:
+                                    <input type="text" id="waterCreditCook_literMonthlyDrinkable"
+                                        name="waterCreditCook_literMonthlyDrinkable" readonly />
+                                    liter/månad
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_waterCreditWC">
+
+                                <h4>WC-SPOLNING</h4>
+
+                                <label>
+                                    Toa&shy;vatten:
+                                    <input type="text" id="waterCreditWC_literPersonDaily"
+                                        name="waterCreditWC_literPersonDaily" />
+                                    liter/pers/dag
+                                </label>
+
+                                <label>
+                                    Månadsförbrukning:
+                                    <input type="text" id="waterCreditWC_literMonthly" name="waterCreditWC_literMonthly"
+                                        readonly />
+                                    liter/månad
+                                </label>
+
+                            </fieldset>
+
+
+                            <fieldset id="fieldset_waterCreditShower">
+
+                                <h4>DUSCHVATTEN</h4>
+
+                                <label>
+                                    För dusch:
+                                    <input type="text" id="waterCreditShower_literPersonDaily"
+                                        name="waterCreditShower_literPersonDaily" value="25" readonly />
+                                    liter/person/dag <a href="step3.html" class="changePreviousFormLink"> Ändra</a>
+                                </label>
+
+                                <label>
+                                    Månadsförbrukning:
+                                    <input type="text" id="waterCreditShower_literMonthly"
+                                        name="waterCreditShower_literMonthly" readonly />
+                                    liter/månad
+                                </label>
+
+                            </fieldset>
+
+
+                            <fieldset id="fieldset_waterCreditDish">
+
+                                <h4>DISKVATTEN</h4>
+
+                                <label>
+                                    För disk:
+                                    <input type="text" id="waterCreditDish_literPersonDaily"
+                                        name="waterCreditDish_literPersonDaily" value="2" readonly />
+                                    liter/person/dag <a href="step3.html" class="changePreviousFormLink"> Ändra</a>
+                                </label>
+
+                                <label>
+                                    Månadsförbrukning:
+                                    <input type="text" id="waterCreditDish_literMonthly"
+                                        name="waterCreditDish_literMonthly" readonly />
+                                    liter/månad
+                                </label>
+
+                            </fieldset>
+
+
+                            <fieldset id="fieldset_waterCreditWash">
+
+                                <h4>KLÄDTVÄTT&shy;VATTEN</h4>
+
+                                <label>
+                                    För tvätt:
+                                    <input type="text" id="waterCreditWash_literPersonWeekly"
+                                        name="waterCreditWash_literPersonWeekly" value="20" readonly />
+                                    liter/person/vecka <a href="step3.html" class="changePreviousFormLink"> Ändra</a>
+                                </label>
+
+                                <label>
+                                    Månadsförbrukning:
+                                    <input type="text" id="waterCreditWash_literMonthly"
+                                        name="waterCreditWash_literMonthly" readonly />
+                                    liter/månad
+                                </label>
+
+                            </fieldset>
+
+
+                            <fieldset id="fieldset_waterCreditOtherHot">
+
+                                <h4>ÖVRIGT VARMVATTEN</h4>
+
+                                <label>
+                                    Veckoförbrukning:
+                                    <input type="text" id="waterCreditOtherHot_literWeekly"
+                                        name="waterCreditOtherHot_literWeekly" value="0" readonly />
+                                    liter/vecka <a href="step3.html" class="changePreviousFormLink"> Ändra</a>
+                                </label>
+
+                                <label>
+                                    Månadsförbrukning:
+                                    <input type="text" id="waterCreditOtherHot_literMonthly"
+                                        name="waterCreditOtherHot_literMonthly" readonly />
+                                    liter/månad
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_waterCreditOtherCold">
+
+                                <h4>ÖVRIGT KALLVATTEN</h4>
+
+                                <label>
+                                    Veckoförbrukning:
+                                    <input type="text" id="waterCreditOtherCold_literWeekly"
+                                        name="waterCreditOtherCold_literWeekly" />
+                                    liter/vecka
+                                </label>
+
+                                <label>
+                                    Månadsförbrukning:
+                                    <input type="text" id="waterCreditOtherCold_literMonthly"
+                                        name="waterCreditOtherCold_literMonthly" readonly />
+                                    liter/månad
+                                </label>
+
+                            </fieldset>
+
+
+                            <h3>Total Vatten&shy;förbrukning</h3>
+
+                            <div class="totalruta">
+
+                                <fieldset id="fieldset_waterCreditTotal">
+
+                                    <label>
+                                        Volym drickbart:
+                                        <input type="text" id="waterCreditTotal_literMonthlyDrinkable"
+                                            name="waterCreditTotal_literMonthlyDrinkable" readonly />
+                                        liter/månad
+                                    </label>
+
+                                    <label>
+                                        Volym för rengöring:
+                                        <input type="text" id="waterCreditTotal_literMonthly"
+                                            name="waterCreditTotal_literMonthly" readonly />
+                                        liter/månad
+                                    </label>
+
+                                    <label>
+                                        Daglig volym drickbart:
+                                        <input type="text" id="waterCreditTotal_literDailyDrinkable"
+                                            name="waterCreditTotal_literDailyDrinkable" readonly />
+                                        liter/dag
+                                    </label>
+
+                                    <label>
+                                        Daglig volym för rengöring:
+                                        <input type="text" id="waterCreditTotal_literDaily"
+                                            name="waterCreditTotal_literDaily" readonly />
+                                        liter/dag
+                                    </label>
+
+                                </fieldset>
+
+                            </div>
+
+
+                        </form>
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                    </div>
+
+
+
+                    <div class="mainContentBottomLine">
+                        <hr class="greenLine">
+                    </div>
+
+                </div>
+                <!--end of mainContent-->
+
+
+                <div class="mainControls">
+
+                    <!-- only in index.html and step1-5.html-->
+                    <div class="mainControlsLeftLine1">
+                        <hr class="greenLine">
+                    </div>
+
+                    <!-- only in result.html
+                    <div class="mainControlsLeftLine2">
+                        <hr class="greenLine">
+                    </div> -->
+
+                    <!-- only in step1-step5.html and result.html-->
+                    <div class="mainControlsButton mainControlsRestart">
+                        <a href="index.html" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_restart_img','','images/control_restart_active.png',1)">
+                            <img id="id_restart_img" src="images/control_restart.png" alt="Restart Button">
+                        </a>
+                    </div>
+
+                    <!-- only in step1-step5.html and result.html-->
+                    <div class="mainControlsButton mainControlsBack">
+                        <a href="step4.html" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_back_img','','images/control_back_active.png',1)">
+                            <img id="id_back_img" src="images/control_back.png" alt="Back Button">
+                        </a>
+                    </div>
+
+                    <!-- only in index.html
+                    <div class="mainControlsStart">
+
+                        <div class="mainControlsStartLeft">
+                            <h3>KLICKA</h>
+                        </div>
+
+                        <div class="mainControlsButton mainControlsStartPlay">
+                            <a href="step1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('id_play_img','','images/control_play_active.png',1)">
+                                <img id="id_play_img" src="images/control_play.png" alt="Play Button">
+                            </a>
+                        </div>
+
+                        <div class="mainControlsStartRight">
+                            <h3>HÄR!</h3>
+                        </div>
+                    </div>-->
+
+                    <!-- only in step1-step5.html -->
+                    <div class="mainControlsButton mainControlsReload">
+                        <a href="#" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_reload_img','','images/control_reload_active.png',1)">
+                            <img id="id_reload_img" src="images/control_reload.png" alt="Reload Button">
+                        </a>
+                    </div>
+
+                    <!-- only in step1-step5.html-->
+                    <div class="mainControlsButton mainControlsNext">
+                        <a href="result.html" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_next_img','','images/control_next_active.png',1)">
+                            <img id="id_next_img" src="images/control_next.png" alt="Next Button">
+                        </a>
+                    </div>
+
+                    <!-- only in result.html
+                    <div class="mainControlsRightLine2">
+                        <hr class="greenLine">
+                    </div>    -->
+
+                    <!-- only in index.html and step1-5.html-->
+                    <div class="mainControlsRightLine1">
+                        <hr class="greenLine">
+                    </div>
+
+                </div>
+                <!--end of mainControls-->
+
+            </main>
+            <!--end of mainPage-->
+        </div>
+        <!--end of wrapperNavMain-->
+
+
+        <aside class="asidePage">
+            <h4>Externa länkar:</h4>
+        </aside>
+
+
+    </div>
+    <!--end of wrapperMainAside-->
+
+
+
+    <footer class="footerPage">
+
+        <div class="footerInfo">
+            <div class="footerInfoName">
+                <h5> Rebeka Amanatidou</h5>
+            </div>
+            <div class="footerInfoProject">
+                <h5>Projektarbete i kursen Webbprogrammering</h5>
+            </div>
+        </div>
+
+
+        <div class="footerSchool">
+            <div class="footerSchoolLogo">
+                <a target="_blank" href="https://glimnet.se">
+                    <img src="images/logo_glimakra.png" alt="Glimåkra folkhöskola logo">
+                </a>
+            </div>
+            <div class="footerSchoolName">
+                <a target="_blank" href="https://glimnet.se">
+                    <h5>Glimåkra folkhögskola</h5>
+                </a>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!-- <script type="module" src="JS/functions.js"></script> -->
+
+    <script src="JS/func_language.js"></script>
+
+    <script src="JS/step5_dataLoad.js"></script>
+    <script src="JS/func_scenario.js"></script>
+
+    <script src="JS/step5_events.js"></script>
+    <script src="JS/step5_calculate.js"></script>
+
+    <script src="JS/func_controls.js"></script>
+
+</body>
+
+</html>

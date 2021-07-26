@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="translate" data-en="Step 1" data-sv="Steg 1">Steg 1</title>
+
+    <link rel="stylesheet" href="styles/style1_overall.css">
+    <link rel="stylesheet" href="styles/style1mq_overall.css">
+    <link rel="stylesheet" href="styles/style2_header.css">
+    <link rel="stylesheet" href="styles/style2mq_header.css">
+    <link rel="stylesheet" href="styles/style3_nav.css">
+    <link rel="stylesheet" href="styles/style3mq_nav.css">
+    <link rel="stylesheet" href="styles/style4_mainGeneral.css">
+    <link rel="stylesheet" href="styles/style4mq_mainGeneral.css">
+    <link rel="stylesheet" href="styles/style5_mainControls.css">
+    <link rel="stylesheet" href="styles/style5mq_mainControls.css">
+    <link rel="stylesheet" href="styles/style6_footer.css">
+    <link rel="stylesheet" href="styles/style6mq_footer.css">
+    <link rel="stylesheet" href="styles/style7_startTab.css">
+    <link rel="stylesheet" href="styles/style7mq_startTab.css">
+    <link rel="stylesheet" href="styles/style8_moneyTab.css">
+    <link rel="stylesheet" href="styles/style8mq_moneyTab.css">
+    <link rel="stylesheet" href="styles/style9_electricityTab.css">
+    <link rel="stylesheet" href="styles/style9mq_electricityTab.css">
+    <link rel="stylesheet" href="styles/style10_heatTab.css">
+    <link rel="stylesheet" href="styles/style10mq_heatTab.css">
+    <link rel="stylesheet" href="styles/style11_foodTab.css">
+    <link rel="stylesheet" href="styles/style11mq_foodTab.css">
+    <link rel="stylesheet" href="styles/style12_waterTab.css">
+    <link rel="stylesheet" href="styles/style12mq_waterTab.css">
+    <link rel="stylesheet" href="styles/style13_endTab.css">
+    <link rel="stylesheet" href="styles/style13mq_endTab.css">
+    <link rel="stylesheet" href="styles/style14_infoPage.css">
+    <link rel="stylesheet" href="styles/style14mq_infoPage.css">
+
+    <script src="JS/func_images.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+
+<body onLoad="MM_preloadImages('images/logo_my_active.png','images/icon_info_active.png','images/control_play_active.png',
+'images/control_restart_active.png','images/control_back_active.png','images/control_reload_active.png', 
+'images/control_next_active.png','images/icon_yes_active.png', 'images/icon_yes_gray.png', 
+'images/icon_no_active.png', 'images/icon_no_active.png')">
+
+
+
+    <header class="headerPage">
+
+        <div class="headerLogo">
+            <a href="index.html" onMouseOut="MM_swapImgRestore()"
+                onMouseOver="MM_swapImage('id_myLogo_img','','images/logo_my_active.png',1)">
+                <img id="id_myLogo_img" src="images/logo_my.png" alt="Logo">
+            </a>
+        </div>
+
+        <!---->
+        <div class="headerTitle">
+            <div class="headerTitleFirst">
+                <h1 class="translate" data-en="Survival App" data-sv="Över&shy;lev&shy;nads&shy;appen">
+                    Över&shy;lev&shy;nads&shy;appen</h1>
+            </div>
+            <div class="headerTitleSecond">
+                <h4 class="translate" data-en="How prepared are you for a societal crisis?"
+                    data-sv="Hur rustad är du för en samhällskris?">Hur rustad är du för en samhällskris?</h4>
+            </div>
+        </div>
+
+        <div class="headerButtons">
+
+            <div class="headerButtonsInfo">
+
+                <a href="infoPage.html" onMouseOut="MM_swapImgRestore()"
+                    onMouseOver="MM_swapImage('id_info_img','','images/icon_info_active.png',1)">
+                    <img id="id_info_img" src="images/icon_info.png" width="auto" alt="Info button">
+                </a>
+
+            </div>
+
+            <div class="drop-down headerButtonsFlag">
+
+                <select name="select_sprak" id="select_sprak" class="vodiapicker">
+                    <option class="swedish" value="swedish" data-thumbnail="images/icon_SE.png"></option>
+                    <option class="english" value="english" data-thumbnail="images/icon_GB.png"></option>
+                    <!-- <option class="greek" value="greek"     data-thumbnail="images/icon_GR.png"></option>
+                    <option class="german" value="german"   data-thumbnail="images/icon_DE.png"></option> -->
+                </select>
+
+
+                <div class="lang-select">
+                    <button class="btn-select" value=""></button>
+                    <div class="b">
+                        <ul id="a"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <option class="swedish" value="swedish" style="background-image:url('images/icon_GB.png');">SE</option>
+            <option class="english" value="english" style="background-image:url('images/icon_GB.png');">EN</option> -->
+
+
+            <!-- <div class="headerButtonsFlag">
+                <fieldset>
+                    <select name="sprak" id="sprak">
+                        <option value="swedish"><img src="images/icon_SE.png" alt="swedish flag"></option>
+                        <option value="english"><img src="images/icon_GB.png" alt="brittish flag"></option>
+                        <option value="greek"><img src="images/icon_GR.png" alt="greek flag"></option>
+                        <option value="german"><img src="images/icon_DE.png" alt="german flag"></option>
+                    </select>
+                </fieldset>
+            </div> -->
+
+        </div>
+    </header>
+
+
+    <!-- <div class="drop-down">    
+        <select name="options">   
+
+            <option class="en" value="en" 
+                style="background-image:url('images/en.png');">English</option>  
+
+            <option class="fr" value="fr"
+                style="background-image:url('images/fr.png');">French</option>
+
+            <option class="nl" value="nl"
+                style="background-image:url('images/nl.png');">Nederlands</option>    
+        </select>     
+    </div>  -->
+
+
+
+
+    <div class="wrapperMainAside">
+        <div class="wrapperNavMain">
+            <nav class="navPage">
+
+                <div class="navTab navStart colorActive_Start">
+                    <a href="index.html" class="changePreviousNavLink">
+                        <h4 class="translate" data-en="Start:" data-sv="Start:">Start:</h4>
+                        <h5 class="translate" data-en="Chose scenario" data-sv="Välj scenario">Välj scenario</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep1 navCurrent colorActive_Step1">
+                    <a href="#">
+                        <!--<a href="step1.html"> -->
+                        <h4 class="translate" data-en="Step 1:" data-sv="Steg 1:">Steg 1:</h4>
+                        <h5 class="translate" data-en="Money" data-sv="Pengar">Pengar</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep2 colorInactive_Step2">
+                    <a href="#">
+                        <!--<a href="step2.html"> -->
+                        <h4 class="translate" data-en="Step 2:" data-sv="Steg 2:">Steg 2:</h4>
+                        <h5 class="translate" data-en="Elec&shy;tricity" data-sv="Elek&shy;tricitet">Elek&shy;tricitet
+                        </h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep3 colorInactive_Step3">
+                    <a href="#">
+                        <!--<a href="step3.html">-->
+                        <h4 class="translate" data-en="Step 3:" data-sv="Steg 3:">Steg 3:</h4>
+                        <h5 class="translate" data-en="Heating" data-sv="Upp&shy;värmning">Upp&shy;värmning</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep4 colorInactive_Step4">
+                    <a href="#">
+                        <!-- <a href="step4.html">-->
+                        <h4 class="translate" data-en="Step 4:" data-sv="Steg 4:">Steg 4:</h4>
+                        <h5 class="translate" data-en="Food" data-sv="Mat">Mat</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep5 colorInactive_Step5">
+                    <a href="#">
+                        <!--<a href="step5.html"> -->
+                        <h4 class="translate" data-en="Step 5:" data-sv="Steg 5:">Steg 5:</h4>
+                        <h5 class="translate" data-en="Water" data-sv="Vatten">Vatten</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navEnd colorInactive_End">
+                    <a href="#">
+                        <!--<a href="result.html"> -->
+                        <h4 class="translate" data-en="End" data-sv="Slut:">Slut:</h4>
+                        <h5 class="translate" data-en="Your Result" data-sv="Ditt Resultat">Ditt Resultat</h5>
+                    </a>
+                </div>
+
+            </nav>
+            <!--end of navPage-->
+
+            <main class="mainPage colorActive_Step1">
+
+                <div class="mainGeneral">
+
+                    <!-- only in index.html
+                    <div class="mainGeneralGreeting">
+                        <h3 class="translate" data-en="Can you survive a societal crisis?" data-sv="Kan du överleva en samhällskris?">Kan du överleva en samhällskris?</h3>
+                        <h3 class="translate" data-en="How long and how good?" data-sv="Hur länge och hur bra?">Hur länge och hur bra?</h3>
+                        <h3 class="translate" data-en="Test yourself in 5 steps!" data-sv="Testa dej själv i 5 steg!">Testa dej själv i 5 steg!</h3>
+                    </div>-->
+
+                    <!-- only in Step1-Step5.html and Result.html-->
+                    <div class="mainGeneralInfo">
+                        <div class="mainGeneralInfoTitle">
+                            <h5 class="translate" data-en="YOUR SCENARIO" data-sv="DITT SCENARIO">DITT SCENARIO</h5>
+                        </div>
+                        <div class="mainGeneralInfoBody">
+                            <div class="mainGeneralInfoBodyPre">
+                                <h5 class="translate" data-en="You have stated:" data-sv="Du har angett:">Du har angett:
+                                </h5>
+                            </div>
+                            <div class="mainGeneralInfoBodyConditions">
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>
+                                        <span class="translate" data-en="that the bank system is"
+                                            data-sv="att banksystemet">att banksystemet</span>
+                                        <span class="nobr">
+                                            <span id="money_spanON_step1">
+                                                <span id="money_span_step1" class="translate" data-en="not"
+                                                    data-sv="inte">inte</span>
+                                                <span class="translate" data-en="working!"
+                                                    data-sv="fungerar!">fungerar!</span>
+                                            </span>
+                                            <span id="money_spanOFF_step1" class="translate" data-en="not relevant!"
+                                                data-sv="inte är relevant!">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink translate"
+                                                data-en="Change" data-sv="Ändra">Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>
+                                        <span class="translate" data-en="that the electricity grid is"
+                                            data-sv="att elnätet"> att elnätet</span>
+                                        <span class="nobr">
+                                            <span id="el_spanON_step1">
+                                                <span id="el_span_step1" class="translate" data-en="not"
+                                                    data-sv="inte">inte</span>
+                                                <span class="translate" data-en="working!"
+                                                    data-sv="fungerar!">fungerar!</span>
+                                            </span>
+                                            <span id="el_spanOFF_step1" class="translate" data-en="not relevant!"
+                                                data-sv="inte är relevant!">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink translate"
+                                                data-en="Change" data-sv="Ändra">Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>
+                                        <span class="translate" data-en="that the petrol market is"
+                                            data-sv="att oljemarknaden">att oljemarknaden</span>
+                                        <span class="nobr">
+                                            <span id="heatOil_spanON_step1">
+                                                <span id="heatOil_span_step1" class="translate" data-en="not"
+                                                    data-sv="inte">inte</span>
+                                                <span class="translate" data-en="working!"
+                                                    data-sv="fungerar!">fungerar!</span>
+                                            </span>
+                                            <span id="heatOil_spanOFF_step1" class="translate" data-en="not relevant!"
+                                                data-sv="inte är relevant!">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink translate"
+                                                data-en="Change" data-sv="Ändra">Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>
+                                        <span class="translate"
+                                            data-en="that the district heating&shy;/gas grid&shy;/pellets market is"
+                                            data-sv="fjärrvärme&shy;/naturgasnätet&shy;/pellets&shy;marknaden">
+                                            att fjärrvärme&shy;/naturgasnätet&shy;/pellets&shy;marknaden</span>
+                                        <span class="nobr">
+                                            <span id="heatOther_spanON_step1">
+                                                <span id="heatOther_span_step1" class="translate" data-en="not"
+                                                    data-sv="inte">inte</span>
+                                                <span class="translate" data-en="working!"
+                                                    data-sv="fungerar!">fungerar!</span>
+                                            </span>
+                                            <span id="heatOther_spanOFF_step1" class="translate" data-en="not relevant!"
+                                                data-sv="inte är relevant!">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink translate"
+                                                data-en="Change" data-sv="Ändra"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>
+                                        <span class="translate" data-en="that the food supply chain is"
+                                            data-sv="att livsmedelskedjan"> att livsmedelskedjan </span>
+                                        <span class="nobr">
+                                            <span id="food_spanON_step1">
+                                                <span id="food_span_step1" class="translate" data-en="not"
+                                                    data-sv="inte">inte</span>
+                                                <span class="translate" data-en="working!"
+                                                    data-sv="fungerar!">fungerar!</span>
+                                            </span>
+                                            <span id="food_spanOFF_step1" class="translate" data-en="not relevant!"
+                                                data-sv="inte är relevant!">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink translate"
+                                                data-en="Change" data-sv="Ändra">Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>
+                                        <span class="translate" data-en="that the water suply is"
+                                            data-sv="att vattenledningsnätet">att vattenledningsnätet</span>
+                                        <span class="nobr">
+                                            <span id="water_spanON_step1">
+                                                <span id="water_span_step1" class="translate" data-en="not"
+                                                    data-sv="inte">inte</span>
+                                                <span class="translate" data-en="working!"
+                                                    data-sv="fungerar!">fungerar!</span>
+                                            </span>
+                                            <span id="water_spanOFF_step1" class="translate" data-en="not relevant!"
+                                                data-sv="inte är relevant!">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink translate"
+                                                data-en="Change" data-sv="Ändra">Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mainGeneralInstructions">
+
+                        <!-- only in index.html
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4 class="translate" data-en="Choose scenario and click on the button" 
+                                data-sv="Välj scenario och klicka på knappen">Välj scenario och klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_play_mini.png" alt="Play mini icon">
+                            </div>
+                        </div> -->
+
+                        <!-- only in index.html and step1-step5.html -->
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4 class="translate" data-en="Fill in your answers and click on the button"
+                                    data-sv="Fyll i dina svar och klicka på knappen">Fyll i dina svar och klicka på
+                                    knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_next_mini.png" alt="Next mini icon">
+                            </div>
+                        </div>
+
+                        <!-- only in result.html
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4 class="translate" data-en="To start afresh click on the button" data-sv="För att börja om klicka på knappen">För att börja om klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_restart_mini.png" alt="Restart mini icon">
+                            </div>
+                        </div> -->
+
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4 class="translate" data-en="For more information click on the button"
+                                    data-sv="För mer information klicka på knappen">För mer information klicka på
+                                    knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/icon_info_mini.png" alt="Info mini icon">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- only in index.html-->
+                    <!-- se index.html 
+                    <div class="mainGeneralChooseScenario">
+                        <h2>Scenario-val in index.html</h2>
+                    </div>-->
+
+                    <!-- only in result.html-->
+                    <!-- se result.html 
+                    <div class="mainGeneralResult">
+                        <h2>RESULTS in results.html</h2>
+                    </div>-->
+
+                </div>
+
+
+
+                <!-- only in step1-step5.html-->
+                <!-- se step1-step5.html -->
+                <div class="mainContent">
+
+                    <div class="mainContentTopLine">
+                        <hr class="greenLine">
+                    </div>
+
+
+
+                    <div class="mainContentLeft">
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                        <form action="action_Page.php" method="post" id="form_moneyDebit">
+                            <h2 class="translate" data-en="Your Resources" data-sv="Dina Resurser">Dina Resurser</h2>
+
+                            <fieldset id="fieldset_moneyDebitAssets">
+
+                                <h4 class="translate" data-en="ASSETS" data-sv="TILLGÅNGAR">TILLGÅNGAR</h4>
+
+                                <label>
+                                    <span class="translate" data-en="Money in bank:" data-sv="Pengar på banken:">Pengar
+                                        på banken:</span>
+                                    <input type="text" id="moneyDebitAssets_bankMoney" name="moneyDebitAssets_bankMoney"
+                                        class="money_scenario" value="10000" />
+                                    <span class="translate" data-en="EUR" data-sv="SEK">SEK</span>
+                                </label>
+
+                                <label>
+                                    <span class="translate" data-en="Available cash:"
+                                        data-sv="Tillgängliga kontanter:">Tillgängliga kontanter:</span>
+                                    <input type="text" id="moneyDebitAssets_cashMoney"
+                                        name="moneyDebitAssets_cashMoney" />
+                                    <span class="translate" data-en="EUR" data-sv="SEK">SEK</span>
+                                </label>
+
+                                <label>
+                                    <span class="translate" data-en="Value of valuables:"
+                                        data-sv="Säljvärde på värdesaker:">Säljvärde på värdesaker:</span>
+                                    <input type="text" id="moneyDebitAssets_valuablesMoney"
+                                        name="moneyDebitAssets_valuablesMoney" />
+                                    <span class="translate" data-en="EUR" data-sv="SEK">SEK</span>
+                                </label>
+
+                                <label>
+                                    <span class="translate" data-en="Sum of assets:" data-sv="Summa tillgångar:">Summa
+                                        tillgångar:</span>
+                                    <input type="text" id="moneyDebitAssets_TotalMoney"
+                                        name="moneyDebitAssets_TotalMoney" readonly />
+                                    <span class="translate" data-en="EUR" data-sv="SEK">SEK</span>
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_moneyDebitIncome">
+
+                                <h4 class="translate" data-en="INCOME" data-sv="INKOMSTER">INKOMSTER</h4>
+
+                                <label>
+                                    <span class="translate" data-en="Income through bank account:"
+                                        data-sv="Inkomst via bankkonto:">Inkomst via bankkonto:</span>
+                                    <input type="text" id="moneyDebitIncome_bankMoney" name="moneyDebitIncome_bankMoney"
+                                        class="money_scenario" />
+                                    <span class="translate" data-en="EUR/month" data-sv="SEK/mån">SEK/mån</span>
+                                </label>
+
+                                <label>
+                                    <span class="translate" data-en="Income in cash:"
+                                        data-sv="Inkomst i kontanter:">Inkomst i kontanter:</span>
+                                    <input type="text" id="moneyDebitIncome_cashMoney"
+                                        name="moneyDebitIncome_cashMoney" />
+                                    <span class="translate" data-en="EUR/month" data-sv="SEK/mån">SEK/mån</span>
+                                </label>
+
+                                <label>
+                                    <span class="translate" data-en="Sum of income:" data-sv="Summa inkomster:">Summa
+                                        inkomster:</span>
+                                    <input type="text" id="moneyDebitIncome_TotalMoney"
+                                        name="moneyDebitIncome_TotalMoney" readonly />
+                                    <span class="translate" data-en="EUR/month" data-sv="SEK/mån">SEK/mån</span>
+                                </label>
+
+                            </fieldset>
+
+                        </form>
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                    </div>
+
+
+
+                    <div class="mainContentMiddleLine">
+                        <hr class="greenLine">
+                    </div>
+
+
+
+                    <div class="mainContentRight">
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                        <form action="action_Page.php" method="post" id="form_moneyCredit">
+                            <h2 class="translate" data-en="Your Expenses" data-sv="Dina Utgifter">Dina Utgifter</h2>
+
+
+                            <fieldset id="fieldset_moneyCreditSpend">
+
+                                <h4 class="translate" data-en="EXPENSES" data-sv="UTGIFTER">UTGIFTER</h4>
+
+                                <label>
+                                    <span class="translate" data-en="For electricity:" data-sv="För el:">För el:</span>
+                                    <input type="text" id="moneyCreditSpend_elMoney" name="moneyCreditSpend_elMoney"
+                                        class="elANDheatOil_scenario" value="600" />
+                                    <span class="translate" data-en="EUR/month" data-sv="SEK/mån">SEK/mån</span>
+                                </label>
+
+                                <label>
+                                    <span class="translate" data-en="For heating" data-sv="För uppvärmning">För
+                                        uppvärmning</span>
+                                    <span class="smallText translate" data-en="*excl. electrical heating"
+                                        data-sv="*exkl. elvärme">&nbsp; *exkl. elvärme</span>:
+                                    <input type="text" id="moneyCreditSpend_heatMoney" name="moneyCreditSpend_heatMoney"
+                                        class="heatOilANDheatOther_scenario" value="600" />
+                                    <span class="translate" data-en="EUR/month" data-sv="SEK/mån">SEK/mån</span>
+                                </label>
+
+                                <label>
+                                    <span class="translate" data-en="For food:" data-sv="För mat:"></span>
+                                    <input type="text" id="moneyCreditSpend_foodMoney" name="moneyCreditSpend_foodMoney"
+                                        class="food_scenario" value="600" />
+                                    <span class="translate" data-en="EUR/month" data-sv="SEK/mån">SEK/mån</span>
+                                </label>
+
+                                <label>
+                                    <span class="translate" data-en="For water:" data-sv="För vatten:">För
+                                        vatten:</span>
+                                    <input type="text" id="moneyCreditSpend_waterMoney"
+                                        name="moneyCreditSpend_waterMoney" class="foodANDwater_scenario" value="600" />
+                                    <span class="translate" data-en="EUR/month" data-sv="SEK/mån">SEK/mån</span>
+                                </label>
+
+                                <label>
+                                    <span class="translate" data-en="Other expenses:" data-sv="Övriga utgifter:">Övriga
+                                        utgifter:</span>
+                                    <input type="text" id="moneyCreditSpend_otherMoney"
+                                        name="moneyCreditSpend_otherMoney" />
+                                    <span class="translate" data-en="EUR/month" data-sv="SEK/mån">SEK/mån</span>
+                                </label>
+
+                                <label>
+                                    <span class="translate" data-en="Sum of expenses:" data-sv="Summa utgifter:"></span>
+                                    <input type="text" id="moneyCreditSpend_TotalMoney"
+                                        name="moneyCreditSpend_TotalMoney" readonly />
+                                    <span class="translate" data-en="EUR/month" data-sv="SEK/mån">SEK/mån</span>
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_moneyCreditPeople">
+
+                                <h4 class="translate" data-en="NUMBER OF PEOPLE IN THE HOUSEHOLD"
+                                    data-sv="ANTAL PERSONER I HUSHÅLLET">ANTAL PERSONER I HUSHÅLLET</h4>
+
+                                <label>
+                                    <input type="text" id="moneyCreditPeople_count" name="moneyCreditPeople_count"
+                                        value="1" />
+                                    <span class="translate" data-en="people" data-sv="st">st</span>
+                                </label>
+
+                            </fieldset>
+
+                        </form>
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                    </div>
+
+
+
+                    <div class="mainContentBottomLine">
+                        <hr class="greenLine">
+                    </div>
+
+                </div>
+                <!--end of mainContent-->
+
+
+                <div class="mainControls">
+
+                    <!-- only in index.html and step1-5.html-->
+                    <div class="mainControlsLeftLine1">
+                        <hr class="greenLine">
+                    </div>
+
+                    <!-- only in result.html
+                    <div class="mainControlsLeftLine2">
+                        <hr class="greenLine">
+                    </div> -->
+
+                    <!-- only in step1-step5.html and result.html-->
+                    <div class="mainControlsButton mainControlsRestart">
+                        <a href="index.html" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_restart_img','','images/control_restart_active.png',1)">
+                            <img id="id_restart_img" src="images/control_restart.png" alt="Restart Button">
+                        </a>
+                    </div>
+
+                    <!-- only in step1-step5.html and result.html-->
+                    <div class="mainControlsButton mainControlsBack">
+                        <a href="index.html" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_back_img','','images/control_back_active.png',1)">
+                            <img id="id_back_img" src="images/control_back.png" alt="Back Button">
+                        </a>
+                    </div>
+
+                    <!-- only in index.html
+                    <div class="mainControlsStart">
+
+                        <div class="mainControlsStartLeft">
+                            <h3 class="translate" data-en="CLICK" data-sv="KLICKA">KLICKA</h>
+                        </div>
+
+                        <div class="mainControlsButton mainControlsStartPlay">
+                            <a href="step1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('id_play_img','','images/control_play_active.png',1)">
+                                <img id="id_play_img" src="images/control_play.png" alt="Play Button">
+                            </a>
+                        </div>
+
+                        <div class="mainControlsStartRight">
+                            <h3 class="translate" data-en="HERE!" data-sv="HÄR!">HÄR!</h3>
+                        </div>
+                    </div>-->
+
+                    <!-- only in step1-step5.html -->
+                    <div class="mainControlsButton mainControlsReload">
+                        <a href="#" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_reload_img','','images/control_reload_active.png',1)">
+                            <img id="id_reload_img" src="images/control_reload.png" alt="Reload Button">
+                        </a>
+                    </div>
+
+                    <!-- only in step1-step5.html-->
+                    <div class="mainControlsButton mainControlsNext">
+                        <a href="step2.html" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_next_img','','images/control_next_active.png',1)">
+                            <img id="id_next_img" src="images/control_next.png" alt="Next Button">
+                        </a>
+                    </div>
+
+                    <!-- only in result.html
+                    <div class="mainControlsRightLine2">
+                        <hr class="greenLine">
+                    </div>    -->
+
+                    <!-- only in index.html and step1-5.html-->
+                    <div class="mainControlsRightLine1">
+                        <hr class="greenLine">
+                    </div>
+
+                </div>
+                <!--end of mainControls-->
+
+            </main>
+            <!--end of mainPage-->
+        </div>
+        <!--end of wrapperNavMain-->
+
+
+        <aside class="asidePage">
+            <h4 class="translate" data-en="Extern links:" data-sv="Externa länkar:">Externa länkar:</h4>
+        </aside>
+
+
+    </div>
+    <!--end of wrapperMainAside-->
+
+
+
+    <footer class="footerPage">
+
+        <div class="footerInfo">
+            <div class="footerInfoName">
+                <h5 class="translate" data-en="Rebeka Amanatidou" data-sv="Rebeka Amanatidou"> Rebeka Amanatidou</h5>
+            </div>
+            <div class="footerInfoProject">
+                <h5 class="translate" data-en="Project work in the course Web programming"
+                    data-sv="Projektarbete i kursen Webbprogrammering">Projektarbete i kursen Webbprogrammering</h5>
+            </div>
+        </div>
+
+
+        <div class="footerSchool">
+            <div class="footerSchoolLogo">
+                <a target="_blank" href="https://glimnet.se">
+                    <img src="images/logo_glimakra.png" alt="Glimåkra folkhöskola logo">
+                </a>
+            </div>
+            <div class="footerSchoolName">
+                <a target="_blank" href="https://glimnet.se">
+                    <h5 class="translate" data-en="Glimåkra folkhighschool" data-sv="Glimåkra folkhögskola">Glimåkra
+                        folkhögskola</h5>
+                </a>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!-- <script type="module" src="JS/functions.js"></script> -->
+
+
+
+    <script src="JS/step1_dataLoad.js"></script>
+    <script src="JS/func_scenario.js"></script>
+
+    <script src="JS/step1_events.js"></script>
+    <script src="JS/step1_calculate.js"></script>
+
+    <script src="JS/func_controls.js"></script>
+    <script src="JS/func_language.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+/* CLASSES IN FILE
+header.headerPage
+div.wrapperMainAside
+div.wrapperNavMain
+nav.navPage
+main.mainPage
+div.mainGeneral
+div.mainContent
+div.mainContentLeft
+div.mainContentTopLine
+div.mainContentMiddleLine
+div.mainContentBottomLine
+div.mainContentRight
+div.mainControls
+aside.asidePage
+footer.footerPage */
+
+
+/*
+Code Sections:
+1.GENERAL TAGS
+2.HEADER
+3.THE WRAPPERS
+4.NAVIGATION
+5.MAIN
+6.MAIN GENERAL
+7.MAIN CONTENT
+8.MAIN CONTROLS
+9.ASIDE
+10.FOOTER
+ */
+
+
+
+
+/* mobile */
+@media(min-width:320px),
+(max-width:320px) {
+
+
+
+    /* 3.THE WRAPPERS */
+
+    div.wrapperMainAside {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.wrapperNavMain {
+        flex: auto;
+    }
+
+
+    /* 6.MAIN GENERAL */
+
+    div.mainGeneral .mainGeneralInfoBody {
+        display:flex;
+        flex-direction:column;
+    }
+
+
+    /* 7.MAIN CONTENT */
+    div.mainContent {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    div.mainContent form{
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+
+    div.mainContentTopLine hr.greenLine{
+        width:100%;
+        height:7px;
+    }
+
+    div.mainContentMiddleLine hr.greenLine {
+        width:100%;
+        height:7px;
+    }
+
+    div.mainContentBottomLine hr.greenLine{
+        width:100%;
+        height:7px;
+    }
+
+
+
+    /* 9.ASIDE */
+
+    aside.asidePage {
+        width: auto;
+        min-width: auto;
+        flex: auto;
+        margin-left: 0;
+    }
+
+
+}
+
+
+
+
+/* mobile landscape */
+@media(min-width:578px) {
+
+
+
+
+    /* 3.THE WRAPPERS */
+
+    /* div.wrapperMainAside {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    /* div.wrapperNavMain {
+        flex:auto;
+    } */
+
+    /* div.mainContent form{
+        margin-top:30px;
+        margin-bottom:30px;
+    } */
+
+    /* 6.MAIN GENERAL */
+
+    div.mainGeneral .mainGeneralInfoBody {
+        display:flex;
+        flex-direction:row;
+    }
+
+
+
+    /* 7.MAIN CONTENT */
+    /* div.mainContent {
+        display:flex;
+        flex-direction: column;
+       } */
+
+    /* div.mainContentTopLine hr.greenLine{
+        width:100%;
+        height:7px;
+    } */
+
+    /* div.mainContentMiddleLine hr.greenLine {
+        width:100%;
+        height:7px;
+    } */
+
+    /* div.mainContentBottomLine hr.greenLine{
+        width:100%;
+        height:7px;
+    } */
+
+
+    /* 9.ASIDE */
+    /* aside.asidePage {
+        width: auto;
+        min-width:auto;
+        flex:auto;
+        margin-left:0;
+    } */
+
+}
+
+
+
+/* tablet */
+/* aside under main */
+@media(min-width:768px) {
+
+
+
+    /* 3.THE WRAPPERS */
+
+    /* div.wrapperMainAside {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    /* div.wrapperNavMain {
+        flex:auto;
+    } */
+
+
+    /* 6.MAIN GENERAL */
+
+    /* div.mainGeneral .mainGeneralInfoBody {
+        display:flex;
+        flex-direction:row;
+    } */
+
+    div.mainContent form{
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+
+
+    /* 7.MAIN CONTENT */
+    div.mainContent {
+        display: flex;
+        flex-direction: row;
+    }
+
+    div.mainContentTopLine hr.greenLine{
+        display:none;
+    }
+
+    div.mainContentMiddleLine hr.greenLine {
+        width:7px;
+        height:100%;
+    }
+
+    div.mainContentBottomLine hr.greenLine{
+        display:none;
+    }
+
+
+    /* 9.ASIDE */
+
+    /* aside.asidePage {
+        width: auto;
+        min-width:auto;
+        flex:auto;
+        margin-left:0;
+    } */
+
+
+}
+
+
+
+/* screen */
+@media(min-width:1200px) {
+
+
+
+
+
+    /* 3.THE WRAPPERS */
+
+    div.wrapperMainAside {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* div.wrapperNavMain {
+        flex:auto;
+    } */
+
+
+    /* 6.MAIN GENERAL */
+
+    /* div.mainGeneral .mainGeneralInfoBody {
+        display:flex;
+        flex-direction:row;
+    } */
+
+
+
+    /* 7.MAIN CONTENT */
+
+    /* div.mainContent {
+        display:flex;
+        flex-direction: row;
+    } */
+
+    /* div.mainContentTopLine hr.greenLine{
+        display:none;
+    } */
+
+    /* div.mainContentMiddleLine hr.greenLine {
+        width:7px;
+        height:100%;
+    } */
+
+    /* div.mainContentBottomLine hr.greenLine{
+        display:none;
+    } */
+
+
+    /* 9.ASIDE */
+
+    aside.asidePage {
+        width: 256px;
+        min-width: auto;
+        flex: none;
+        margin-left: 8px;
+    }
+
+
+
+
+}
+
+
+
+/* big screen */
+@media(min-width:1600px) {
+
+
+    /* 3.THE WRAPPERS */
+
+    /* div.wrapperMainAside {
+        display: flex;
+        flex-direction: row;
+    } */
+
+    div.wrapperNavMain {
+        flex: 1186;
+    }
+
+
+    /* 6.MAIN GENERAL */
+
+    /* div.mainGeneral .mainGeneralInfoBody {
+        display:flex;
+        flex-direction:row;
+    } */
+
+
+
+    /* 7.MAIN CONTENT */
+
+    /* div.mainContent {
+        display:flex;
+        flex-direction: row;
+    } */
+
+    /* div.mainContentTopLine hr.greenLine{
+        display:none;
+    } */
+
+    /* div.mainContentMiddleLine hr.greenLine {
+        width:7px;
+        height:100%;
+    } */
+
+    /* div.mainContentBottomLine hr.greenLine{
+        display:none;
+    } */
+
+
+    /* 9.ASIDE */
+
+    aside.asidePage {
+        min-width: 390px;
+        width: auto;
+        flex: 390;
+        /* margin-left: 8px; */
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* GAMMALT */
+
+/* header.headerPage{} */
+/* div.headerLogo{} */
+/* div.headerButtons{} */
+/* div.headerInfo{} */
+/* div.headerFlag {} */
+/* header select {} */
+/* div.headerTitleFirst {} */
+/* div.headerTitleSecond {} */
+/* header.headerPage h1 {} */
+/* header.headerPage h4 {} */
+
+
+/* div.wrapperMainAside {} */
+/* aside.asidePage {} */
+/* aside h4{} */
+
+
+/* div.wrapperNavMain{} */
+/* nav.navPage{} */
+/* div.navTab{} */
+/* nav.navPage h4 {} */
+/* nav.navPage h5 {} */
+/* nav triangle-stroke{} */
+/* nav triangle-fill{} */
+
+
+/* main.mainPage {}
+    div.mainContentLeft{}
+    div.mainContentMiddle{}
+    div.mainContentRight{} */
+
+
+/* div.mainControls{}
+    div.controlLeftLine{}
+    div.controlButton{}
+    div.controlRightLine{} */
+
+
+/* footer.footerPage{}
+    div.footerInfo{}
+    div.footerName{}
+    footer h5 {}
+    div.footerProject{}
+    div.footerFHSK{}
+    div.footerLogoFHSK{}
+    div.footerNameFHSK{} */

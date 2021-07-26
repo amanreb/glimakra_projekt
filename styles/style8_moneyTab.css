@@ -1,0 +1,634 @@
+
+main.mainPage fieldset {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+
+
+form input[type="text"] {
+    width: 100px;
+    height: 30px;
+    max-height:30px;
+    max-width:100px;
+    flex: none;
+    border-radius: 4px;
+   
+   
+    /* border: thick solid rgb(138, 16, 112); */
+    padding-left:5px;
+    padding-right:5px;
+    text-align:right;
+    font-size:22px;
+    outline:4px inset black; 
+    border: 2px solid rgba(56, 56, 56, 0.767);
+    outline-offset: 0;
+}
+
+
+input[type="text" ] {
+    background-color: rgb(240, 233, 195);
+    /* margin-top:auto; */
+    /* margin-bottom: 0px; */
+    margin-right:10px;
+    margin-left:10px;
+}
+
+/* funkar ej */
+/* input[type="text" ][class$="systemUnit"]:not([readonly]){
+    background-color:red;
+} */
+
+form label a {
+    margin-left:15px;
+    margin-right: 5px;
+    margin-top:4px;
+    font-family: monospace;
+    text-decoration-line: underline;
+}    
+
+form fieldset.basruta label a {
+    margin-top:0px;
+    text-decoration-line: underline;
+    
+}
+
+form div.totalruta{
+    font-weight: bolder;
+    margin-top:10px;
+    margin-bottom:10px;
+    background-color: rgba(255, 255, 255, 0.253);
+    padding-left:10px;
+    padding-right:5px;
+    border-radius:20px;
+    border: 3px dashed rgba(0, 0, 0, 0.918);
+    outline:3px dashed rgb(10, 1, 1);
+    
+    box-shadow: -3px 3px 1px 1px rgba(41, 40, 40, 0.747),
+                 3px -3px 1px 1px rgba(44, 44, 44, 0.733) ,
+                -3px 3px 1px 1px rgba(54, 54, 54, 0.699)  ,
+                 3px -3px 1px 1px rgba(32, 32, 32, 0.692)  ;
+    /* box-shadow: -5px 3px 1px rgb(85, 82, 82)  ; */
+    /* background-color: #DFDBE5;
+    background-color: #DFDBE5;
+    background-color: #DFDBE5; */
+/* background-image: url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23550023' fill-opacity='0.04' fill-rule='evenodd'%3E%3Cpath d='M0 0h35v35H0V0zm5 5h25v25H5V5zm5 5h15v15H10V10zm5 5h5v5h-5v-5zM40 5h25v25H40V5zm5 5h15v15H45V10zm5 5h5v5h-5v-5zM70 35H35v35h35V35zm-5 5H40v25h25V40zm-5 5H45v15h15V45zm-5 5h-5v5h5v-5zM30 40H5v25h25V40zm-5 5H10v15h15V45zm-5 5h-5v5h5v-5z'/%3E%3C/g%3E%3C/svg%3E"); */
+}
+
+
+form label a:link,
+form label a:visited{
+    color:rgb(0, 0, 151);
+}
+
+form label a:hover,
+form label a:active {
+    /* color:rgba(110, 7, 7, 0.774); */
+    color:rgb(151, 0, 0);
+}
+
+ 
+
+
+
+input[type="text" ]:read-only {
+    background-color: rgb(155, 155, 155);
+    /* outline:2px outset rgb(36, 36, 36); */
+    font-size:22px;
+    /* border: 2px solid rgb(61, 61, 61); */
+    /* color: rgb(43, 43, 43); */
+    /* background-color: #9090a3; */
+    /* background-color: rgb(10, 5, 29); */
+    /* background-color:rgb(214, 143, 102);
+    color:rgb(189, 85, 26);
+    border:thick solid rgb(189, 85, 26); */
+    color:rgb(24, 24, 24);
+}
+
+
+
+
+/* label [disabled] {
+    background-color: gray;
+} */
+
+input[type="text"]:focus:not(:read-only) {
+    background-color: white;
+}
+
+
+
+
+form h2
+/* ,form :not(h2)>span  */
+{
+    font-size: 50px;
+    /* font-family: Comic Sans Ms, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+     transform: scaleY(1.1);
+    /* text-decoration-line: underline; */
+    text-shadow:
+        2px 2px 2px rgb(179, 92, 77),
+        -1px -1px 2px #000,
+        2px -1px 2px rgb(179, 92, 77),
+        -1px 2px 2px #000,
+        2px 2px 2px #000,
+        -1px -1px 2px #000,
+        
+        2px -1px 2px #000,
+        -1px 2px 2px #000,
+        2px 2px 2px #000,
+        -1px -1px 2px #000,
+        2px -1px 2px #000,
+        -1px 2px 2px #000;
+}
+
+form h3 {
+    font-size: 40px;
+    font-family: Comic Sans Ms, sans-serif;
+    margin-top:50px;
+    font-weight: 900;
+    /* -webkit-text-stroke: 1px black; */
+}
+
+form fieldset h4 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-family: Comic Sans Ms, sans-serif;
+    text-decoration: underline;
+}
+
+/* inte index.html */
+fieldset label {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-family: Comic Sans Ms, sans-serif;
+    line-height:140%;
+    display: flex;  
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: left;
+    /* margin-left:10px; */
+}
+
+/* funkar ej */
+/* fieldset label span:first-child{
+ text-indent: -50px;
+}
+fieldset label span:not(:first-child){
+    margin-left:-50px;
+} */
+
+
+
+form button[type=button] {
+    /* background-color: rgb(231, 176, 180); */
+    background-color:   rgb(177, 153, 121) ;
+    background-color:   rgba(94, 17, 52, 0.37) ;
+    background-color:   rgba(65, 15, 15, 0.212) ;
+
+
+    color: rgba(24, 18, 18, 0.863);
+    display:inline-block;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 2px 10px;
+    cursor: pointer;
+    border: 3px outset rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+
+form button:hover:enabled {
+    /* background-color: rgb(107, 74, 74);
+    background-color: rgba(27, 27, 27, 0.63); */
+    background-color: rgba(12, 9, 9, 0.151);
+    color: rgba(247, 223, 223, 0.932);
+    border: 3px inset rgba(0, 0, 0, 0.658);
+    
+    /* font-size:20px; */
+}
+
+
+form fieldset.elUnit button[type=button] {
+    background-color:   rgba(128, 106, 94, 0.685) ;
+    /* color: rgba(24, 18, 18, 0.849); */
+
+}
+
+form fieldset.elUnit button[type=button]:hover {
+    background-color:   rgba(155, 146, 142, 0.397) ;
+    color:rgba(228, 214, 214, 0.507);
+    border:2px outset rgba(0, 0, 0, 0.589);
+
+}
+
+form fieldset#fieldset_elCreditAdd button{
+    background-color:rgba(110, 94, 82, 0.808);
+    
+}
+
+form fieldset#fieldset_elCreditAdd button:hover{
+    background-color:rgba(206, 156, 115, 0.486);
+    background-color:   rgba(148, 121, 98, 0.575) ;
+    color: rgb(192, 155, 155);
+}
+
+
+
+/* form#foodDebit button:hover { */
+    /* background-color: rgba(107, 74, 74, 0); */
+    /* background-color: rgba(63, 24, 24, 0.192); */
+    /* background-color: rgba(170, 31, 31, 0.61); */
+    /* color: rgb(219, 207, 207); */
+    /* color: rgba(197, 191, 191, 0.507); */
+    /* color: pink; */
+    /* border: 3px inset; */
+/* } */
+
+
+
+/* radio button */
+
+/* inte index.html */
+/* fieldset input[type="radio"] {
+     
+} */
+
+
+
+
+form div.squareRadioLine {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items:flex-start; */
+    /* align-items: center; */
+    /* border: 1px solid black; */
+}
+
+
+fieldset#fieldset_elDebitHeatSystem div.squareRadioLine{
+    margin-left:10px;
+    /* color:red; */
+}
+
+/* radio color */
+
+form fieldset [type="checkbox"]:checked+label img,
+form fieldset [type="radio"]:checked+label img{
+    /* outline:2px solid blue; */
+    /* border:2px solid black; */
+    border:1px solid rgb(148, 113, 113);
+    /* outline:2px solid #000c94; #41f12a #07b681*/
+    /* outline:2px solid #178580;  */
+    /* background-color:rgba(180, 197, 233, 0.473); */
+    /* outline:3px solid rgba(0, 16, 104, 0.568); */
+}
+
+
+form fieldset img {
+    display:inline-block;
+}
+
+form fieldset input[type="checkbox"] ,
+form fieldset input[type="radio"] {
+    display: none;
+}
+
+
+/* radio color */
+
+form fieldset input[type="checkbox"]+label span:first-child ,
+form fieldset input[type="radio"]+label span:first-child {
+    display: flex;
+    width: 25px;
+    min-width:25px;
+    height: 25px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    
+    border: 1px solid rgb(148, 113, 113);
+    outline: 3px inset black;
+    margin-top:6px;
+    
+    margin-right:10px;
+    margin-left:12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+
+form fieldset input[type="checkbox"]+label span{
+    margin-left:0px;
+}
+
+form fieldset input[type="checkbox"]+label span img,
+form fieldset input[type="radio"]+label span img {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+
+form fieldset input[type="checkbox"]:checked+label span img,
+form fieldset input[type="radio"]:checked+label span img {
+    opacity: 1;
+}
+
+
+
+
+form div.squareRadioLine label {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    /* margin-left:7px; */
+    margin-right:10px;
+    /* padding-top:3px; */
+    /* line-height:50px; */
+}
+
+form input[type="checkbox"]+label{
+    margin-right:-5px;
+}
+
+form input[type="checkbox"]+label+label{
+    margin-left:15px;
+}
+
+
+/* around radio button water */
+
+div.rowWrapper {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+label.squareRadioLineLabel {
+    width:140px;
+    margin-bottom:0;
+}
+
+
+span.nobr { white-space: nowrap; }
+
+/* span.titleUnderscore {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+} */
+
+span.smallText {
+    font-size:16px;
+    /* border:1px solid blue; */
+    margin:0;
+    line-height:16px;
+    text-indent: 0;
+    /* text-shadow: none; */
+    text-decoration-line:none;
+    /* align-self: flex-end; */
+}
+
+span.labelTextSmall{
+    font-size:19px;
+}
+
+span.noShadow{
+    text-shadow: none;
+}
+
+/* table */
+form#form_foodCredit table{
+    margin-bottom:30px;
+    width:100%;
+    max-width:600px;
+}
+
+form#form_foodCredit table td,
+form#form_foodCredit table th{
+    vertical-align:top;
+    padding-top:10px;
+    vertical-align: top;
+    text-align:left;
+}
+
+
+/* Met-rubrik */
+form#form_foodCredit table thead tr th:nth-child(1) label {
+    margin-bottom:0px;
+    margin-top:0px;
+    margin-right:20px;
+}
+
+/* Tidslangd-rubrik */
+form#form_foodCredit table thead tr th:nth-child(2) label {
+    margin-bottom:0px;
+    margin-top:0px;
+}
+
+/* Met-texten i body */
+form#form_foodCredit table tbody tr td:nth-child(1) label{
+    margin-top:25px;
+    margin-bottom:0px;
+    margin-right:20px;
+}
+
+/* timmar/dag-texten i body */
+form#form_foodCredit table tbody tr td:nth-child(2) label{
+    font-size:19px;
+    margin-left:0px;
+    margin-bottom:2px;
+    margin-top:0px;   
+}
+
+
+form#form_foodCredit table input {
+    margin-left:5px;
+    margin-right:5px;
+}
+
+
+
+/* radio avmarkering */
+/* form fieldset#fieldset_elDebitProduction>div.rowWrapper>div.squareRadioLine>input#elDebitProduction_PVFalse:checked  */
+
+/* form  fieldset#fieldset_elDebitHeatSystem input[type="checkbox"]:checked +label +label,
+form  fieldset#fieldset_elDebitHeatSystem input[type="checkbox"]:checked +label +label input[type="text"] {
+   display:none;
+} */
+
+
+/* ej klara functioner */
+.ofardigtStycke label {
+    color:rgb(95, 12, 12);
+}
+
+
+.monospace{
+    font-family:monospace;
+}
+
+.basruta {
+    /* border: 3px inset rgba(236, 233, 233, 0.459); */
+    /* padding-left:10px; */
+    /* color: rgb(58, 27, 1); */
+    /* background-color:rgba(128, 0, 0, 0.329); */
+    /* color: rgba(0, 0, 0, 0.856); */
+    /* background-color:rgba(212, 206, 206, 0.13); */
+    /* background-color:rgba(53, 46, 46, 0.384); */
+    /* color:rgba(214, 209, 209, 0.938); */
+    /* color:black; */
+    border: 5px solid black;
+    padding-left:20px;
+    padding-right:20px;
+    border-radius:20px;
+    background-color:rgba(138, 125, 125, 0.356);
+    /* outline:5px groove black; */
+}
+
+fieldset legend{
+    padding-left:10px;
+    padding-right:10px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:32px;
+    font-family:monospace;
+    
+}
+
+fieldset.basruta label{
+    font-family: monospace;
+    line-height: 140%;
+}
+
+fieldset.basruta h4 {
+    font-family: monospace;
+}
+
+fieldset.basruta input {
+    /* margin-top:5px; */
+    margin-bottom:5px;
+}
+
+
+/* fieldset.skafferi_ruta{
+    border: 3px solid black;
+    padding-left:20px;
+    border-radius:20px;
+    background-color:rgba(253, 242, 242, 0.075);
+} */
+
+
+fieldset.dryFoodUnit {
+    border: 5px outset rgba(219, 173, 173, 0.521);
+    padding-left:20px;
+    border-radius:20px;
+    background-color: rgba(350, 300, 200, 0.5);
+    background-color:rgba(212, 152, 111, 0.555);
+}
+
+fieldset.coolFoodUnit {
+    border: 5px outset rgba(116, 90, 90, 0.39);
+    padding-left:20px;
+    border-radius:20px;
+    background-color: rgba(120, 280, 188, 0.432);
+    background-color:rgba(107, 143, 77, 0.452);
+}
+
+
+fieldset.frozenFoodUnit {
+    border: 5px outset rgba(138, 67, 67, 0.623);
+    padding-left:20px;
+    border-radius:20px;
+    background-color:rgba(130, 95, 95, 0.575);
+}
+
+fieldset.elUnit{
+    border: 5px outset rgba(97, 56, 56, 0.767);
+    padding-left:20px;
+    border-radius:20px;
+    background-color:rgba(61, 56, 54, 0.39);
+}
+
+/* radio color */
+form fieldset input[type="radio"]:disabled:not(.radioReadOnly) +label  {
+    color: rgba(73, 17, 17, 0.801);
+    color:rgba(46, 45, 45, 0.897);
+    color:rgb(88, 47, 7);
+    text-decoration-line: line-through;
+}
+
+
+
+
+
+
+/* alla radio disabled forutom svarta rutorna pa sidan 3 */
+form fieldset input[type="radio"]:disabled:not(.radioReadOnly) +label span:first-child {
+
+    /* box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33); */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: rgb(184, 107, 36);
+    /* border: 4px solid rgb(0, 0, 0); */
+    /* outline:2px solid rgb(138, 47, 5); */
+}
+
+
+
+/* input[type="radio" ]:disabled {
+     background-color: gray; 
+    background-color:rgba(0, 0, 0, 0.712); 
+} */
+
+
+
+input[disabled] {
+    pointer-events:none;
+    /* background-color:darksalmon; */
+}
+
+/* input[type="text" ]:disabled , textarea{
+    background-color: gray;
+    } */
+
+
+input[disabled][type="text"]{
+    /* background-color:rgba(0, 0, 0, 0.712); */
+    /* background-color: rgba(0, 0, 0, 0.65); */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* food input other color*/
+input[disabled][type="text"]{
+    /* background-color:rgba(0, 0, 0, 0.712); */
+    /* background-color: rgba(0, 0, 0, 0.65); */
+    background-color: #d68f66;
+    border :4px solid #bd551a;
+}
+
+
+/* form fieldset input[type="radio"].radioReadOnly +label span{
+    background-color: red;
+} */
+
+/* radio color */
+form fieldset input[type="radio"].radioReadOnly:disabled +label span:first-child{
+    background-color: black;
+    /* background-color: red; */
+
+
+}
+
+
+
+
+/* form fieldset.frozenFoodUnit input[type="text"].freezerEl_scenario:disabled+label span { */

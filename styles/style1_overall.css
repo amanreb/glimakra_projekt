@@ -1,0 +1,391 @@
+/* CLASSES IN FILE
+header.headerPage
+div.wrapperMainAside
+div.wrapperNavMain
+nav.navPage
+main.mainPage
+div.mainGeneral
+div.mainContent
+div.mainContentLeft
+div.mainContentMiddleLine
+div.mainContentRight
+div.mainControls
+aside.asidePage
+footer.footerPage */
+
+
+/* My text sizes in desktop view 
+   h1   48pt     4rem    64px
+   h2   36pt     3rem    48px
+   h3   30pt   2.5rem    40px
+   h4   18pt   1.5rem    24px
+   h5   12pt     1rem    16px
+   h6    9pt  0.75rem    12px*/
+
+
+   /* tab colors 
+   start  #820202   #505050
+   step1  #a6030e   #686868
+   step2  #b3081f   #808080
+   step3  #cf1f3c   #989898
+   step4  #df3954   #b0b0b0
+   step5  #e86680   #c8c8c8
+   result #f7afc0   e0e0e0*/
+
+
+/*
+Code Sections:
+1.GENERAL TAGS
+2.HEADER
+3.THE WRAPPERS
+4.NAVIGATION
+5.MAIN
+6.MAIN GENERAL
+7.MAIN CONTENT
+8.MAIN CONTROLS
+9.ASIDE
+10.FOOTER
+11. COLOR CLASSES
+ */
+
+   /* tab colors 
+   start  #820202  
+   step1  #a6030e   #8e8d8d
+   step2  #b3081f   #9c9b9b
+   step3  #cf1f3c   #b1b1b1
+   step4  #df3954   #c5c5c5
+   step5  #e86680   #d7d5d5
+   result #f7afc0   #ffffff*/
+
+
+ /* 1.GENERAL TAGS */
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+   
+  }
+  
+  html {
+    width:100%;
+    min-width:320px;
+    
+}
+
+
+body {
+    padding: 8px;
+    background-color: #555555;
+    width:100%;
+    min-width:320px;
+    
+}
+
+
+a {
+   display:inline-block;
+}
+
+img {
+    display:block;
+    max-width:100%;
+    max-height:100%;
+    width:100%;
+    height:auto;
+}
+
+
+div{
+    display:block;
+}
+
+fieldset {
+    width: 100%;
+    border:0;
+    height:auto;
+  }
+
+hr {
+    width:100%;
+    display:block;
+}
+
+/* a:hover {
+    opacity:0.7;
+} */
+
+label {
+    display:block;
+}
+
+
+
+
+
+
+/* 2.HEADER */
+
+header.headerPage {
+    height: 146px;
+    background-color: #c77926;
+    border: 3px solid black;
+    margin-bottom: 8px;
+    display:flex;
+    flex-direction: row;
+    z-index: 5;
+}
+
+
+
+
+
+
+/* 3.THE WRAPPERS */
+
+div.wrapperMainAside {
+    /* display: flex;
+    flex-direction: column; */
+    /* flex-wrap: wrap; */
+    min-height: 200px;
+}
+
+div.wrapperNavMain {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    margin-bottom: 8px;
+    z-index: 1;
+}
+
+
+
+
+/* 4.NAVIGATION */
+
+nav.navPage {
+    margin: 0;
+    padding: 0;
+    background: white;
+    display: flex; 
+}
+
+
+
+
+/* 5.MAIN */
+
+main.mainPage {
+    display: flex;
+    flex-direction:column;
+    /* background: #820202;
+    background:white; */
+    flex: 1;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    min-height:150px;
+    width:100%;
+}
+
+
+
+
+/* 6.MAIN GENERAL */
+
+div.mainGeneral{
+/* height:30px; */
+text-align: center;
+margin-top:30px;
+margin-bottom:30px;
+padding-left:5px;
+padding-right:5px;
+display:flex;
+flex-direction:column;
+}
+
+
+
+
+/* 7.MAIN CONTENT */
+/* only for step1-step5.html */
+/* subclasses in style8-style12.css */
+
+div.mainContent {
+ min-height:150px;
+ display:flex;
+ flex-direction: row;
+}
+
+
+div.mainContentLeft{
+    /* background-color: hotpink; */
+    /* se style7-style13.css */
+    flex:1;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+/* div.mainContentTopLine{  
+
+} */
+
+/* div.mainContentMiddleLine{
+
+} */
+
+/* div.mainContentBottomLine{
+    
+} */
+
+
+div.mainContent hr.greenLine {
+    background-color: #0c5b31;
+    border:2.5px solid black;
+}
+
+div.mainContentRight {
+    /* background-color:hotpink; */
+    /* se style7-style13.css */
+    flex:1;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+
+
+
+
+/* 8.MAIN CONTROLS*/
+
+div.mainControls {
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    
+    height:min-content;
+    margin-top: 15px;
+    margin-bottom:15px;
+          
+}
+
+
+
+
+/* 9.ASIDE */
+
+aside.asidePage {
+    background: #d4471c;
+    border: 3px solid black;
+    margin-bottom: 8px;
+    
+}
+
+aside.asidePage h4 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+    font-family: Segoe Print, Comic Sans MS, sans-serif;
+    text-shadow:
+        1px 1px 2px black,
+        -1px -1px 2px black,
+        1px -1px 2px black,
+        -1px 1px 2px black;
+}
+
+
+
+
+
+
+
+/* 10.FOOTER */
+
+footer.footerPage {
+    display:flex;
+    flex-direction:row;
+    min-height: 50px;
+    background: #8f6436;
+    border: 3px solid black;
+    padding:3px;
+}
+
+
+
+
+
+/* 11. COLOR CLASSES */
+ 
+   /* tab colors 
+   start  #820202   #505050
+   step1  #a6030e   #686868
+   step2  #b3081f   #808080
+   step3  #cf1f3c   #989898
+   step4  #df3954   #b0b0b0
+   step5  #e86680   #c8c8c8
+   result #f7afc0   e0e0e0*/
+
+
+.colorActive_Start{
+    background-color:#820202;
+}
+
+.colorActive_Step1{
+    background-color: #a6030e;
+}
+
+.colorActive_Step2{
+    background-color:#b3081f;
+}
+
+.colorActive_Step3{
+    background-color:#cf1f3c;
+}
+
+.colorActive_Step4{
+    background-color:#df3954;
+}
+
+.colorActive_Step5{
+    background-color:#e86680;
+}
+
+.colorActive_End{
+    background-color:#f7afc0;
+}
+
+.colorInactive_Start{
+    background-color:#505050;
+}
+
+.colorInactive_Step1{
+    background-color:#686868;
+}
+
+.colorInactive_Step2{
+    background-color:#808080;
+}
+
+.colorInactive_Step3{
+    background-color:#989898;
+}
+
+.colorInactive_Step4{
+    background-color:#b0b0b0;
+}
+
+.colorInactive_Step5{ 
+    background-color:#c8c8c8;
+}
+
+.colorInactiveEnd{
+    background-color:#e0e0e0;
+}
+
+  
+
+
+
+

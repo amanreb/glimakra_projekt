@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steg 3</title>
+
+    <link rel="stylesheet" href="styles/style1_overall.css">
+    <link rel="stylesheet" href="styles/style1mq_overall.css">
+    <link rel="stylesheet" href="styles/style2_header.css">
+    <link rel="stylesheet" href="styles/style2mq_header.css">
+    <link rel="stylesheet" href="styles/style3_nav.css">
+    <link rel="stylesheet" href="styles/style3mq_nav.css">
+    <link rel="stylesheet" href="styles/style4_mainGeneral.css">
+    <link rel="stylesheet" href="styles/style4mq_mainGeneral.css">
+    <link rel="stylesheet" href="styles/style5_mainControls.css">
+    <link rel="stylesheet" href="styles/style5mq_mainControls.css">
+    <link rel="stylesheet" href="styles/style6_footer.css">
+    <link rel="stylesheet" href="styles/style6mq_footer.css">
+    <link rel="stylesheet" href="styles/style7_startTab.css">
+    <link rel="stylesheet" href="styles/style7mq_startTab.css">
+    <link rel="stylesheet" href="styles/style8_moneyTab.css">
+    <link rel="stylesheet" href="styles/style8mq_moneyTab.css">
+    <link rel="stylesheet" href="styles/style9_electricityTab.css">
+    <link rel="stylesheet" href="styles/style9mq_electricityTab.css">
+    <link rel="stylesheet" href="styles/style10_heatTab.css">
+    <link rel="stylesheet" href="styles/style10mq_heatTab.css">
+    <link rel="stylesheet" href="styles/style11_foodTab.css">
+    <link rel="stylesheet" href="styles/style11mq_foodTab.css">
+    <link rel="stylesheet" href="styles/style12_waterTab.css">
+    <link rel="stylesheet" href="styles/style12mq_waterTab.css">
+    <link rel="stylesheet" href="styles/style13_endTab.css">
+    <link rel="stylesheet" href="styles/style13mq_endTab.css">
+    <link rel="stylesheet" href="styles/style14_infoPage.css">
+    <link rel="stylesheet" href="styles/style14mq_infoPage.css">
+
+    <script src="JS/func_images.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+
+<body onLoad="MM_preloadImages('images/logo_my_active.png','images/icon_info_active.png','images/control_play_active.png',
+'images/control_restart_active.png','images/control_back_active.png','images/control_reload_active.png', 
+'images/control_next_active.png','images/icon_yes_active.png', 'images/icon_yes_gray.png', 
+'images/icon_no_active.png', 'images/icon_no_active.png')">
+
+
+
+    <header class="headerPage">
+
+        <div class="headerLogo">
+            <a href="index.html" onMouseOut="MM_swapImgRestore()"
+                onMouseOver="MM_swapImage('id_myLogo_img','','images/logo_my_active.png',1)">
+                <img id="id_myLogo_img" src="images/logo_my.png" alt="Logo">
+            </a>
+        </div>
+
+        <!---->
+        <div class="headerTitle">
+            <div class="headerTitleFirst">
+                <h1>Över&shy;lev&shy;nads&shy;appen</h1>
+            </div>
+            <div class="headerTitleSecond">
+                <h4>Hur rustad är du för en samhällskris?</h4>
+            </div>
+        </div>
+
+        <div class="headerButtons">
+
+            <div class="headerButtonsInfo">
+
+                <a href="infoPage.html" onMouseOut="MM_swapImgRestore()"
+                    onMouseOver="MM_swapImage('id_info_img','','images/icon_info_active.png',1)">
+                    <img id="id_info_img" src="images/icon_info.png" width="auto" alt="Info button">
+                </a>
+
+            </div>
+
+            <div class="headerButtonsFlag">
+                <fieldset>
+                    <select name="sprak" id="sprak">
+                        <option value="swedish"><img src="images/icon_SE.png" alt="swedish flag"></option>
+                        <option value="english"><img src="images/icon_GB.png" alt="brittish flag"></option>
+                        <option value="greek"><img src="images/icon_GR.png" alt="greek flag"></option>
+                        <option value="german"><img src="images/icon_DE.png" alt="german flag"></option>
+                    </select>
+                </fieldset>
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <div class="wrapperMainAside">
+        <div class="wrapperNavMain">
+            <nav class="navPage">
+
+                <div class="navTab navStart colorActive_Start">
+                    <a href="index.html" class="changePreviousNavLink">
+                        <h4>Start:</h4>
+                        <h5>Välj scenario</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep1 colorActive_Step1">
+                    <a href="step1.html" class="changePreviousNavLink">
+                        <h4>Steg 1:</h4>
+                        <h5>Pengar</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep2 colorActive_Step2">
+                    <a href="step2.html" class="changePreviousNavLink">
+                        <h4>Steg 2:</h4>
+                        <h5>Elek&shy;tricitet</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep3 navCurrent colorActive_Step3">
+                    <a href="#">
+                        <!-- <a href="step3.html">  -->
+                        <h4>Steg 3:</h4>
+                        <h5>Upp&shy;värmning</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep4 colorInactive_Step4">
+                    <a href="#">
+                        <!-- <a href="step4.html">  -->
+                        <h4>Steg 4:</h4>
+                        <h5>Mat</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep5 colorInactive_Step5">
+                    <a href="#">
+                        <!-- <a href="step5.html"> -->
+                        <h4>Steg 5:</h4>
+                        <h5>Vatten</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navEnd colorInactive_End">
+                    <a href="#">
+                        <!-- <a href="result.html"> -->
+                        <h4>Slut:</h4>
+                        <h5>Ditt Resultat</h5>
+                    </a>
+                </div>
+
+            </nav>
+            <!--end of navPage-->
+
+            <main class="mainPage colorActive_Step3">
+
+                <div class="mainGeneral">
+
+                    <!-- only in index.html
+                    <div class="mainGeneralGreeting">
+                        <h3>Kan du överleva en samhällskris?</h3>
+                        <h3>Hur länge och hur bra?</h3>
+                        <h3>Testa dej själv i 5 steg!</h3>
+                    </div>-->
+
+                    <!-- only in Step1-Step5.html and Result.html-->
+                    <div class="mainGeneralInfo">
+                        <div class="mainGeneralInfoTitle">
+                            <h5>DITT SCENARIO</h5>
+                        </div>
+                        <div class="mainGeneralInfoBody">
+                            <div class="mainGeneralInfoBodyPre">
+                                <h5>Du har angett:</h5>
+                            </div>
+                            <div class="mainGeneralInfoBodyConditions">
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att banksystemet
+                                        <span class="nobr">
+                                            <span id="money_spanON_step3">
+                                                <span id="money_span_step3">inte</span> fungerar!
+                                            </span>
+                                            <span id="money_spanOFF_step3">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att elnätet
+                                        <span class="nobr">
+                                            <span id="el_spanON_step3">
+                                                <span id="el_span_step3">inte</span> fungerar!
+                                            </span>
+                                            <span id="el_spanOFF_step3">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att oljemarknaden
+                                        <span class="nobr">
+                                            <span id="heatOil_spanON_step3">
+                                                <span id="heatOil_span_step3">inte</span> fungerar!
+                                            </span>
+                                            <span id="heatOil_spanOFF_step3">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att fjärrvärme&shy;/naturgasnätet&shy;/pellets&shy;marknaden
+                                        <span class="nobr">
+                                            <span id="heatOther_spanON_step3">
+                                                <span id="heatOther_span_step3">inte</span> fungerar!
+                                            </span>
+                                            <span id="heatOther_spanOFF_step3">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att livsmedelskedjan
+                                        <span class="nobr">
+                                            <span id="food_spanON_step3">
+                                                <span id="food_span_step3">inte</span> fungerar!
+                                            </span>
+                                            <span id="food_spanOFF_step3">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att vattenledningsnätet
+                                        <span class="nobr">
+                                            <span id="water_spanON_step3">
+                                                <span id="water_span_step3">inte</span> fungerar!
+                                            </span>
+                                            <span id="water_spanOFF_step3">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mainGeneralInstructions">
+
+                        <!-- only in index.html 
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>Välj scenario och klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_play_mini.png" alt="Play mini icon">
+                            </div>
+                        </div>-->
+
+                        <!-- only in index.html and step1-step5.html -->
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>Fyll i dina svar och klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_next_mini.png" alt="Next mini icon">
+                            </div>
+                        </div>
+
+                        <!-- only in result.html 
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>För att börja om klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_restart_mini.png" alt="Restart mini icon">
+                            </div>
+                        </div>-->
+
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>För mer information klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/icon_info_mini.png" alt="Info mini icon">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- only in index.html-->
+                    <!-- se index.html 
+                    <div class="mainGeneralChooseScenario">
+                        <h2>Scenario-val in index.html</h2>
+                    </div>-->
+
+                    <!-- only in result.html-->
+                    <!-- se result.html
+                    <div class="mainGeneralResult">
+                        <h2>RESULTS in results.html</h2>
+                    </div> -->
+
+                </div>
+
+
+
+                <!-- only in step1-step5.html-->
+                <!-- se step1-step5.html -->
+                <div class="mainContent">
+
+                    <div class="mainContentTopLine">
+                        <hr class="greenLine">
+                    </div>
+
+
+
+                    <div class="mainContentLeft">
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                        <form action="action_Page.php" method="post" id="form_heatDebit">
+                            <h2>Ditt Upp&shy;värmnings&shy;system</h2>
+
+                            <!-- <h3>Utgifter för värme</h3> -->
+
+                            <!-- <h3>Bas&shy;resurser</h3> -->
+                            <fieldset class="basruta">
+                                <legend>Bas&shy;resurser</legend>
+                                <fieldset id="fieldset_heatDebitSpend">
+
+                                    <h4>PENGAR</h4>
+                                    <label>
+                                        Angivna utgifter för uppvärmning: <span class="smallText">*exkl.
+                                            elförbrukning</span>
+                                        <input type="text" id="heatDebitSpend_cost" name="heatDebitSpend_cost"
+                                            class="heatOilANDheatOther_scenario" readonly />
+                                        SEK/mån <a href="step1.html" class="changePreviousFormLink"> Ändra</a>
+                                    </label>
+
+                                    <label>
+                                        Summa utgifter enligt nedan:
+                                        <input type="text" id="heatDebitSpend_sumUnitCost"
+                                            name="heatDebitSpend_sumUnitCost" class="" readonly />
+                                        SEK/mån
+                                    </label>
+
+                                    <!-- <label>
+                                    varav
+                                    <input type="text" id="heatDebitSpend_system1" name="heatDebitSpend_system1" />
+                                    SEK/mån för primära systemet
+                                </label>
+
+                                <label>
+                                    och
+                                    <input type="text" id="heatDebitSpend_system2" name="heatDebitSpend_system2"
+                                        readonly />
+                                    SEK/mån för sekundära systemet
+                                </label> -->
+
+                                </fieldset>
+
+                                <fieldset id="fieldset_heatDebitEnergy">
+
+                                    <h4>EL</h4>
+
+                                    <label>
+                                        Angiven elförbrukning, cirkulationspump:
+                                        <input type="text" id="heatDebitEnergy_circulationPumpEl"
+                                            name="heatDebitEnergy_circulationPumpEl" class="circulationPump_systemUnit"
+                                            readonly />
+                                        kWh/dag <a href="step2.html" class="changePreviousFormLink"> Ändra</a>
+                                    </label>
+
+                                    <label>
+                                        Angiven elförbrukning, elvärme:
+                                        <input type="text" id="heatDebitEnergy_elHeaterEl"
+                                            name="heatDebitEnergy_elHeaterEl" class="elHeater_systemUnit" readonly />
+                                        kWh/dag <a href="step2.html" class="changePreviousFormLink"> Ändra</a>
+                                    </label>
+
+                                    <label>
+                                        Summa elförbrukning enligt nedan:
+                                        <input type="text" id="heatDebitEnergy_sumUnitEl"
+                                            name="heatDebitEnergy_sumUnitEl" readonly />
+                                        kWh/dag
+                                    </label>
+
+                                </fieldset>
+
+                            </fieldset>
+
+
+                            <h3>Välj ditt system</h3>
+
+                            <fieldset id="fieldset_heatDebitSystem1">
+
+                                <div id="div_heatDebitSystem1">
+                                    <h4>VILKEN TYP AV UPPVÄRMNINGS&shy;SYSTEM HAR DU?</h4>
+
+                                    <!-- <input type="radio" id="heatDebitSystem1_null" name="heatDebitSystem1"
+                                        value="nullValue" checked="checked"> -->
+
+
+                                    <div class="squareRadioLine">
+                                        <input type="radio" id="heatDebitSystem1_none" name="heatDebitSystem1"
+                                            value="none" checked="checked">
+                                        <label for="heatDebitSystem1_none">
+                                            <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                            <span>Har
+                                                inget&nbsp;</span><span>vattenburet&nbsp;</span><span>uppvärmnings&shy;system!</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="squareRadioLine">
+                                        <input type="radio" id="heatDebitSystem1_District" name="heatDebitSystem1"
+                                            value="District"
+                                            class="circulationPumpEl_scenario cirulationPump_systemUnit">
+                                        <label for="heatDebitSystem1_District">
+                                            <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                            <span>Fjärrvärme</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="squareRadioLine">
+                                        <input type="radio" id="heatDebitSystem1_Gas" name="heatDebitSystem1"
+                                            value="Gas" class="circulationPumpEl_scenario cirulationPump_systemUnit">
+                                        <label for="heatDebitSystem1_Gas">
+                                            <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                            <span>Gaspanna&nbsp;</span><span>- Naturgas</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="squareRadioLine">
+                                        <input type="radio" id="heatDebitSystem1_Pellets" name="heatDebitSystem1"
+                                            value="Pellets"
+                                            class="circulationPumpEl_scenario cirulationPump_systemUnit">
+                                        <label for="heatDebitSystem1_Pellets">
+                                            <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                            <span>Pelletspanna&nbsp;</span><span>- Bränslepellets</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="squareRadioLine">
+                                        <input type="radio" id="heatDebitSystem1_Oil" name="heatDebitSystem1"
+                                            value="Oil" class="circulationPumpEl_scenario cirulationPump_systemUnit">
+                                        <label for="heatDebitSystem1_Oil">
+                                            <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                            <span>Oljepanna&nbsp;</span><span>- Eldningsolja</span>
+                                        </label>
+                                    </div>
+
+
+                                    <div class="squareRadioLine">
+                                        <input type="radio" id="heatDebitSystem1_El" name="heatDebitSystem1" value="El"
+                                            class="elHeaterEl_scenario circulationPumpEl_scenario cirulationPump_systemUnit elHeater_systemUnit">
+                                        <label for="heatDebitSystem1_El">
+                                            <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                            <span>Elpanna&nbsp;</span><span>- Elvärme</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="squareRadioLine">
+                                        <input type="radio" id="heatDebitSystem1_Sun" name="heatDebitSystem1"
+                                            value="Sun" class="circulationPumpEl_scenario cirulationPump_systemUnit">
+                                        <label for="heatDebitSystem1_Sun">
+                                            <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                            <span>Solfångare&nbsp;</span><span>- Solvärme</span>
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </fieldset>
+
+
+                            <fieldset id="fieldset_heatDebitSystem2">
+
+                                <h4>HAR DU ETT SEKUNDÄRT UPP&shy;VÄRMNINGS&shy;SYSTEM?</h4>
+
+                                <div class="squareRadioLine">
+
+                                    <input type="radio" id="heatDebitSystem2_addTrue" name="heatDebitSystem2_add"
+                                        value="true">
+                                    <label for="heatDebitSystem2_addTrue">
+                                        <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                        JA
+                                    </label>
+
+                                    <input type="radio" id="heatDebitSystem2_addFalse" name="heatDebitSystem2_add"
+                                        value="false" checked="checked">
+                                    <label for="heatDebitSystem2_addFalse">
+                                        <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                        NEJ
+                                    </label>
+
+                                </div>
+
+
+                                <div id="div_heatDebitSystem2">
+
+                                    <h4>VÄLJ ETT SEKUNDÄRT SYSTEM NEDAN ELLER BOCKA FÖR "NEJ" OVAN:</h4>
+
+                                    <input type="radio" id="heatDebitSystem2_none" name="heatDebitSystem2" value="none"
+                                        checked="checked">
+
+                                    <div class="squareRadioLine">
+
+                                        <input type="radio" id="heatDebitSystem2_El2" name="heatDebitSystem2"
+                                            value="El2" class="elHeaterEl_scenario elHeater_systemUnit">
+                                        <label for="heatDebitSystem2_El2">
+                                            <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                            <span>El-element&nbsp;</span><span>- Elvärme</span>
+                                        </label>
+
+                                    </div>
+
+                                    <div class="squareRadioLine">
+
+                                        <input type="radio" id="heatDebitSystem2_Wood" name="heatDebitSystem2"
+                                            value="Wood">
+                                        <label for="heatDebitSystem2_Wood">
+                                            <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                            <span>VedKamin&nbsp;</span><span>- Ved</span>
+                                        </label>
+
+                                    </div>
+
+                                    <div class="squareRadioLine">
+
+                                        <input type="radio" id="heatDebitSystem2_Sun2" name="heatDebitSystem2"
+                                            value="Sun2">
+                                        <label for="heatDebitSystem2_Sun2">
+                                            <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                            <span>Solfångare&nbsp;</span><span>-
+                                                Solvärme&nbsp;</span><span>(endast&nbsp;</span><span>för&nbsp;</span><span>varmvatten)</span>
+                                        </label>
+
+                                    </div>
+
+                                    <div class="squareRadioLine">
+
+                                        <input type="radio" id="heatDebitSystem2_El3" name="heatDebitSystem2"
+                                            value="El3" class="elHeaterEl_scenario elHeater_systemUnit">
+                                        <label for="heatDebitSystem2_El3">
+                                            <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                            <span>Varmvatten-</span><span>beredare&nbsp;</span><span>-
+                                                Elvärme</span>
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+                            </fieldset>
+
+
+
+                            <h3>Primära Värmekällan</h3>
+
+                            <fieldset class="primaryHeatSource" id="fieldset_heatDebitDistrict">
+                                <h4>FJÄRRVÄRME</h4>
+
+                                <label>
+                                    Månads&shy;kostnad, enligt ovan:
+                                    <input type="text" id="heatDebitDistrict_unitCost" class="heatOther_scenario"
+                                        name="heatDebitDistrict_unitCost" readonly />
+                                    SEK/mån
+                                </label>
+
+                                <label>
+                                    fast kostnad:
+                                    <input type="text" id="heatDebitDistrict_fixedCost" class="heatOther_scenario"
+                                        name="heatDebitDistrict_fixedCost" value="440" />
+                                    SEK/mån
+                                </label>
+
+                                <label>
+                                    rörlig kostnad
+                                    <input type="text" id="heatDebitDistrict_variableCost" class="heatOther_scenario"
+                                        name="heatDebitDistrict_variableCost" value="0.65" />
+                                    SEK/kWh
+                                </label>
+
+                                <label>
+                                    El till circulationspump, enligt ovan:
+                                    <input type="text" id="heatDebitDistrict_circulationPumpUnitEl"
+                                        name="heatDebitDistrict_circulationPumpUnitEl" class="heatOther_scenario"
+                                        readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    Tillgänglig värme
+                                    <input type="text" id="heatDebitDistrict_kWhDaily" name="heatDebitDistrict_kWhDaily"
+                                        class="heatOther_scenario" readonly />
+                                    kWh/dag
+                                </label>
+
+                            </fieldset>
+
+
+
+                            <fieldset class="primaryHeatSource" id="fieldset_heatDebitGas">
+                                <h4>GASPANNA - NATURGAS</h4>
+
+                                <label>
+                                    Månads&shy;kostnad, enligt ovan:
+                                    <input type="text" id="heatDebitGas_unitCost" name="heatDebitGas_unitCost"
+                                        class="heatOther_scenario" readonly />
+                                    SEK/mån
+                                </label>
+
+                                <label>
+                                    El till circulationspump, enligt ovan:
+                                    <input type="text" id="heatDebitGas_circulationPumpUnitEl"
+                                        name="heatDebitGas_circulationPumpUnitEl" class="heatOther_scenario" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    fast kostnad:
+                                    <input type="text" id="heatDebitGas_fixedCost" name="heatDebitGas_fixedCost"
+                                        value="70" class="heatOther_scenario" />
+                                    SEK/mån
+                                </label>
+
+                                <label>
+                                    rörlig kostnad:
+                                    <input type="text" id="heatDebitGas_variableCost" name="heatDebitGas_variableCost"
+                                        value="0.45" class="heatOther_scenario" />
+                                    SEK/kWh
+                                </label>
+
+                                <label>
+                                    Verkningsgrad, panna:
+                                    <input type="text" id="heatDebitGas_efficiency" name="heatDebitGas_efficiency"
+                                        value="90" />
+                                    %
+                                </label>
+
+                                <label>
+                                    Tillgänglig värme:
+                                    <input type="text" id="heatDebitGas_kWhDaily" name="heatDebitGas_kWhDaily"
+                                        class="heatOther_scenario" readonly />
+                                    kWh/dag
+                                </label>
+
+                            </fieldset>
+
+
+
+                            <fieldset class="primaryHeatSource" id="fieldset_heatDebitPellets">
+                                <h4>PELLETSPANNA - BRÄNSLEPELLETS</h4>
+
+                                <label>
+                                    Månads&shy;kostnad, enligt ovan:
+                                    <input type="text" id="heatDebitPellets_unitCost" name="heatDebitPellets_unitCost"
+                                        class="heatOther_scenario" readonly />
+                                    SEK/mån
+                                </label>
+
+                                <label>
+                                    El till circulationspump, enligt ovan:
+                                    <input type="text" id="heatDebitPellets_circulationPumpUnitEl"
+                                        name="heatDebitPellets_circulationPumpUnitEl" class="heatOther_scenario"
+                                        readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    Pris:
+                                    <input type="text" id="heatDebitPellets_price" name="heatDebitPellets_price"
+                                        class="heatOther_scenario" value="3" />
+                                    SEK/kg
+                                </label>
+
+                                <label>
+                                    Värmevärde:
+                                    <input type="text" id="heatDebitPellets_MJcalorific"
+                                        name="heatDebitPellets_MJcalorific" value="18" />
+                                    MJ/kg
+                                </label>
+
+                                <label>
+                                    Verkningsgrad, panna:
+                                    <input type="text" id="heatDebitPellets_efficiency"
+                                        name="heatDebitPellets_efficiency" value="75" />
+                                    %
+                                </label>
+
+                                <label>
+                                    Tillgänglig värme, från köp:
+                                    <input type="text" id="heatDebitPellets_kWhDaily" name="heatDebitPellets_kWhDaily"
+                                        class="heatOther_scenario" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    Pellets&shy;lager:
+                                    <input type="text" id="heatDebitPellets_kgStorage"
+                                        name="heatDebitPellets_kgStorage" />
+                                    kg
+                                </label>
+
+                                <label>
+                                    Tillgänglig värme, från lager:
+                                    <input type="text" id="heatDebitPellets_kWhStorage"
+                                        name="heatDebitPellets_kWhStorage" readonly />
+                                    kWh
+                                </label>
+
+                            </fieldset>
+
+
+
+
+                            <fieldset class="primaryHeatSource" id="fieldset_heatDebitOil">
+
+                                <h4>OLJEPANNA - ELDNINGSOLJA</h4>
+
+                                <label>
+                                    Månads&shy;kostnad, enligt ovan:
+                                    <input type="text" id="heatDebitOil_unitCost" name="heatDebitOil_unitCost"
+                                        class="heatOil_scenario" readonly />
+                                    SEK/mån
+                                </label>
+
+                                <label>
+                                    El till circulationspump, enligt ovan:
+                                    <input type="text" id="heatDebitOil_circulationPumpUnitEl"
+                                        name="heatDebitOil_circulationPumpUnitEl" class="heatOil_scenario" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    Pris:
+                                    <input type="text" id="heatDebitOil_price" name="heatDebitOil_price"
+                                        class="heatOil_scenario" value="9.446" />
+                                    SEK/liter
+                                </label>
+
+                                <label>
+                                    Densitet:
+                                    <input type="text" id="heatDebitOil_density" name="heatDebitOil_density"
+                                        value="830" />
+                                    kg/m3
+                                </label>
+
+                                <label>
+                                    Värmevärde:
+                                    <input type="text" id="heatDebitOil_MJcalorific" name="heatDebitOil_MJcalorific"
+                                        value="43" />
+                                    MJ/kg
+                                </label>
+
+                                <label>
+                                    Verkningsgrad, panna:
+                                    <input type="text" id="heatDebitOil_efficiency" name="heatDebitOil_efficiency"
+                                        value="90" />
+                                    %
+                                </label>
+
+                                <label>
+                                    Tillgänglig värme, från köp:
+                                    <input type="text" id="heatDebitOil_kWhDaily" name="heatDebitOil_kWhDaily"
+                                        class="heatOil_scenario" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    Olje&shy;lager:
+                                    <input type="text" id="heatDebitOil_literStorage"
+                                        name="heatDebitOil_literStorage" />
+                                    liter
+                                </label>
+
+                                <label>
+                                    Tillgänglig värme, från lager:
+                                    <input type="text" id="heatDebitOil_kWhStorage" name="heatDebitOil_kWhStorage"
+                                        readonly />
+                                    kWh
+                                </label>
+
+                            </fieldset>
+
+
+
+                            <fieldset class="primaryHeatSource" id="fieldset_heatDebitEl">
+                                <h4>ELPANNA - ELVÄRME</h4>
+
+                                <!-- <label>
+                                    Angiven el, Luft&shy;uppvärmning:
+                                    <input type="text" id="heatDebitEl_airHeatingEl" name="heatDebitEl_airHeatingEl" 
+                                    class="el_scenario" readonly />
+                                    kWh/dag 
+                                </label> -->
+
+                                <label>
+                                    El till circulationspump, enligt ovan:
+                                    <input type="text" id="heatDebitEl_circulationPumpUnitEl"
+                                        name="heatDebitEl_circulationPumpUnitEl" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    El till uppvärmning, enligt ovan:
+                                    <input type="text" id="heatDebitEl_elHeaterUnitEl" name="heatDebitEl_elHeaterUnitEl"
+                                        readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    Verkningsgrad, panna:
+                                    <input type="text" id="heatDebitEl_efficiency" name="heatDebitEl_efficiency"
+                                        value="99" />
+                                    %
+                                </label>
+
+                                <!-- <label>
+                                    Tillgänglig luftvärme:
+                                    <input type="text" id="heatDebitEl_kWhDailyAir" name="heatDebitEl_kWhDailyAir" 
+                                    class="el_scenario" readonly />
+                                    kWh/dag
+                                </label> -->
+
+                                <label>
+                                    Tillgänglig värme:
+                                    <input type="text" id="heatDebitEl_kWhDaily" name="heatDebitEl_kWhDaily" class=""
+                                        readonly />
+                                    kWh/dag
+                                </label>
+
+                            </fieldset>
+
+
+
+                            <fieldset class="primaryHeatSource ofardigtStycke" id="fieldset_heatDebitSun">
+                                <h4>SOLFÅNGARE - SOLVÄRME</h4>
+
+                                <label>
+                                    El till circulationspump, enligt ovan:
+                                    <input type="text" id="heatDebitSun_circulationPumpUnitEl"
+                                        name="heatDebitSun_circulationPumpUnitEl" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    Yta, paneler:
+                                    <input type="text" id="heatDebitSun_panelArea" name="heatDebitSun_panelArea" />
+                                    m2
+                                </label>
+
+                                <label>
+                                    Verkningsgrad, paneler:
+                                    <input type="text" id="heatDebitSun_panelEfficiency"
+                                        name="heatDebitSun_panelEfficiency" value="61" />
+                                    %
+                                </label>
+
+                                <label>
+                                    Solintrålning per dag, vinter:
+                                    <input type="text" id="heatDebitSun_irradiationDaily"
+                                        name="heatDebitSun_irradiationDaily" value="0.7" />
+                                    kWh/m2
+                                </label>
+
+                                <label>
+                                    Panelens värmekapacitet:
+                                    <input type="text" id="heatDebitSun_panelCapacity" name="heatDebitSun_panelCapacity"
+                                        readonly />
+                                    kWh/dag
+                                </label>
+
+
+                                <label>
+                                    Tankvolym:
+                                    <input type="text" id="heatDebitSun_tankVolume" name="heatDebitSun_tankVolume" />
+                                    liter
+                                </label>
+
+                                <label>
+                                    Kallvattentemperatur:
+                                    <input type="text" id="heatDebitSun_coldWaterTemp" name="heatDebitSun_coldWaterTemp"
+                                        readonly />
+                                    grader C
+                                </label>
+
+                                <label>
+                                    Driftstemperatur, tank <span class="smallText"> *50-80 grader C</span>:
+                                    <input type="text" id="heatDebitSun_tankTemp" name="heatDebitSun_tankTemp"
+                                        value="55" />
+                                    grader C
+                                </label>
+
+                                <label>
+                                    Tankens värmekapacitet:
+                                    <input type="text" id="heatDebitSun_tankCapacity" name="heatDebitSun_tankCapacity"
+                                        readonly />
+                                    kWh
+                                </label>
+
+                                <label>
+                                    Värmeförlust, tank:
+                                    <input type="text" id="heatDebitSun_heatLosses" name="heatDebitSun_heatLosses"
+                                        value="15" />
+                                    %
+                                </label>
+
+                                <label>
+                                    Tillgänglig värme:
+                                    <input type="text" id="heatDebitSun_kWhDaily" name="heatDebitSun_kWhDaily"
+                                        readonly />
+                                    kWh/dag
+                                </label>
+
+                            </fieldset>
+
+                            <h3>Sekundära Värmekällan</h3>
+
+
+                            <fieldset class="secondaryHeatSource" id="fieldset_heatDebitEl2">
+                                <h4>EL-ELEMENT</h4>
+
+                                <label>
+                                    El till uppvärmning, enligt ovan:
+                                    <input type="text" id="heatDebitEl2_elHeaterUnitEl"
+                                        name="heatDebitEl2_elHeaterUnitEl" readonly />
+                                    kWh/dag
+                                </label>
+
+
+                                <label>
+                                    Verkningsgrad:
+                                    <input type="text" id="heatDebitEl2_efficiency" name="heatDebitEl2_efficiency"
+                                        value="100" />
+                                    %
+                                </label>
+
+                                <label>
+                                    Tillgänglig luftvärme:
+                                    <input type="text" id="heatDebitEl2_kWhDailyAir" name="heatDebitEl2_kWhDailyAir"
+                                        readonly />
+                                    kWh/dag
+                                </label>
+
+
+                            </fieldset>
+
+                            <fieldset class="secondaryHeatSource" id="fieldset_heatDebitWood">
+                                <h4>VEDKAMIN - VED</h4>
+
+                                <label>
+                                    Tillgång per dag:
+                                    <input type="text" id="heatDebitWood_kgAccess" name="heatDebitWood_kgAccess"
+                                        value="10" />
+                                    kg/dag
+                                </label>
+
+                                <label>
+                                    Värmevärde:
+                                    <input type="text" id="heatDebitWood_MJcalorific" name="heatDebitWood_MJcalorific"
+                                        value="15" />
+                                    MJ/kg
+                                </label>
+
+                                <!-- <label>
+                                    Värmevärde:
+                                    <input type="text" id="heatDebitWood_calorific" name="heatDebitWood_calorific"
+                                        value="" />
+                                    kWh/kg
+                                </label> -->
+
+                                <label>
+                                    Verkningsgrad, förbränning:
+                                    <input type="text" id="heatDebitWood_efficiency" name="heatDebitWood_efficiency"
+                                        value="80" />
+                                    %
+                                </label>
+
+                                <label>
+                                    Tillgänglig värme:
+                                    <input type="text" id="heatDebitWood_kWhDailyAir" name="heatDebitWood_kWhDailyAir"
+                                        readonly />
+                                    kWh
+                                </label>
+
+                            </fieldset>
+
+
+                            <fieldset class="secondaryHeatSource ofardigtStycke" id="fieldset_heatDebitSun2">
+                                <h4>SOLFÅNGARE - SOLVÄRME (endast för varmvatten)</h4>
+
+                                <label>
+                                    Yta, paneler:
+                                    <input type="text" id="heatDebitSun2_panelArea" name="heatDebitSun2_panelArea" />
+                                    m2
+                                </label>
+
+                                <label>
+                                    Verkningsgrad, paneler:
+                                    <input type="text" id="heatDebitSun2_panelEfficiency"
+                                        name="heatDebitSun2_panelEfficiency" value="61" />
+                                    %
+                                </label>
+
+                                <label>
+                                    Solintrålning per dag, vinter:
+                                    <input type="text" id="heatDebitSun2_irradiationDaily"
+                                        name="heatDebitSun2_irradiationDaily" value="0.7" />
+                                    kWh/m2
+                                </label>
+
+                                <label>
+                                    Panelens värmekapacitet:
+                                    <input type="text" id="heatDebitSun2_panelCapacity"
+                                        name="heatDebitSun2_panelCapacity" readonly />
+                                    kWh/dag
+                                </label>
+
+
+                                <label>
+                                    Tankvolym:
+                                    <input type="text" id="heatDebitSun2_tankVolume" name="heatDebitSun2_tankVolume" />
+                                    liter
+                                </label>
+
+                                <label>
+                                    Kallvattentemperatur:
+                                    <input type="text" id="heatDebitSun2_coldWaterTemp"
+                                        name="heatDebitSun2_coldWaterTemp" readonly />
+                                    grader C
+                                </label>
+
+                                <label>
+                                    Driftstemperatur, tank <span class="smallText"> *50-80 grader C</span>:
+                                    <input type="text" id="heatDebitSun2_tankTemp" name="heatDebitSun2_tankTemp"
+                                        value="55" />
+                                    grader C
+                                </label>
+
+                                <label>
+                                    Tankens värmekapacitet:
+                                    <input type="text" id="heatDebitSun2_tankCapacity" name="heatDebitSun2_tankCapacity"
+                                        readonly />
+                                    kWh
+                                </label>
+
+                                <label>
+                                    Värmeförlust, tank:
+                                    <input type="text" id="heatDebitSun2_heatLosses" name="heatDebitSun2_heatLosses"
+                                        value="15" />
+                                    %
+                                </label>
+
+                                <label>
+                                    Tillgänglig värme:
+                                    <input type="text" id="heatDebitSun2_kWhDailyWater"
+                                        name="heatDebitSun2_kWhDailyWater" readonly />
+                                    kWh/dag
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="secondaryHeatSource" id="fieldset_heatDebitEl3">
+                                <h4>ELEKTRISK VARMVATTENBEREDARE</h4>
+
+                                <label>
+                                    El till uppvärmning, enligt ovan:
+                                    <input type="text" id="heatDebitEl3_elHeaterUnitEl"
+                                        name="heatDebitEl3_elHeaterUnitEl" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    Verkningsgrad:
+                                    <input type="text" id="heatDebitEl3_efficiency" name="heatDebitEl3_efficiency"
+                                        value="100" />
+                                    %
+                                </label>
+
+                                <label>
+                                    Tillgängligt varmvatten:
+                                    <input type="text" id="heatDebitEl3_kWhDailyWater" name="heatDebitEl3_kWhDailyWater"
+                                        readonly />
+                                    kWh/dag
+                                </label>
+
+
+                            </fieldset>
+
+
+
+
+
+                            <h3>Total Värme&shy;tillgång</h3>
+                            <!-- <h4>PRIMÄRT + SEKUNDÄRT</h4> -->
+
+                            <div class="totalruta">
+
+                                <fieldset id="fieldset_heatDebitTotal">
+
+                                    <label>
+                                        Värme, ospecificerad:
+                                        <input type="text" id="heatDebitTotal_kWhDaily" name="heatDebitTotal_kWhDaily"
+                                            readonly />
+                                        kWh/dag
+                                    </label>
+
+                                    <label>
+                                        Endast luftvärme:
+                                        <input type="text" id="heatDebitTotal_kWhDailyAir"
+                                            name="heatDebitTotal_kWhDailyAir" readonly />
+                                        kWh/dag
+                                    </label>
+
+                                    <label>
+                                        Endast varmvatten:
+                                        <input type="text" id="heatDebitTotal_kWhDailyWater"
+                                            name="heatDebitTotal_kWhDailyWater" readonly />
+                                        kWh/dag
+                                    </label>
+
+
+                                    <label>
+                                        Bränslelager:
+                                        <input type="text" id="heatDebitTotal_kWhStorage"
+                                            name="heatDebitTotal_kWhStorage" readonly />
+                                        kWh
+                                    </label>
+
+                                </fieldset>
+
+                            </div>
+
+
+                        </form>
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                    </div>
+
+
+
+                    <div class="mainContentMiddleLine">
+                        <hr class="greenLine">
+                    </div>
+
+
+
+                    <div class="mainContentRight">
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                        <form action="action_Page.php" method="post" id="form_heatCredit">
+                            <h2>Ditt Upp&shy;värmnings&shy;behov</h2>
+
+                            <fieldset id="fieldset_heatCreditPeople" class="basruta">
+                                <legend> Hus&shy;hållet </legend>
+                                <label>
+                                    Antal personer i hushållet:
+                                    <input type="text" id="heatCreditPeople_count" name="heatCreditPeople_count"
+                                        readonly />
+                                    <a href="step1.html" class="changePreviousFormLink"> Ändra</a>
+                                </label>
+                            </fieldset>
+
+
+                            <h3>Luftuppvärmning</h3>
+
+                            <fieldset id="fieldset_heatCreditRoom" class="hotWater ofardigtStycke">
+
+                                <label>
+                                    Takhöjd:
+                                    <input type="text" id="heatCreditRoom_wallHeight"
+                                        name="heatCreditRoom_wallHeight" />
+                                    m
+                                </label>
+
+                                <label>
+                                    Längd, ytterväggar:
+                                    <input type="text" id="heatCreditRoom_wallLength"
+                                        name="heatCreditRoom_wallLength" />
+                                    m
+                                </label>
+
+                                <label>
+                                    Golvyta:
+                                    <input type="text" id="heatCreditRoom_floorArea" name="heatCreditRoom_floorArea" />
+                                    m2
+                                </label>
+
+                                <label>
+                                    Area, fönster:
+                                    <input type="text" id="heatCreditRoom_windowArea"
+                                        name="heatCreditRoom_windowArea" />
+                                    m2
+                                </label>
+
+                                <label>
+                                    Area, ytterdörr:
+                                    <input type="text" id="heatCreditRoom_doorArea" name="heatCreditRoom_doorArea" />
+                                    m2
+                                </label>
+
+                                <label>
+                                    Area, ytterväggar:
+                                    <input type="text" id="heatCreditRoom_wallArea" name="heatCreditRoom_wallArea"
+                                        readonly />
+                                    m2
+                                </label>
+
+                                <label>
+                                    U-värde, vägg:
+                                    <input type="text" id="heatCreditRoom_wallUvalue" name="heatCreditRoom_wallUvalue"
+                                        value="1" />
+                                    W/m2K
+                                </label>
+
+                                <label>
+                                    U-värde, golv:
+                                    <input type="text" id="heatCreditRoom_floorUvalue" name="heatCreditRoom_floorUvalue"
+                                        value="1" />
+                                    W/m2K
+                                </label>
+
+                                <label>
+                                    U-värde, tak:
+                                    <input type="text" id="heatCreditRoom_roofUvalue" name="heatCreditRoom_roofUvalue"
+                                        value="0.7" />
+                                    W/m2K
+                                </label>
+
+                                <label>
+                                    U-värde,dörr:
+                                    <input type="text" id="heatCreditRoom_doorUvalue" name="heatCreditRoom_doorUvalue"
+                                        value="2.4" />
+                                    W/m2K
+                                </label>
+
+                                <label>
+                                    U-värde, fönster:
+                                    <input type="text" id="heatCreditRoom_windowUvalue"
+                                        name="heatCreditRoom_windowUvalue" value="2.5" />
+                                    W/m2K
+                                </label>
+
+                                <label>
+                                    Utetemperatur, snitt:
+                                    <input type="text" id="heatCreditRoom_outsideTemp"
+                                        name="heatCreditRoom_outsideTemp" />
+                                    grader C
+                                </label>
+
+                                <label>
+                                    Optimal rumstemperatur:
+                                    <input type="text" id="heatCreditRoom_roomTemp" name="heatCreditRoom_roomTemp"
+                                        value="21" readonly />
+                                    grader C
+                                </label>
+
+                            </fieldset>
+
+                            <h3>Varmvatten</h3>
+
+
+                            <fieldset id="fieldset_heatCreditShower" class="hotWater ofardigtStycke">
+
+                                <h4>DUSCH</h4>
+
+                                <!-- <label>
+                                    Antal personer i hushållet:
+                                    <input type="text" id="heatCreditShower_peopleCount"
+                                        name="heatCreditShower_peopleCount" readonly />
+                                    st <a href="step1.html" class="changePreviousFormLink">Ändra</a>
+                                </label> -->
+
+                                <label>
+                                    Duschtid:
+                                    <input type="text" id="heatCreditShower_showerTime"
+                                        name="heatCreditShower_showerTime" value="10" />
+                                    minuter/person/dag
+                                </label>
+
+                                <label>
+                                    Vattenflöde:
+                                    <input type="text" id="heatCreditShower_waterFlow" name="heatCreditShower_waterFlow"
+                                        value="12" />
+                                    liter/min
+                                </label>
+
+                                <label>
+                                    Volym, per person:
+                                    <input type="text" id="heatCreditShower_literPersonDaily"
+                                        name="heatCreditShower_literPersonDaily" readonly />
+                                    liter/person/dag
+                                </label>
+
+
+                                <!-- <label>
+                                    Volym, totalt:
+                                    <input type="text" id="heatCreditShower_volumeDaily" name="heatCreditShower_volumeDaily"
+                                        readonly />
+                                    liter/dag
+                                </label> -->
+
+
+                                <label>
+                                    Önskad temperatur:
+                                    <input type="text" id="heatCreditShower_temperature"
+                                        name="heatCreditShower_temperature" value="35" />
+                                    grader C
+                                </label>
+
+                                <label>
+                                    Temperatur, kallvatten:
+                                    <input type="text" id="heatCreditShower_coldWaterTemp"
+                                        name="heatCreditShower_coldWaterTemp" required value="10" />
+                                    grader C
+                                </label>
+
+                                <label>
+                                    Värmeförbrukning:
+                                    <input type="text" id="heatCreditShower_kWhDaily" name="heatCreditShower_kWhDaily"
+                                        readonly />
+                                    kWh/dag
+                                </label>
+
+                            </fieldset>
+
+
+                            <fieldset id="fieldset_heatCreditDish" class="hotWater ofardigtStycke">
+                                <h4>DISK</h4>
+
+                                <label>
+                                    Volym, per person:
+                                    <input type="text" id="heatCreditDish_literPersonDaily"
+                                        name="heatCreditDish_literPersonDaily" value="2" />
+                                    liter/person/dag
+                                </label>
+
+                                <!-- <label>
+                                    Volym, totalt:
+                                    <input type="text" id="heatCreditDish_volumeDaily" name="heatCreditDish_volumeDaily" 
+                                    readonly/>
+                                    liter/dag
+                                </label> -->
+
+                                <label>
+                                    Önskad temperatur:
+                                    <input type="text" id="heatCreditDish_temperature"
+                                        name="heatCreditDish_temperature" />
+                                    grader C
+                                </label>
+
+                                <label>
+                                    Värmeförbrukning:
+                                    <input type="text" id="heatCreditDish_kWhDaily" name="heatCreditDish_kWhDaily"
+                                        readonly />
+                                    kWh/dag
+                                </label>
+
+                            </fieldset>
+
+
+                            <fieldset id="fieldset_heatCreditWash" class="hotWater ofardigtStycke">
+                                <h4>KLÄDTVÄTT</h4>
+
+                                <label>
+                                    Volym, per person:
+                                    <input type="text" id="heatCreditWash_literPersonWeekly"
+                                        name="heatCreditWash_literPersonWeekly" value="20" />
+                                    liter/person/vecka
+                                </label>
+
+                                <!-- <label>
+                                    Volym, totalt:
+                                    <input type="text" id="heatCreditWash_volumeWeekly"
+                                        name="heatCreditWash_volumeWeekly" readonly/>
+                                    liter/vecka
+                                </label> -->
+
+                                <label>
+                                    Önskad temperatur:
+                                    <input type="text" id="heatCreditWash_temperature"
+                                        name="heatCreditWash_temperature" />
+                                    grader C
+                                </label>
+
+                                <label>
+                                    Värmeförbrukning:
+                                    <input type="text" id="heatCreditWash_kWhDaily" name="heatCreditWash_kWhDaily"
+                                        readonly />
+                                    kWh/dag
+                                </label>
+
+                            </fieldset>
+
+
+                            <fieldset id="fieldset_heatCreditOther" class="hotWater ofardigtStycke">
+                                <h4>ÖVRIGT VARMVATTEN</h4>
+
+                                <label>
+                                    Volym, övrigt:
+                                    <input type="text" id="heatCreditOther_literWeekly"
+                                        name="heatCreditOther_literWeekly" value="0" />
+                                    liter/vecka
+                                </label>
+
+                                <label>
+                                    Önskad temperatur:
+                                    <input type="text" id="heatCreditOther_temperature"
+                                        name="heatCreditOther_temperature" />
+                                    grader C
+                                </label>
+
+                                <label>
+                                    Värmeförbrukning:
+                                    <input type="text" id="heatCreditOther_kWhDaily" name="heatCreditOther_kWhDaily"
+                                        readonly />
+                                    kWh/dag
+                                </label>
+
+                            </fieldset>
+
+
+                            <h3>Totalt Värmebehov</h3>
+
+                            <div class="totalruta">
+
+                                <fieldset id="fieldset_heatCreditTotal" class="totalruta">
+
+                                    <label>
+                                        Luftuppvärmning:
+                                        <input type="text" id="heatCreditTotal_kWhDailyAir"
+                                            name="heatCreditTotal_kWhDailyAir" readonly />
+                                        kWh/dag
+                                    </label>
+
+
+                                    <label>
+                                        Varmvattenbehov:
+                                        <input type="text" id="heatCreditTotal_kWhDailyWater"
+                                            name="heatCreditTotal_kWhDailyWater" readonly />
+                                        kWh/dag
+                                    </label>
+
+                                </fieldset>
+
+                            </div>
+
+
+                        </form>
+
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                    </div>
+
+
+
+                    <div class="mainContentBottomLine">
+                        <hr class="greenLine">
+                    </div>
+
+                </div>
+                <!--end of mainContent-->
+
+
+                <div class="mainControls">
+
+                    <!-- only in index.html and step1-5.html-->
+                    <div class="mainControlsLeftLine1">
+                        <hr class="greenLine">
+                    </div>
+
+                    <!-- only in result.html
+                    <div class="mainControlsLeftLine2">
+                        <hr class="greenLine">
+                    </div> -->
+
+                    <!-- only in step1-step5.html and result.html-->
+                    <div class="mainControlsButton mainControlsRestart">
+                        <a href="index.html" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_restart_img','','images/control_restart_active.png',1)">
+                            <img id="id_restart_img" src="images/control_restart.png" alt="Restart Button">
+                        </a>
+                    </div>
+
+                    <!-- only in step1-step5.html and result.html-->
+                    <div class="mainControlsButton mainControlsBack">
+                        <a href="step2.html" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_back_img','','images/control_back_active.png',1)">
+                            <img id="id_back_img" src="images/control_back.png" alt="Back Button">
+                        </a>
+                    </div>
+
+                    <!-- only in index.html
+                    <div class="mainControlsStart">
+
+                        <div class="mainControlsStartLeft">
+                            <h3>KLICKA</h>
+                        </div>
+
+                        <div class="mainControlsButton mainControlsStartPlay">
+                            <a href="step1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('id_play_img','','images/control_play_active.png',1)">
+                                <img id="id_play_img" src="images/control_play.png" alt="Play Button">
+                            </a>
+                        </div>
+
+                        <div class="mainControlsStartRight">
+                            <h3>HÄR!</h3>
+                        </div>
+                    </div>-->
+
+                    <!-- only in step1-step5.html -->
+                    <div class="mainControlsButton mainControlsReload">
+                        <a href="#" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_reload_img','','images/control_reload_active.png',1)">
+                            <img id="id_reload_img" src="images/control_reload.png" alt="Reload Button">
+                        </a>
+                    </div>
+
+                    <!-- only in step1-step5.html-->
+                    <div class="mainControlsButton mainControlsNext">
+                        <a href="step4.html" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_next_img','','images/control_next_active.png',1)">
+                            <img id="id_next_img" src="images/control_next.png" alt="Next Button">
+                        </a>
+                    </div>
+
+                    <!-- only in result.html
+                    <div class="mainControlsRightLine2">
+                        <hr class="greenLine">
+                    </div>    -->
+
+                    <!-- only in index.html and step1-5.html-->
+                    <div class="mainControlsRightLine1">
+                        <hr class="greenLine">
+                    </div>
+
+                </div>
+                <!--end of mainControls-->
+
+            </main>
+            <!--end of mainPage-->
+        </div>
+        <!--end of wrapperNavMain-->
+
+
+        <aside class="asidePage">
+            <h4>Externa länkar:</h4>
+        </aside>
+
+
+    </div>
+    <!--end of wrapperMainAside-->
+
+
+
+    <footer class="footerPage">
+
+        <div class="footerInfo">
+            <div class="footerInfoName">
+                <h5> Rebeka Amanatidou</h5>
+            </div>
+            <div class="footerInfoProject">
+                <h5>Projektarbete i kursen Webbprogrammering</h5>
+            </div>
+        </div>
+
+
+        <div class="footerSchool">
+            <div class="footerSchoolLogo">
+                <a target="_blank" href="https://glimnet.se">
+                    <img src="images/logo_glimakra.png" alt="Glimåkra folkhöskola logo">
+                </a>
+            </div>
+            <div class="footerSchoolName">
+                <a target="_blank" href="https://glimnet.se">
+                    <h5>Glimåkra folkhögskola</h5>
+                </a>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!-- <script type="module" src="JS/functions.js"></script> -->
+
+    <script src="JS/func_language.js"></script>
+
+    <script src="JS/step3_dataLoad.js"></script>
+    <script src="JS/func_scenario.js"></script>
+
+    <script src="JS/step3_events.js"></script>
+    <script src="JS/step3_calculate.js"></script>
+
+    <script src="JS/func_controls.js"></script>
+
+</body>
+
+</html>

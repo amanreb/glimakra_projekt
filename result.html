@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultat</title>
+
+    <link rel="stylesheet" href="styles/style1_overall.css">
+    <link rel="stylesheet" href="styles/style1mq_overall.css">
+    <link rel="stylesheet" href="styles/style2_header.css">
+    <link rel="stylesheet" href="styles/style2mq_header.css">
+    <link rel="stylesheet" href="styles/style3_nav.css">
+    <link rel="stylesheet" href="styles/style3mq_nav.css">
+    <link rel="stylesheet" href="styles/style4_mainGeneral.css">
+    <link rel="stylesheet" href="styles/style4mq_mainGeneral.css">
+    <link rel="stylesheet" href="styles/style5_mainControls.css">
+    <link rel="stylesheet" href="styles/style5mq_mainControls.css">
+    <link rel="stylesheet" href="styles/style6_footer.css">
+    <link rel="stylesheet" href="styles/style6mq_footer.css">
+    <link rel="stylesheet" href="styles/style7_startTab.css">
+    <link rel="stylesheet" href="styles/style7mq_startTab.css">
+    <link rel="stylesheet" href="styles/style8_moneyTab.css">
+    <link rel="stylesheet" href="styles/style8mq_moneyTab.css">
+    <link rel="stylesheet" href="styles/style9_electricityTab.css">
+    <link rel="stylesheet" href="styles/style9mq_electricityTab.css">
+    <link rel="stylesheet" href="styles/style10_heatTab.css">
+    <link rel="stylesheet" href="styles/style10mq_heatTab.css">
+    <link rel="stylesheet" href="styles/style11_foodTab.css">
+    <link rel="stylesheet" href="styles/style11mq_foodTab.css">
+    <link rel="stylesheet" href="styles/style12_waterTab.css">
+    <link rel="stylesheet" href="styles/style12mq_waterTab.css">
+    <link rel="stylesheet" href="styles/style13_endTab.css">
+    <link rel="stylesheet" href="styles/style13mq_endTab.css">
+    <link rel="stylesheet" href="styles/style14_infoPage.css">
+    <link rel="stylesheet" href="styles/style14mq_infoPage.css">
+
+    <script src="JS/func_images.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+
+<body onLoad="MM_preloadImages('images/logo_my_active.png','images/icon_info_active.png','images/control_play_active.png',
+'images/control_restart_active.png','images/control_back_active.png','images/control_reload_active.png', 
+'images/control_next_active.png','images/icon_yes_active.png', 'images/icon_yes_gray.png', 
+'images/icon_no_active.png', 'images/icon_no_active.png')">
+
+
+
+    <header class="headerPage">
+
+        <div class="headerLogo">
+            <a href="index.html" onMouseOut="MM_swapImgRestore()"
+                onMouseOver="MM_swapImage('id_myLogo_img','','images/logo_my_active.png',1)">
+                <img id="id_myLogo_img" src="images/logo_my.png" alt="Logo">
+            </a>
+        </div>
+
+        <!---->
+        <div class="headerTitle">
+            <div class="headerTitleFirst">
+                <h1>Över&shy;lev&shy;nads&shy;appen</h1>
+            </div>
+            <div class="headerTitleSecond">
+                <h4>Hur rustad är du för en samhällskris?</h4>
+            </div>
+        </div>
+
+        <div class="headerButtons">
+
+            <div class="headerButtonsInfo">
+
+                <a href="infoPage.html" onMouseOut="MM_swapImgRestore()"
+                    onMouseOver="MM_swapImage('id_info_img','','images/icon_info_active.png',1)">
+                    <img id="id_info_img" src="images/icon_info.png" width="auto" alt="Info button">
+                </a>
+
+            </div>
+
+            <div class="headerButtonsFlag">
+                <fieldset>
+                    <select name="sprak" id="sprak">
+                        <option value="swedish"><img src="images/icon_SE.png" alt="swedish flag"></option>
+                        <option value="english"><img src="images/icon_GB.png" alt="brittish flag"></option>
+                        <option value="greek"><img src="images/icon_GR.png" alt="greek flag"></option>
+                        <option value="german"><img src="images/icon_DE.png" alt="german flag"></option>
+                    </select>
+                </fieldset>
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <div class="wrapperMainAside">
+        <div class="wrapperNavMain">
+            <nav class="navPage">
+
+                <div class="navTab navStart colorActive_Start">
+                    <a href="index.html" class="changePreviousNavLink">
+                        <h4>Start:</h4>
+                        <h5>Välj scenario</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep1 colorActive_Step1">
+                    <a href="step1.html" class="changePreviousNavLink">
+                        <h4>Steg 1:</h4>
+                        <h5>Pengar</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep2 colorActive_Step2">
+                    <a href="step2.html" class="changePreviousNavLink">
+                        <h4>Steg 2:</h4>
+                        <h5>Elek&shy;tricitet</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep3 colorActive_Step3">
+                    <a href="step3.html" class="changePreviousNavLink">
+                        <h4>Steg 3:</h4>
+                        <h5>Upp&shy;värmning</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep4 colorActive_Step4">
+                    <a href="step4.html" class="changePreviousNavLink">
+                        <h4>Steg 4:</h4>
+                        <h5>Mat</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep5 colorActive_Step5">
+                    <a href="step5.html" class="changePreviousNavLink">
+                        <h4>Steg 5:</h4>
+                        <h5>Vatten</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navEnd navCurrent colorActive_End">
+                    <a href="result.html">
+                        <h4>Slut:</h4>
+                        <h5>Ditt Resultat</h5>
+                    </a>
+                </div>
+
+            </nav>
+            <!--end of navPage-->
+
+            <main class="mainPage colorActive_End">
+
+                <div class="mainGeneral">
+
+                    <!-- only in index.html
+                    <div class="mainGeneralGreeting">
+                        <h3>Kan du överleva en samhällskris?</h3>
+                        <h3>Hur länge och hur bra?</h3>
+                        <h3>Testa dej själv i 5 steg!</h3>
+                    </div>-->
+
+                    <!-- only in Step1-Step5.html and Result.html-->
+                    <div class="mainGeneralInfo">
+                        <div class="mainGeneralInfoTitle">
+                            <h5>DITT SCENARIO</h5>
+                        </div>
+                        <div class="mainGeneralInfoBody">
+                            <div class="mainGeneralInfoBodyPre">
+                                <h5>Du har angett:</h5>
+                            </div>
+                            <div class="mainGeneralInfoBodyConditions">
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att banksystemet
+                                        <span class="nobr">
+                                            <span id="money_spanON_result">
+                                                <span id="money_span_result">inte</span> fungerar!
+                                            </span>
+                                            <span id="money_spanOFF_result">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink">Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att elnätet
+                                        <span class="nobr">
+                                            <span id="el_spanON_result">
+                                                <span id="el_span_result">inte</span> fungerar!
+                                            </span>
+                                            <span id="el_spanOFF_result">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink">Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att oljemarknaden
+                                        <span class="nobr">
+                                            <span id="heatOil_spanON_result">
+                                                <span id="heatOil_span_result">inte</span> fungerar!
+                                            </span>
+                                            <span id="heatOil_spanOFF_result">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink">Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att fjärrvärme&shy;/naturgasnätet&shy;/pellets&shy;marknaden
+                                        <span class="nobr">
+                                            <span id="heatOther_spanON_result">
+                                                <span id="heatOther_span_result">inte</span> fungerar!
+                                            </span>
+                                            <span id="heatOther_spanOFF_result">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att livsmedelskedjan
+                                        <span class="nobr">
+                                            <span id="food_spanON_result">
+                                                <span id="food_span_result">inte</span> fungerar!
+                                            </span>
+                                            <span id="food_spanOFF_result">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink">Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att vattenledningsnätet
+                                        <span class="nobr">
+                                            <span id="water_spanON_result">
+                                                <span id="water_span_result">inte</span> fungerar!
+                                            </span>
+                                            <span id="water_spanOFF_result">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink">Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mainGeneralInstructions">
+
+                        <!-- only in index.html 
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>Välj scenario och klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_play_mini.png" alt="Play mini icon">
+                            </div>
+                        </div>-->
+
+                        <!-- only in index.html and step1-step5.html 
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>Fyll i dina svar och klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_next_mini.png" alt="Next mini icon">
+                            </div>
+                        </div>-->
+
+                        <!-- only in result.html -->
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>För att börja om klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_restart_mini.png" alt="Restart mini icon">
+                            </div>
+                        </div>
+
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>För mer information klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/icon_info_mini.png" alt="Info mini icon">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- only in index.html-->
+                    <!-- se index.html 
+                    <div class="mainGeneralChooseScenario">
+                        <h2>Scenario-val in index.html</h2>
+                    </div>-->
+
+
+
+                    <!-- only in result.html-->
+                    <!-- se result.html -->
+                    <div class="mainGeneralResult">
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                        <h1>Ditt Resultat</h1>
+
+                        <div id="resultSummary" class="resultIntro">
+
+                            <h4><span class="underscore">Överlevnad</span> :Du kan överleva i <span
+                                    id="resultSummary_surviveDays">XXX</span> dagar.
+                            </h4>
+
+                            <h4><span class="underscore">Bekvämlighet</span>: Din bekvämlighetsnivå under den tiden är
+                                på nivån: "<span id="resultSummary_comfortLevel">XXX</span>".
+                            </h4>
+
+                            <h4>
+                                <span class="underscore">Ekonomi</span>: Du har då kvar
+                                <span id="resultSummary_economyScore">XXX</span> % av dina tillgångar.
+                            </h4>
+
+                        </div>
+
+
+                        <div id="resultConditions" class="resultIntro">
+                            <h3>VILLKOR FÖR ÖVERLEVNAD</h3>
+                            <h4><span class="underscore">Vatten</span>: minst 4 liter/person/dag, varav drickbart vatten
+                                minst 3 liter/person/dag.</h4>
+                            <h4><span class="underscore">Mat-tillgång</span>: minst 100% av sammanlagda behovet,
+                                kroppfettsförbränning medräknad.</h4>
+                            <h4><span class="underscore">Pengar och värdesaker</span>: summan av alla tillgångar kan
+                                vara 0 SEK, inga skulder tillåtna.</h4>
+                            <h4><span class="underscore">Inomhustemperatur</span>: minst 12 grader C.</h4>
+                        </div>
+
+                        <div>
+                            <hr class="greenLine">
+                        </div>
+
+                        <!-- ÖVERLEVNADSPROGNOSEN -->
+                        <!-- resultSurvive -->
+
+                        <h2>Överlevnadsprognosen</h2>
+
+                        <div class="gridContainer gridSurvive">
+                            <div class="        gridLabel  gridTitle"></div>
+                            <div class="        gridBox0   gridTitle"></div>
+                            <div class="        gridBox1   gridTitle">minst<br>3 dagar</div>
+                            <div class="        gridBox2   gridTitle">minst<br>1 vecka</div>
+                            <div class="        gridBox3   gridTitle">minst<br>2 veckor</div>
+                            <div class="        gridBox4   gridTitle">minst<br>1 månad</div>
+                            <div class="        gridBox5   gridTitle">minst<br>3 månader</div>
+                            <div class="        gridBox6   gridTitle">minst<br>ett halvår</div>
+                            <div class="        gridResult gridTitle   resultSpanGridSurvive">
+                                <h4>Du överlever <span id="resultSurvive_overallDays">XXX</span> dagar</h4>
+                                <h4>Vatten i <span id="resultSurvive_waterDays">XXX</span> dagar</h4>
+                                <h4>Mat i <span id="resultSurvive_foodDays">XXX</span> dagar</h4>
+                                <h4>Pengar i <span id="resultSurvive_moneyDays">XXX</span> dagar</h4>
+                                <h4>Värme i <span id="resultSurvive_heatDays">XXX</span> dagar</h4>
+                            </div>
+                            <div class="        gridLabel  gridRow1">
+                                <h4>VATTEN</h4>
+                            </div>
+                            <div class="        gridBox0   gridRow1"></div>
+                            <div class="gBox    gridBox1   gridRow1  active"></div>
+                            <div class="gBox    gridBox2   gridRow1  active"></div>
+                            <div class="gBox    gridBox3   gridRow1"></div>
+                            <div class="gBox    gridBox4   gridRow1"></div>
+                            <div class="gBox    gridBox5   gridRow1"></div>
+                            <div class="gBox    gridBox6   gridRow1"></div>
+                            <!-- <div class="        gridResult gridRow1"></div> -->
+                            <div class="        gridLabel  gridRow2">
+                                <h4>MAT</h4>
+                            </div>
+                            <div class="        gridBox0   gridRow2"></div>
+                            <div class="gBox    gridBox1   gridRow2  active"></div>
+                            <div class="gBox    gridBox2   gridRow2  active"></div>
+                            <div class="gBox    gridBox3   gridRow2  active"></div>
+                            <div class="gBox    gridBox4   gridRow2"></div>
+                            <div class="gBox    gridBox5   gridRow2"></div>
+                            <div class="gBox    gridBox6   gridRow2"></div>
+                            <!-- <div class="        gridResult gridRow2"></div> -->
+                            <div class="        gridLabel  gridRow3">
+                                <h4>PENGAR</h4>
+                            </div>
+                            <div class="        gridBox0   gridRow3"></div>
+                            <div class="gBox    gridBox1   gridRow3  active"></div>
+                            <div class="gBox    gridBox2   gridRow3  active"></div>
+                            <div class="gBox    gridBox3   gridRow3  active"></div>
+                            <div class="gBox    gridBox4   gridRow3  active"></div>
+                            <div class="gBox    gridBox5   gridRow3"></div>
+                            <div class="gBox    gridBox6   gridRow3"></div>
+                            <!-- <div class="        gridResult gridRow3"></div> -->
+                            <div class="        gridLabel  gridRow4">
+                                <h4>VÄRME</h4>
+                            </div>
+                            <div class="        gridBox0   gridRow4"></div>
+                            <div class="gBox    gridBox1   gridRow4  active"></div>
+                            <div class="gBox    gridBox2   gridRow4  active"></div>
+                            <div class="gBox    gridBox3   gridRow4  active"></div>
+                            <div class="gBox    gridBox4   gridRow4  active"></div>
+                            <div class="gBox    gridBox5   gridRow4  active"></div>
+                            <div class="gBox    gridBox6   gridRow4  active"></div>
+                            <!-- <div class="        gridResult gridRow4"></div> -->
+                        </div>
+
+
+
+                        <!-- BEKVÄMLIGHETSPROGNOSEN -->
+                        <!-- resultComfort -->
+
+                        <h2>Bekvämlighetsprognosen</h2>
+
+                        <div class="gridContainer gridComfort">
+                            <div class="       gridLabel  gridTitle"></div>
+                            <div class="       gridBox0   gridTitle"></div>
+                            <div class="gBox   gridBox1   gridTitle">
+                                <h5>OBEHAGLIGT</h5>
+                            </div>
+                            <div class="gBox   gridBox2   gridTitle">
+                                <h5>BASBEHOV</h5>
+                            </div>
+                            <div class="gBox   gridBox3   gridTitle">
+                                <h5>OKEJ</h5>
+                            </div>
+                            <div class="gBox   gridBox4   gridTitle">
+                                <h5>GANSKA BRA</h5>
+                            </div>
+                            <div class="gBox   gridBox5   gridTitle">
+                                <h5>MAXIMALT</h5>
+                            </div>
+                            <div class="       gridResult gridTitle  resultSpanGridComfort">
+                                <h4>Din bekväm&shy;lig&shy;hets&shy;nivå: <span id="resultComfort_overallLevel"></span>
+                                </h4>
+                                <h4><span id="resultComfort_runningWater">XXX, </span></h4>
+                                <h4><span id="resultComfort_waterNeed">XXX, </span></h4>
+                                <h4><span id="resultComfort_drinkableWater">XXX, </span></h4>
+                                <h4><span id="resultComfort_foodNeedIncFat">XXX, </span></h4>
+                                <h4><span id="resultComfort_foodNeed">XXX, </span></h4>
+                                <h4><span id="resultComfort_elKWHdaily">XXX, </span> </h4>
+                                <h4><span id="resultComfort_elNeed">XXX, </span></h4>
+                                <h4><span id="resultComfort_roomTemp">XXX, </span></h4>
+                                <h4><span id="resultComfort_hotwaterTemp">XXX, </span></h4>
+                                <h4><span id="resultComfort_hotwaterNeed">XXX, </span></h4>
+                            </div>
+                            <div class="       gridLabel  gridRow1">
+                                <h4>VATTEN</h4>
+                            </div>
+                            <div class="       gridBox0   gridRow1"></div>
+                            <div class="gBox   gridBox1   gridRow1">ej rinnande vatten</div>
+                            <div class="gBox   gridBox2   gridRow1">rinnande vatten,<br>&lt; 50% av behovet</div>
+                            <div class="gBox   gridBox3   gridRow1">rinnande vatten,<br>50% - 100% av behovet</div>
+                            <div class="gBox   gridBox4   gridRow1">rinnande vatten,<br>&gt; 100% av behovet</div>
+                            <div class="gBox   gridBox5   gridRow1 active">rinnande och drickbart vatten,<br>&gt; 100% av
+                                behovet</div>
+                            <div class="       gridLabel  gridRow2">
+                                <h4>MAT</h4>
+                            </div>
+                            <div class="       gridBox0   gridRow2"></div>
+                            <div class="gBox   gridBox1   gridRow2">&lt; 100% av behovet, inkl. fett&shy;för&shy;bränning
+                            </div>
+                            <div class="gBox   gridBox2   gridRow2  active">100% - 120% av behovet</div>
+                            <div class="gBox   gridBox3   gridRow2">120% - 150% av behovet</div>
+                            <div class="gBox   gridBox4   gridRow2">150% - 200% av behovet</div>
+                            <div class="gBox   gridBox5   gridRow2">&gt; 200% av behovet</div>
+                            <div class="       gridLabel  gridRow3">
+                                <h4>EL</h4>
+                            </div>
+                            <div class="       gridBox0   gridRow3"></div>
+                            <div class="gBox   gridBox1   gridRow3">&lt; 1 kWh/dag</div>
+                            <div class="gBox   gridBox2   gridRow3  active">1 - 2 kWh/dag</div>
+                            <div class="gBox   gridBox3   gridRow3">&gt; 2 kWh/dag,<br>&lt; 50% av behovet</div>
+                            <div class="gBox   gridBox4   gridRow3">&gt; 2 kWh/dag,<br>50%-100% av behovet</div>
+                            <div class="gBox   gridBox5   gridRow3">&gt; 2 kWh/dag,<br>&gt; 100% av behovet</div>
+                            <div class="       gridLabel  gridRow4">
+                                <h4>RUMS&shy;TEMP.</h4>
+                            </div>
+                            <div class="       gridBox0   gridRow4"></div>
+                            <div class="gBox   gridBox1   gridRow4">12 - 14 grC</div>
+                            <div class="gBox   gridBox2   gridRow4">14 - 16 grC</div>
+                            <div class="gBox   gridBox3   gridRow4">16 - 18 grC</div>
+                            <div class="gBox   gridBox4   gridRow4">18 - 20 grC</div>
+                            <div class="gBox   gridBox5   gridRow4  active">&gt; 20 grC</div>
+                            <div class="       gridLabel  gridRow5">
+                                <h4>VARM&shy;VATTEN</h4>
+                            </div>
+                            <div class="       gridBox0   gridRow5"></div>
+                            <div class="gBox   gridBox1   gridRow5">ej rinnande vatten</div>
+                            <div class="gBox   gridBox2   gridRow5">&lt; 35 grC</div>
+                            <div class="gBox   gridBox3   gridRow5">&gt; 35 grC,<br>&lt; 50% av behovet</div>
+                            <div class="gBox   gridBox4   gridRow5  active">&gt; 35 grC,<br>50%-100% av behovet</div>
+                            <div class="gBox   gridBox5   gridRow5">&gt; 35 grC, <br>&gt; 100% av behovet</div>
+                        </div>
+
+
+                        <!-- EKONOMIPROGNOSEN -->
+                        <!-- resultEconomy -->
+
+                        <h2>Ekonomiprognosen</h2>
+
+                        <div class="gridContainer gridEconomy">
+                            <div class="       gridLabel  gridTitle"></div>
+                            <div class="       gridBox0   gridTitle"></div>
+                            <div class="       gridBox1   gridTitle">&lt; 20%</div>
+                            <div class="       gridBox2   gridTitle">20% - 40%</div>
+                            <div class="       gridBox3   gridTitle">40% - 60%</div>
+                            <div class="       gridBox4   gridTitle">60% - 80%</div>
+                            <div class="       gridBox5   gridTitle">&gt; 80%</div>
+
+                            <div class="       gridResult gridTitle  resultSpanGridEconomy">
+                                <h4>Dina tillgångar efter <span id="resultEconomy_overallDays">XXX</span> dagar:
+                                    <span id="resultEconomy_overallScore">XXX</span>% 
+                                    (<span id="resultEconomy_overallMoney">XXX</span> SEK), </h4>
+
+                                <h4>varav bankpengar <span id="resultEconomy_bankScore">XXX</span>% 
+                                    (<span id="resultEconomy_bankMoney">XXX</span> SEK),</h4>
+
+                                <h4>kontanter <span id="resultEconomy_cashScore">XXX</span>%, 
+                                    (<span id="resultEconomy_cashMoney">XXX</span> SEK), </h4>
+
+                                <h4>och värdesaker <span id="resultEconomy_valuablesScore">XXX</span>%
+                                    (<span id="resultEconomy_valuablesMoney">XXX</span> SEK). </h4>
+                            </div>
+                            <div class="       gridLabel  gridRow1">
+                                <h4>BANK-PENGAR</h4>
+                            </div>
+                            <div class="       gridBox0   gridRow1"></div>
+                            <div class="gBox   gridBox1   gridRow1"></div>
+                            <div class="gBox   gridBox2   gridRow1"></div>
+                            <div class="gBox   gridBox3   gridRow1"></div>
+                            <div class="gBox   gridBox4   gridRow1  empty"></div>
+                            <div class="gBox   gridBox5   gridRow1  empty"></div>
+                            <div class="       gridLabel  gridRow2">
+                                <h4>KONTANTER</h4>
+                            </div>
+                            <div class="       gridBox0   gridRow2"></div>
+                            <div class="gBox   gridBox1   gridRow2"></div>
+                            <div class="gBox   gridBox2   gridRow2"></div>
+                            <div class="gBox   gridBox3   gridRow2"></div>
+                            <div class="gBox   gridBox4   gridRow2"></div>
+                            <div class="gBox   gridBox5   gridRow2"></div>
+                            <div class="       gridLabel  gridRow3">
+                                <h4>VÄRDESAKER</h4>
+                            </div>
+                            <div class="       gridBox0   gridRow3"></div>
+                            <div class="gBox   gridBox1   gridRow3"></div>
+                            <div class="gBox   gridBox2   gridRow3"></div>
+                            <div class="gBox   gridBox3   gridRow3"></div>
+                            <div class="gBox   gridBox4   gridRow3"></div>
+                            <div class="gBox   gridBox5   gridRow3"></div>
+                        </div>
+
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                    </div>
+                    <!--mainGeneralResult-->
+
+                </div>
+                <!--mainGeneral-->
+
+
+
+                <!-- only in step1-step5.html-->
+                <!-- se step1-step5.html 
+                <div class="mainContent">
+
+                    <div class="mainContentTopLine">
+                        <hr class="greenLine">
+                    </div>
+
+                    <div class="mainContentLeft">
+                        <h2>Left side Step1-step5.html</h2>
+                    </div>
+
+                    <div class="mainContentMiddleLine">
+                        <hr class="greenLine">
+                    </div>
+
+                    <div class="mainContentRight">
+                        <h2>Right side Step1-step5.html</h2>
+                    </div>
+
+                    <div class="mainContentBottomLine">
+                        <hr class="greenLine">
+                    </div>
+
+                </div>-->
+                <!--end of mainContent-->
+
+
+                <div class="mainControls">
+
+                    <!-- only in index.html and step1-5.html
+                    <div class="mainControlsLeftLine1">
+                        <hr class="greenLine">
+                    </div>-->
+
+                    <!-- only in result.html-->
+                    <div class="mainControlsLeftLine2">
+                        <hr class="greenLine">
+                    </div>
+
+                    <!-- only in step1-step5.html and result.html-->
+                    <div class="mainControlsButton mainControlsRestart">
+                        <a href="index.html" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_restart_img','','images/control_restart_active.png',1)">
+                            <img id="id_restart_img" src="images/control_restart.png" alt="Restart Button">
+                        </a>
+                    </div>
+
+                    <!-- only in step1-step5.html and result.html-->
+                    <div class="mainControlsButton mainControlsBack">
+                        <a href="step5.html" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_back_img','','images/control_back_active.png',1)">
+                            <img id="id_back_img" src="images/control_back.png" alt="Back Button">
+                        </a>
+                    </div>
+
+                    <!-- only in index.html
+                    <div class="mainControlsStart">
+
+                        <div class="mainControlsStartLeft">
+                            <h3>KLICKA</h>
+                        </div>
+
+                        <div class="mainControlsButton mainControlsStartPlay">
+                            <a href="step1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('id_play_img','','images/control_play_active.png',1)">
+                                <img id="id_play_img" src="images/control_play.png" alt="Play Button">
+                            </a>
+                        </div>
+
+                        <div class="mainControlsStartRight">
+                            <h3>HÄR!</h3>
+                        </div>
+                    </div>-->
+
+                    <!-- only in step1-step5.html 
+                    <div class="mainControlsButton mainControlsReload">
+                        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('id_reload_img','','images/control_reload_active.png',1)">
+                            <img id="id_reload_img" src="images/control_reload.png" alt="Reload Button">
+                        </a>
+                    </div>-->
+
+                    <!-- only in step1-step5.html
+                    <div class="mainControlsButton mainControlsNext">
+                        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('id_next_img','','images/control_next_active.png',1)">
+                            <img id="id_next_img" src="images/control_next.png" alt="Next Button">
+                        </a>
+                    </div> -->
+
+                    <!-- only in result.html-->
+                    <div class="mainControlsRightLine2">
+                        <hr class="greenLine">
+                    </div>
+
+                    <!-- only in index.html and step1-5.html
+                    <div class="mainControlsRightLine1">
+                        <hr class="greenLine">
+                    </div>-->
+
+                </div>
+                <!--end of mainControls-->
+
+            </main>
+            <!--end of mainPage-->
+        </div>
+        <!--end of wrapperNavMain-->
+
+
+        <aside class="asidePage">
+            <h4>Externa länkar:</h4>
+        </aside>
+
+
+    </div>
+    <!--end of wrapperMainAside-->
+
+
+
+    <footer class="footerPage">
+
+        <div class="footerInfo">
+            <div class="footerInfoName">
+                <h5> Rebeka Amanatidou</h5>
+            </div>
+            <div class="footerInfoProject">
+                <h5>Projektarbete i kursen Webbprogrammering</h5>
+            </div>
+        </div>
+
+        <div class="footerSchool">
+            <div class="footerSchoolLogo">
+                <a target="_blank" href="https://glimnet.se">
+                    <img src="images/logo_glimakra.png" alt="Glimåkra folkhöskola logo">
+                </a>
+            </div>
+            <div class="footerSchoolName">
+                <a target="_blank" href="https://glimnet.se">
+                    <h5>Glimåkra folkhögskola</h5>
+                </a>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <!-- <script type="module" src="JS/functions.js"></script> -->
+
+    <script src="JS/func_language.js"></script>
+
+    <script  src="JS/resultPage_dataLoad.js"></script>
+    <script src="JS/func_scenario.js"></script>
+
+    <script  src="JS/resultPage_calculate.js"></script>
+    
+    <script src="JS/func_controls.js"></script>
+    
+
+
+</body>
+
+</html>
+
+

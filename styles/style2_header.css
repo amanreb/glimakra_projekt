@@ -1,0 +1,290 @@
+/* CLASSES IN FILE
+div.headerLogo
+div.headerTitle
+div.headerTitleFirst h1
+div.headerTitleSecond h4
+div.headerButtons
+div.headerButtonsInfo
+div.headerButtonsFlag 
+header select */
+
+
+
+/*
+Code Sections:
+ 1.LOGO
+2.TITLE
+3.BUTTONS */
+
+
+
+/* 1.LOGO */
+
+div.headerLogo {
+    height: min-content;
+    font-size: 0;
+    flex: none;
+}
+
+
+
+
+
+/* 2.TITLE */
+div.headerTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: auto;
+}
+
+
+/* inside div.headerTitleFirst */
+header.headerPage h1 {
+    text-align: left;
+
+    color: #f7c86e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    letter-spacing: -3px;
+
+    /* -webkit-text-stroke: 1.5px #f1f8b3;
+    text-shadow:
+        2px 2px 1.5px #f1f8b3,
+        -2px -1px 1.5px #f1f8b3,
+        2px -1px 1.5px #f1f8b3,
+        -2px 2px 1.5px #f1f8b3; */
+
+    transform: scaleY(1.1);
+}
+
+
+/* inside div.headerTitleFirst */
+header.headerPage h4 {
+    text-align: left;
+
+    color: #f7c86e;
+    font-family: Segoe Print, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: -1px;
+
+    -webkit-text-stroke: 0.2px black;
+    text-shadow:
+        2px 2px 2px #000,
+        -1px -1px 2px #000,
+        2px -1px 2px #000,
+        -1px 2px 2px #000,
+        2px 2px 2px #000,
+        -1px -1px 2px #000,
+        2px -1px 2px #000,
+        -1px 2px 2px #000,
+        2px 2px 2px #000,
+        -1px -1px 2px #000,
+        2px -1px 2px #000,
+        -1px 2px 2px #000;
+
+    /* transform: scaleX(0.95); */
+    /* -webkit-text-stroke: 0.5px #f7c86e; */
+
+}
+
+
+
+
+/* 3.BUTTONS */
+
+div.headerButtons {
+    flex: none;
+    font-size: 0;
+    display: flex;
+}
+
+div.headerButtonsInfo {
+    align-self: center;
+    height: min-content;
+}
+
+/* div.headerButtonsInfo img:hover {
+    opacity: 0.7;  
+} */
+
+div.headerButtonsFlag {
+    /* border: 3px solid black;
+    width:48px;
+    border-radius: 10%;
+    padding: 3px;  */
+    align-self: center;
+    /* width: fit-content;
+    height: fit-content; */
+    z-index: 5;
+}
+
+
+/* inside div.headerButtonsFlag */
+header select {
+    width: 100%;
+    /* background-image:url(../images/icon_SE.png); */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    
+}
+
+header select#select_sprak {
+    display: none;
+    
+}
+
+
+/* nytt forsok */
+
+.drop-down { 
+    position: relative;  
+    display: inline-block;    
+    width: auto; 
+    
+    /* margin-top: 0;   
+    font-family: verdana;     */
+}
+
+
+.vodiapicker {
+    display: none; 
+    
+}
+
+/* .lang-select{
+    position: absolute;
+    left:0;
+    top:-20px;
+   
+  } */
+
+.btn-select {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    border-radius: 10%;
+    /* padding: 3px;  */
+    box-sizing: content-box;
+    width: 100%;
+    /* max-width: 350px; */
+    /* width:48px; */
+    /* height: 34px; */
+    /* border-radius: 5px; */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 3px solid black;
+    /* width:48px; */
+    border-radius: 10%;
+    padding: 3px; 
+}
+
+.btn-select:hover{
+    background-color: #F4F3F3;
+    /* border: 1px solid transparent; */
+    box-shadow: inset 0 0px 0px 1px #ccc;
+}
+
+.btn-select:focus{
+    outline:none;
+ }
+
+.btn-select li{
+    list-style: none;
+    /* float: left; */
+    /* padding-bottom: 0px; */
+    
+}
+
+.b{
+    
+    display: none;
+    /* width: 100%;
+    max-width: 350px;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 5px; 
+    background-color: rgb(205, 240, 237); */
+    
+}
+
+#a img,
+.btn-select img {
+    /* width: 48px; */
+    /* margin: 3px; */
+}
+
+#a {
+    position: absolute;
+    /* padding:2px 3px; */
+    background-color:rgb(58, 52, 46);
+    border: 3px solid black;
+    border-radius: 10%;
+}
+
+#a li{
+    list-style: none;
+    padding:2px 3px;
+    border-radius: 10%;
+     /* padding-top: 5px;
+    padding-bottom: 5px; */
+  }
+
+  #a li:hover{
+    background-color: #F4F3F3;
+   }
+
+   /* #a li img{
+    margin: 5px;
+  } */
+
+
+
+/* FLAGG STYLE 
+.drop-down { 
+    position: relative;  
+    display: inline-block;    
+    width: auto;       
+    margin-top: 0;   
+    font-family: verdana;    
+    }      
+
+.drop-down select {   
+    display: none;    
+}      
+    
+.drop-down .select-list {   
+    position: absolute;     
+    top: 0;      
+    left: 0;     
+    z-index: 1;    
+    margin-top: 40px;    
+    padding: 0;         
+    background-color: #595959;      
+}      
+    
+.drop-down .select-list li {   
+    display: none;      
+}    
+    
+.drop-down .select-list li span {  
+    display: inline-block;      
+    min-height: 40px;        
+    min-width: 280px;      
+    width: 100%;        
+    padding: 5px 15px 5px 35px;     
+    background-color: #595959;     
+    background-position: left 10px center;   
+    background-repeat: no-repeat;       
+    font-size: 16px;       
+    text-align: left;       
+    color: #FFF;        
+    opacity: 0.7;      
+    box-sizing: border-box;     
+}     
+    
+.drop-down .select-list li span:hover,  
+.drop-down .select-list li span:focus {     
+    opacity: 1;     
+} */

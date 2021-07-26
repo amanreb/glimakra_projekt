@@ -1,0 +1,214 @@
+/* CLASSES IN FILE
+div.mainGeneralGreeting
+div.mainGeneralInfo
+div.mainGeneralInfoTitle
+div.mainGeneralInfoBody
+div.mainGeneralInfoBodyPre
+div.mainGeneralInfoBodyConditions
+div.mainGeneralInfoBodyConditionsLine
+div.mainGeneralInstructions
+div.mainGeneralInstructionsLine
+div.mainGeneralInstructionsLineText
+div.mainGeneralInstructionsLineIcon
+div.mainGeneralChooseScenario
+div.mainGeneralResult */
+
+
+
+/*
+Code Sections:
+1.GENERAL GREETING
+2.GENERAL INFO 
+3.GENERAL INSTRUCTIONS
+4.GENERAL SCENARIO AND RESULT */
+
+
+div.mainGeneral img {
+    width:auto;
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+
+/* 1.GENERAL GREETING */
+ /* only for index.html  */
+ div.mainGeneral div.mainGeneralGreeting {
+    margin-top:30px;
+    margin-bottom:30px;
+    /* border: 1px solid black; */
+}
+
+div.mainGeneralGreeting h3 {
+    color:#d7b97e;
+    font-family: Comic Sans Ms, sans-serif;
+
+    text-shadow:
+        3px 3px 4px black,
+        -3px -3px 4px black,
+        3px -3px 4px black,
+        -3px 3px 4px black,
+
+        1px 1px 1px black,
+        -1px -1px 1px black,
+        1px -1px 1px black,
+        -1px 1px 1px black;
+}
+
+
+
+
+
+/* 2.GENERAL INFO  (black box)*/
+/* only for step1-step5.html and result.html  */
+
+div.mainGeneral .mainGeneralInfo {
+    display:inline-flex;
+    flex-direction:column;
+    border: 3px solid #d7b97e;
+    color:#d7b97e;
+    background-color: black;
+    text-align:left;
+    margin-top:20px;
+    margin-bottom:10px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+
+
+
+div.mainGeneralInfoTitle h5{
+    color: black;
+    font-family: Comic Sans Ms, sans-serif;
+    
+    text-shadow:
+    1px 1px 2px #d7b97e,
+    -1px -1px 2px #d7b97e,
+    1px -1px 2px #d7b97e,
+    -1px 1px 2px #d7b97e;
+}
+
+div.mainGeneralInfoBodyPre h5{
+    text-decoration: underline;
+    text-indent: 0px;
+    margin-right:10px;
+}
+
+div.mainGeneralInfoBody{
+    display:flex;
+    flex-direction:row;
+    margin-top:5px;
+    /* margin-bottom:5px; */
+}
+
+div.mainGeneralInfoBody h5 { 
+    color: #d7b97e;
+    font-family: Comic Sans Ms, sans-serif;
+}
+
+
+
+div.mainGeneralInfoBodyPre {
+ flex:none;
+}
+
+/* div.mainGeneralInfoBodyConditions {
+
+} */
+
+div.mainGeneralInfoBodyConditionsLine h5{
+    text-indent: -25px;
+    margin-left:25px;
+}
+
+div.mainGeneralInfoBodyConditionsLine h5 a{
+    text-indent:5px;
+}
+
+div.mainGeneralInfoBodyConditionsLine span[id*='_span_'],
+div.mainGeneralInfoBodyConditionsLine span[id*='_spanOFF_'] {
+    text-decoration: underline;
+    color: red;
+}
+
+
+
+/* 3.GENERAL INSTRUCTIONS */
+
+div.mainGeneral div.mainGeneralInstructions{
+    /* width:max-content;  */
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    display:inline-flex;
+    flex-direction:column;
+ }
+
+div.mainGeneralInstructionsLine {
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    /* border:1px solid black; */
+    margin-top:3px;
+    margin-bottom:3px;
+    justify-content: flex-end;
+}
+
+
+ div.mainGeneralInstructionsLineText h4 {
+    padding-right:5px;
+    /* font-family: Comic Sans Ms, sans-serif; */
+    font-family: Segoe Print, sans-serif;
+    color: #d7b97e;
+
+    text-shadow:
+    3px 3px 4px black,
+    -3px -3px 4px black,
+    3px -3px 4px black,
+    -3px 3px 4px black,
+
+    1px 1px 1px black,
+    -1px -1px 1px black,
+    1px -1px 1px black,
+    -1px 1px 1px black;
+} 
+
+/* div.mainGeneralInstructionsLineText{} */
+
+div.mainGeneralInstructionsLineIcon {
+ margin-left:5px;
+ margin-right:5px;
+}
+
+
+
+
+
+
+/* 4.GENERAL SCENARIO AND RESULT  */
+
+
+/* only for index.html */
+/* subclasses in style7_startTab.css */
+
+div.mainGeneral div.mainGeneralChooseScenario{
+    margin-top:30px;
+    margin-bottom:0px;
+    /* se style7_startTab.css */
+}
+
+
+/* only for result.html */
+/* subclasses in style13_endTab.css */
+
+div.mainGeneral div.mainGeneralResult{
+    margin-top:10px;
+    margin-bottom:30px;
+    /* se style13_endTab.css */
+} 

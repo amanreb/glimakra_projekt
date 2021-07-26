@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steg 2</title>
+    <!-- <link rel="shortcut icon" href="#" /> -->
+
+    <link rel="stylesheet" href="styles/style1_overall.css">
+    <link rel="stylesheet" href="styles/style1mq_overall.css">
+    <link rel="stylesheet" href="styles/style2_header.css">
+    <link rel="stylesheet" href="styles/style2mq_header.css">
+    <link rel="stylesheet" href="styles/style3_nav.css">
+    <link rel="stylesheet" href="styles/style3mq_nav.css">
+    <link rel="stylesheet" href="styles/style4_mainGeneral.css">
+    <link rel="stylesheet" href="styles/style4mq_mainGeneral.css">
+    <link rel="stylesheet" href="styles/style5_mainControls.css">
+    <link rel="stylesheet" href="styles/style5mq_mainControls.css">
+    <link rel="stylesheet" href="styles/style6_footer.css">
+    <link rel="stylesheet" href="styles/style6mq_footer.css">
+    <link rel="stylesheet" href="styles/style7_startTab.css">
+    <link rel="stylesheet" href="styles/style7mq_startTab.css">
+    <link rel="stylesheet" href="styles/style8_moneyTab.css">
+    <link rel="stylesheet" href="styles/style8mq_moneyTab.css">
+    <link rel="stylesheet" href="styles/style9_electricityTab.css">
+    <link rel="stylesheet" href="styles/style9mq_electricityTab.css">
+    <link rel="stylesheet" href="styles/style10_heatTab.css">
+    <link rel="stylesheet" href="styles/style10mq_heatTab.css">
+    <link rel="stylesheet" href="styles/style11_foodTab.css">
+    <link rel="stylesheet" href="styles/style11mq_foodTab.css">
+    <link rel="stylesheet" href="styles/style12_waterTab.css">
+    <link rel="stylesheet" href="styles/style12mq_waterTab.css">
+    <link rel="stylesheet" href="styles/style13_endTab.css">
+    <link rel="stylesheet" href="styles/style13mq_endTab.css">
+    <link rel="stylesheet" href="styles/style14_infoPage.css">
+    <link rel="stylesheet" href="styles/style14mq_infoPage.css">
+
+    <script src="JS/func_images.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+
+<body onLoad="MM_preloadImages('images/logo_my_active.png','images/icon_info_active.png','images/control_play_active.png',
+'images/control_restart_active.png','images/control_back_active.png','images/control_reload_active.png', 
+'images/control_next_active.png','images/icon_yes_active.png', 'images/icon_yes_gray.png', 
+'images/icon_no_active.png', 'images/icon_no_active.png')">
+
+
+
+    <header class="headerPage">
+
+        <div class="headerLogo">
+            <a href="index.html" onMouseOut="MM_swapImgRestore()"
+                onMouseOver="MM_swapImage('id_myLogo_img','','images/logo_my_active.png',1)">
+                <img id="id_myLogo_img" src="images/logo_my.png" alt="Logo">
+            </a>
+        </div>
+
+        <!---->
+        <div class="headerTitle">
+            <div class="headerTitleFirst">
+                <h1>Över&shy;lev&shy;nads&shy;appen</h1>
+            </div>
+            <div class="headerTitleSecond">
+                <h4>Hur rustad är du för en samhällskris?</h4>
+            </div>
+        </div>
+
+        <div class="headerButtons">
+
+            <div class="headerButtonsInfo">
+
+                <a href="infoPage.html" onMouseOut="MM_swapImgRestore()"
+                    onMouseOver="MM_swapImage('id_info_img','','images/icon_info_active.png',1)">
+                    <img id="id_info_img" src="images/icon_info.png" width="auto" alt="Info button">
+                </a>
+
+            </div>
+
+            <div class="headerButtonsFlag">
+                <fieldset>
+                    <select name="sprak" id="sprak">
+                        <option value="swedish"><img src="images/icon_SE.png" alt="swedish flag"></option>
+                        <option value="english"><img src="images/icon_GB.png" alt="brittish flag"></option>
+                        <option value="greek"><img src="images/icon_GR.png" alt="greek flag"></option>
+                        <option value="german"><img src="images/icon_DE.png" alt="german flag"></option>
+                    </select>
+                </fieldset>
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <div class="wrapperMainAside">
+        <div class="wrapperNavMain">
+            <nav class="navPage">
+
+                <div class="navTab navStart colorActive_Start">
+                    <a href="index.html" class="changePreviousNavLink">
+                        <h4>Start:</h4>
+                        <h5>Välj scenario</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep1 colorActive_Step1">
+                    <a href="step1.html" class="changePreviousNavLink">
+                        <h4>Steg 1:</h4>
+                        <h5>Pengar</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep2 navCurrent colorActive_Step2">
+                    <a href="#">
+                        <!-- <a href="step2.html">  -->
+                        <h4>Steg 2:</h4>
+                        <h5>Elek&shy;tricitet</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep3 colorInactive_Step3">
+                    <a href="#">
+                        <!-- <a href="step3.html">  -->
+                        <h4>Steg 3:</h4>
+                        <h5>Upp&shy;värmning</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep4 colorInactive_Step4">
+                    <a href="#">
+                        <!--  <a href="step4.html"> -->
+                        <h4>Steg 4:</h4>
+                        <h5>Mat</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navStep5 colorInactive_Step5">
+                    <a href="#">
+                        <!--  <a href="step5.html"> -->
+                        <h4>Steg 5:</h4>
+                        <h5>Vatten</h5>
+                    </a>
+                    <div class="navTab_triangleStroke"></div>
+                    <div class="navTab_triangleFill"></div>
+                </div>
+
+                <div class="navTab navEnd colorInactive_End">
+                    <a href="#">
+                        <!-- <a href="result.html">  -->
+                        <h4>Slut:</h4>
+                        <h5>Ditt Resultat</h5>
+                    </a>
+                </div>
+
+            </nav>
+            <!--end of navPage-->
+
+            <main class="mainPage colorActive_Step2">
+
+                <div class="mainGeneral">
+
+                    <!-- only in index.html
+                    <div class="mainGeneralGreeting">
+                        <h3>Kan du överleva en samhällskris?</h3>
+                        <h3>Hur länge och hur bra?</h3>
+                        <h3>Testa dej själv i 5 steg!</h3>
+                    </div>-->
+
+                    <!-- only in Step1-Step5.html and Result.html-->
+                    <div class="mainGeneralInfo">
+                        <div class="mainGeneralInfoTitle">
+                            <h5>DITT SCENARIO</h5>
+                        </div>
+                        <div class="mainGeneralInfoBody">
+                            <div class="mainGeneralInfoBodyPre">
+                                <h5>Du har angett:</h5>
+                            </div>
+                            <div class="mainGeneralInfoBodyConditions">
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att banksystemet
+                                        <span class="nobr">
+                                            <span id="money_spanON_step2">
+                                                <span id="money_span_step2">inte</span> fungerar!
+                                            </span>
+                                            <span id="money_spanOFF_step2">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att elnätet
+                                        <span class="nobr">
+                                            <span id="el_spanON_step2">
+                                                <span id="el_span_step2">inte</span> fungerar!
+                                            </span>
+                                            <span id="el_spanOFF_step2">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att oljemarknaden
+                                        <span class="nobr">
+                                            <span id="heatOil_spanON_step2">
+                                                <span id="heatOil_span_step2">inte</span> fungerar!
+                                            </span>
+                                            <span id="heatOil_spanOFF_step2">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att fjärrvärme&shy;/naturgasnätet&shy;/pellets&shy;marknaden
+                                        <span class="nobr">
+                                            <span id="heatOther_spanON_step2">
+                                                <span id="heatOther_span_step2">inte</span> fungerar!
+                                            </span>
+                                            <span id="heatOther_spanOFF_step2">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att livsmedelskedjan
+                                        <span class="nobr">
+                                            <span id="food_spanON_step2">
+                                                <span id="food_span_step2">inte</span> fungerar!
+                                            </span>
+                                            <span id="food_spanOFF_step2">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="mainGeneralInfoBodyConditionsLine">
+                                    <h5>att vattenledningsnätet
+                                        <span class="nobr">
+                                            <span id="water_spanON_step2">
+                                                <span id="water_span_step2">inte</span> fungerar!
+                                            </span>
+                                            <span id="water_spanOFF_step2">inte är relevant!</span>
+                                            <a href="index.html" class="changePreviousBoxLink"> Ändra</a>
+                                        </span>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mainGeneralInstructions">
+
+                        <!-- only in index.html 
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>Välj scenario och klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_play_mini.png" alt="Play mini icon">
+                            </div>
+                        </div>-->
+
+                        <!-- only in index.html and step1-step5.html -->
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>Fyll i dina svar och klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_next_mini.png" alt="Next mini icon">
+                            </div>
+                        </div>
+
+                        <!-- only in result.html 
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>För att börja om klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/control_restart_mini.png" alt="Restart mini icon">
+                            </div>
+                        </div>-->
+
+                        <div class="mainGeneralInstructionsLine">
+                            <div class="mainGeneralInstructionsLineText">
+                                <h4>För mer information klicka på knappen</h4>
+                            </div>
+                            <div class="mainGeneralInstructionsLineIcon">
+                                <img src="images/icon_info_mini.png" alt="Info mini icon">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- only in index.html-->
+                    <!-- se index.html 
+                    <div class="mainGeneralChooseScenario">
+                        <h2>Scenario-val in index.html</h2>
+                    </div>-->
+
+                    <!-- only in result.html-->
+                    <!-- se result.html
+                    <div class="mainGeneralResult">
+                        <h2>RESULTS in results.html</h2>
+                    </div> -->
+
+                </div>
+
+
+
+                <!-- only in step1-step5.html-->
+                <!-- se step1-step5.html -->
+                <div class="mainContent">
+
+                    <div class="mainContentTopLine">
+                        <hr class="greenLine">
+                    </div>
+
+
+
+                    <div class="mainContentLeft">
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                        <form action="action_Page.php" method="post" id="form_elDebit">
+                            <h2>Tillgång till El</h2>
+
+                            <!-- <h3>Bas&shy;resurser</h3> -->
+                            <fieldset class="basruta">
+                                <legend>Bas&shy;resurser</legend>
+                                <fieldset id="fieldset_elDebitSpend">
+
+                                    <h4>PENGAR</h4>
+                                    <label>
+                                        Angivna utgifter för el:
+                                        <input type="text" id="elDebitSpend_cost" name="elDebitSpend_cost"
+                                            class="elANDheatOil_scenario" readonly />
+                                        SEK/mån <a href="step1.html" class="changePreviousFormLink">Ändra</a>
+                                    </label>
+
+                                    <label>
+                                        - varav elräkning:
+                                        <input type="text" id="elDebitSpend_costGrid" name="elDebitSpend_costGrid"
+                                            class="el_scenario" value="600" />
+                                        SEK/mån
+                                    </label>
+
+                                    <label>
+                                        - och övrigt (generatorbränsle):
+                                        <input type="text" id="elDebitSpend_costGenerator" name="elDebitSpend_costGenerator"
+                                            class="heatOil_scenario" value="0" />
+                                        SEK/mån
+                                    </label>
+
+                                    <label>
+                                        Summa utgifter enligt nedan:
+                                        <input type="text" id="elDebitSpend_sumUnitCost" name="elDebitSpend_sumUnitCost"
+                                            class="" readonly />
+                                        SEK/mån
+                                    </label>
+
+                                </fieldset>
+                            </fieldset>
+
+                            <h3>Levererad el</h3>
+
+                            <fieldset id="fieldset_elDebitGrid">
+                                <h4>FRÅN ELNÄTET</h4>
+
+                                <label>
+                                    El&shy;räkning, enligt ovan:
+                                    <input type="text" id="elDebitGrid_unitCost" class="el_scenario"
+                                        name="elDebitGrid_unitCost" readonly />
+                                    SEK/mån
+                                </label>
+
+                                <label>
+                                    Fast kostnad:
+                                    <input type="text" id="elDebitGrid_fixedCost" name="elDebitGrid_fixedCost"
+                                        class="el_scenario" value="11" />
+                                    SEK/mån
+                                </label>
+
+                                <label>
+                                    Rörlig kostnad:
+                                    <input type="text" id="elDebitGrid_variableCost" name="elDebitGrid_variableCost"
+                                        class="el_scenario" value="1.7" />
+                                    SEK/kWh
+                                </label>
+
+                                <label>
+                                    El från nätet:
+                                    <input type="text" id="elDebitGrid_kWhDaily" name="elDebitGrid_kWhDaily"
+                                        class="el_scenario" readonly />
+                                    kWh/dag
+                                </label>
+
+                            </fieldset>
+
+
+                            <h3>Elproduktion</h3>
+
+                            <fieldset id="fieldset_elDebitProduction">
+
+                                <h4>HAR DU TILLGÅNG TILL EL FRÅN...</h4>
+
+                                <div class="rowWrapper">
+                                    <label class="squareRadioLineLabel">Solceller?</label>
+                                    <div class="squareRadioLine">
+                                        <input type="radio" id="elDebitProduction_PVTrue" name="elDebitProduction_PV"
+                                            value="true">
+                                        <label for="elDebitProduction_PVTrue">
+                                            <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                            JA
+                                        </label>
+                                        <input type="radio" id="elDebitProduction_PVFalse" name="elDebitProduction_PV"
+                                            value="false" checked>
+                                        <label for="elDebitProduction_PVFalse">
+                                            <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                            NEJ
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="rowWrapper">
+                                    <label class="squareRadioLineLabel">Generator?</label>
+                                    <div class="squareRadioLine">
+                                        <input type="radio" id="elDebitProduction_generatorTrue"
+                                            name="elDebitProduction_generator" value="true">
+                                        <label for="elDebitProduction_generatorTrue">
+                                            <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                            JA
+                                        </label>
+                                        <input type="radio" id="elDebitProduction_generatorFalse"
+                                            name="elDebitProduction_generator" value="false" checked>
+                                        <label for="elDebitProduction_generatorFalse">
+                                            <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                            NEJ
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset id="fieldset_elDebitPV">
+                                <h4>SOLCELLER</h4>
+
+                                <label>
+                                    Panelyta
+                                    <!-- <span class="smallText"> *ange 0 om du saknar</span>: -->
+                                    <input type="text" id="elDebitPV_panelArea" name="elDebitPV_panelArea" value="0" />
+                                    m2
+                                </label>
+
+                                <label>
+                                    Toppeffekt/Panelyta:
+                                    <input type="text" id="elDebitPV_peakEffectPerM2" name="elDebitPV_peakEffectPerM2"
+                                        value="0.1" />
+                                    kWp/m2
+                                </label>
+
+                                <label>
+                                    Installerad toppeffekt:
+                                    <input type="text" id="elDebitPV_peakEffect" name="elDebitPV_peakEffect" readonly />
+                                    kWp
+                                </label>
+
+                                <label>
+                                    Solinstrålning per dag:
+                                    <input type="text" id="elDebitPV_irradiationDaily" name="elDebitPV_irradiationDaily"
+                                        value="0.7" />
+                                    kWh/kWp
+                                </label>
+
+                                <label>
+                                    Verkningsgrad, system:
+                                    <input type="text" id="elDebitPV_systemEfficiency" name="elDebitPV_systemEfficiency"
+                                        value="80" />
+                                    %
+                                </label>
+
+                                <label>
+                                    Elproduktion:
+                                    <input type="text" id="elDebitPV_elProduction" name="elDebitPV_elProduction"
+                                        readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    Batteriförlust:
+                                    <input type="text" id="elDebitPV_batteryLoss" name="elDebitPV_batteryLoss"
+                                        value="26" />
+                                    %
+                                </label>
+
+                                <label>
+                                    Batterikapacitet (12V, lithium):
+                                    <input type="text" id="elDebitPV_batteryCapacity" name="elDebitPV_batteryCapacity"
+                                        value="0.8" />
+                                    kAh
+                                </label>
+
+                                <label>
+                                    Producerad el:
+                                    <input type="text" id="elDebitPV_kWhDaily" name="elDebitPV_kWhDaily" readonly />
+                                    kWh/dag
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_elDebitGenerator">
+                                <h4>BENSIN-/DISEL&shy;GENERATOR</h4>
+
+                                <label>
+                                    Bränsle&shy;kostnad, enligt ovan:
+                                    <input type="text" id="elDebitGenerator_unitCost" class="heatOil_scenario"
+                                        name="elDebitGenerator_unitCost" readonly />
+                                    SEK/mån
+                                </label>
+
+                                <label>
+                                    Nominell generatoreffekt
+                                    <!-- <span class="smallText"> *ange 0 om du saknar</span>: -->
+                                    <input type="text" id="elDebitGenerator_nomEffect" name="elDebitGenerator_nomEffect"
+                                        value="3" />
+                                    kW
+                                </label>
+
+                                <label>
+                                    Bränsle&shy;konsumtion:
+                                    <input type="text" id="elDebitGenerator_fuelConsume"
+                                        name="elDebitGenerator_fuelConsume" value="3" />
+                                    liter/timme
+                                </label>
+
+                                <label>
+                                    Liter-pris:
+                                    <input type="text" id="elDebitGenerator_oilPrice" name="elDebitGenerator_oilPrice"
+                                        value="9.446" class="heatOil_scenario" />
+                                    SEK/liter
+                                </label>
+
+                                <label>
+                                    Bränslekostnad per kWh:
+                                    <input type="text" id="elDebitGenerator_kWhCost" name="elDebitGenerator_kWhCost"
+                                        class="heatOil_scenario" readonly />
+                                    SEK/kWh
+                                </label>
+
+                                <!-- <label>
+                                    Bränslelager för generator<span class="smallText"> *minst 200liter</span>:
+                                    <input type="text" id="elDebitOil_storage" name="elDebitOil_storage" />
+                                    liter
+                                </label> -->
+
+                                <label>
+                                    Producerad el:
+                                    <input type="text" id="elDebitGenerator_kWhDaily" name="elDebitGenerator_kWhDaily"
+                                        class="heatOil_scenario" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <!-- <label>
+                                    Tillgänglig el från oljelager <span class="smallText"> *ej till elpanna och
+                                        brunnspump</span>:
+                                    <input type="text" id="elDebitOil_kWhStorage" name="elDebitOil_kWhStorage"
+                                        readonly />
+                                    kWh
+                                </label> -->
+
+                            </fieldset>
+
+                            <h3>El till system&shy;drift</h3>
+
+                            <fieldset id="fieldset_elDebitSystem">
+
+                                <!-- <label>
+                                    <input type="checkbox"> Cirkulationspump, panna:
+                                    <input type="text" id="elDebitSystem_circulationPumpSystem" name="elDebitSystem_circulationPumpSystem"
+                                    value="1"  />
+                                    kWh/dag
+                                </label> 
+                            
+                                <label>
+                                    Eluppvärmning:
+                                    <input type="text" id="elDebitSystem_elHeaterSystem" name="elDebitSystem_elHeaterSystem"
+                                    value="0"  />
+                                    kWh/dag
+                                </label>
+                            
+                            <label>
+                                    Kylskåp:
+                                    <input type="text" id="elDebitSystem_fridgeSystem" name="elDebitSystem_fridgeSystem"
+                                         value="0.025"/>
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    Frys:
+                                    <input type="text" id="elDebitSystem_freezerSystem" name="elDebitSystem_freezerSystem"
+                                    value="0.035" />
+                                    kWh/dag
+                                </label>
+                            
+                            <label>
+                                    Vattenpump:
+                                    <input type="text" id="elDebitSystem_waterPumpSystem" name="elDebitSystem_waterPumpSystem"
+                                    value="0" />
+                                    kWh/dag
+                                </label>-->
+
+                                <h4>UPP&shy;VÄRM&shy;NING</h4>
+
+                                <div class="squareRadioLine">
+                                    <input type="checkbox" id="elDebitSystem_circulationPumpSystemYes"
+                                        name="elDebitSystem_circulationPumpSystemYes" checked="checked">
+                                    <label for="elDebitSystem_circulationPumpSystemYes">
+                                        <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                        Cirkulationspump:
+                                    </label>
+
+                                    <label>
+                                        <input type="text" id="elDebitSystem_circulationPumpSystem"
+                                            name="elDebitSystem_circulationPumpSystem" value="1"
+                                            class="circulationPump_systemUnit" />
+                                        <input type="hidden" id="elDebitSystem_circulationPumpSystemHidden"
+                                            name="elDebitSystem_circulationPumpSystemHidden" />
+                                        &nbsp;kWh/dag
+                                    </label>
+                                </div>
+
+                                <div class="squareRadioLine">
+                                    <input type="checkbox" id="elDebitSystem_elHeaterSystemYes"
+                                        name="elDebitSystem_elHeaterSystemYes" />
+                                    <label for="elDebitSystem_elHeaterSystemYes">
+                                        <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                        Eluppvärmning:
+                                    </label>
+
+                                    <label>
+                                        <input type="text" id="elDebitSystem_elHeaterSystem"
+                                            name="elDebitSystem_elHeaterSystem" value="0" class="elHeater_systemUnit" />
+                                        <input type="hidden" id="elDebitSystem_elHeaterSystemHidden"
+                                            name="elDebitSystem_elHeaterSystemHidden" />
+                                        &nbsp;kWh/dag
+                                    </label>
+                                </div>
+
+                                <h4>MAT&shy;FÖR&shy;VAR&shy;ING</h4>
+
+                                <div class="squareRadioLine">
+                                    <input type="checkbox" id="elDebitSystem_fridgeSystemYes"
+                                        name="elDebitSystem_fridgeSystemYes" checked="checked" />
+                                    <label for="elDebitSystem_fridgeSystemYes">
+                                        <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                        Kylskåp:
+                                    </label>
+
+                                    <label>
+                                        <input type="text" id="elDebitSystem_fridgeSystem"
+                                            name="elDebitSystem_fridgeSystem" value="0.025" class="fridge_systemUnit" />
+                                        <input type="hidden" id="elDebitSystem_fridgeSystemHidden"
+                                            name="elDebitSystem_fridgeSystemHidden" />
+                                        &nbsp;kWh/dag
+                                    </label>
+                                </div>
+
+                                <div class="squareRadioLine">
+                                    <input type="checkbox" id="elDebitSystem_freezerSystemYes"
+                                        name="elDebitSystem_freezerSystemYes" checked="checked" />
+                                    <label for="elDebitSystem_freezerSystemYes">
+                                        <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                        Frys:
+                                    </label>
+
+                                    <label>
+                                        <input type="text" id="elDebitSystem_freezerSystem"
+                                            name="elDebitSystem_freezerSystem" value="0.035"
+                                            class="freezer_systemUnit" />
+                                        <input type="hidden" id="elDebitSystem_freezerSystemHidden"
+                                            name="elDebitSystem_freezerSystemHidden" />
+                                        &nbsp;kWh/dag
+                                    </label>
+                                </div>
+
+                                <h4>VATTEN&shy;TILL&shy;FÖRSEL</h4>
+
+                                <div class="squareRadioLine">
+                                    <input type="checkbox" id="elDebitSystem_waterPumpSystemYes"
+                                        name="elDebitSystem_waterPumpSystemYes" />
+                                    <label for="elDebitSystem_waterPumpSystemYes">
+                                        <span><img src="images/icon_tick.png" alt="tick icon"></span>
+                                        Vattenpump:
+                                    </label>
+
+                                    <label>
+                                        <input type="text" id="elDebitSystem_waterPumpSystem"
+                                            name="elDebitSystem_waterPumpSystem" value="0"
+                                            class="waterPump_systemUnit" />
+                                        <input type="hidden" id="elDebitSystem_waterPumpSystemHidden"
+                                            name="elDebitSystem_waterPumpSystemHidden" />
+                                        &nbsp;kWh/dag
+                                    </label>
+                                </div>
+
+                            </fieldset>
+
+
+
+                            <h3>Total Eltillgång</h3>
+
+                            <div class="totalruta">
+
+                                <fieldset id="fieldset_elDebitTotal">
+                                    <h4>ELNÄT + EL&shy;PROD.</h4>
+
+                                    <label>
+                                        Totalt, brutto:
+                                        <input type="text" id="elDebitTotal_kWhDailyBrutto"
+                                            name="elDebitTotal_kWhDailyBrutto" readonly />
+                                        kWh/dag
+                                    </label>
+
+                                    <h4>SYSTEMEL</h4>
+
+                                    <label>
+                                        Elbehov:
+                                        <input type="text" id="elDebitTotal_kWhDailySystem"
+                                            name="elDebitTotal_kWhDailySystem" readonly />
+                                        kWh/dag
+                                    </label>
+
+
+                                    <h4>ELNÄT + ELPROD. <span class="nobr">- SYSTEMEL</span></h4>
+
+                                    <label>
+                                        Totalt, netto:
+                                        <input type="text" id="elDebitTotal_kWhDailyNetto"
+                                            name="elDebitTotal_kWhDailyNetto" readonly />
+                                        kWh/dag
+                                    </label>
+
+                                </fieldset>
+
+                            </div>
+                            
+                            <!-- <fieldset>
+                                    <label>
+                                    Sammanlagd lagrad tillgång (oljelager):
+                                    <input type="text" id="elDebitTotal_kWh" name="elDebitTotal_kWh"
+                                        readonly />
+                                    kWh
+                                </label>
+
+                                 <label>
+                                    Uppskattning av antalet överlevnadsdagar (preliminärt):
+                                    <input type="text" id="elDebitTotal_daysPrel" name="elDebitTotal_daysPrel" />
+                                        dagar
+                                </label>
+
+                                <label>
+                                    Sammanlagd daglig tillgång (preliminärt):
+                                    <input type="text" id="elDebitTotal_kWhPrel" name="elDebitTotal_kWhPrel"
+                                        readonly />
+                                        kWh/dag
+                                </label> 
+
+                            </fieldset>-->
+
+
+                        </form>
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                    </div>
+
+
+
+                    <div class="mainContentMiddleLine">
+                        <hr class="greenLine">
+                    </div>
+
+
+
+                    <div class="mainContentRight">
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                        <form action="action_Page.php" method="post" id="form_elCredit">
+                            <h2>El&shy;för&shy;bruk&shy;ning <span class="smallText nobr noShadow"> *exkl.
+                                    systemel</span></h2>
+
+                            <h3>Hus&shy;hålls&shy;apparater</h3>
+
+                            <fieldset id="fieldset_elCredit1" class="elUnit">
+                                <h4>ROUTER</h4>
+
+                                <label>
+                                    Effekt:
+                                    <input type="text" id="elCredit1_power" name="elCredit1_power" value="6" />
+                                    W
+                                </label>
+
+                                <label>
+                                    Tid i drift:
+                                    <input type="text" id="elCredit1_time" name="elCredit1_time" value="24" />
+                                    timmar/dag
+                                </label>
+
+                                <label>
+                                    Förbrukning:
+                                    <input type="text" id="elCredit1_kWhDaily" name="elCredit1_kWhDaily" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="elCredit1_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_elCredit2" class="elUnit">
+                                <h4>UGN/SPIS</h4>
+
+                                <label>
+                                    Effekt:
+                                    <input type="text" id="elCredit2_power" name="elCredit2_power" value="2000" />
+                                    W
+                                </label>
+
+                                <label>
+                                    Tid i drift:
+                                    <input type="text" id="elCredit2_time" name="elCredit2_time" />
+                                    timmar/dag
+                                </label>
+
+                                <label>
+                                    Förbrukning:
+                                    <input type="text" id="elCredit2_kWhDaily" name="elCredit2_kWhDaily" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="elCredit2_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_elCredit3" class="elUnit">
+                                <h4>TVÄTTMASKIN</h4>
+
+                                <label>
+                                    Effekt:
+                                    <input type="text" id="elCredit3_power" name="elCredit3_power" value="500" />
+                                    W
+                                </label>
+
+                                <label>
+                                    Tid i drift:
+                                    <input type="text" id="elCredit3_time" name="elCredit3_time" />
+                                    timmar/dag
+                                </label>
+
+                                <label>
+                                    Förbrukning:
+                                    <input type="text" id="elCredit3_kWhDaily" name="elCredit3_kWhDaily" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="elCredit3_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_elCredit4" class="elUnit">
+                                <h4>DISKMASKIN</h4>
+
+                                <label>
+                                    Effekt:
+                                    <input type="text" id="elCredit4_power" name="elCredit4_power" value="1500" />
+                                    W
+                                </label>
+
+                                <label>
+                                    Tid i drift:
+                                    <input type="text" id="elCredit4_time" name="elCredit4_time" />
+                                    timmar/dag
+                                </label>
+
+                                <label>
+                                    Förbrukning:
+                                    <input type="text" id="elCredit4_kWhDaily" name="elCredit4_kWhDaily" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="elCredit4_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_elCredit5" class="elUnit">
+                                <h4>DAMMSUGARE</h4>
+
+                                <label>
+                                    Effekt:
+                                    <input type="text" id="elCredit5_power" name="elCredit5_power" value="900" />
+                                    W
+                                </label>
+
+                                <label>
+                                    Tid i drift:
+                                    <input type="text" id="elCredit5_time" name="elCredit5_time" />
+                                    timmar/dag
+                                </label>
+
+                                <label>
+                                    Förbrukning:
+                                    <input type="text" id="elCredit5_kWhDaily" name="elCredit5_kWhDaily" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="elCredit5_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_elCredit6" class="elUnit">
+                                <h4>TV</h4>
+
+                                <label>
+                                    Effekt:
+                                    <input type="text" id="elCredit6_power" name="elCredit6_power" value="100" />
+                                    W
+                                </label>
+
+                                <label>
+                                    Tid i drift:
+                                    <input type="text" id="elCredit6_time" name="elCredit6_time" />
+                                    timmar/dag
+                                </label>
+
+                                <label>
+                                    Förbrukning:
+                                    <input type="text" id="elCredit6_kWhDaily" name="elCredit6_kWhDaily" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="elCredit6_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_elCredit7" class="elUnit">
+                                <h4>SKRIVBORDSDATOR</h4>
+
+                                <label>
+                                    Effekt:
+                                    <input type="text" id="elCredit7_power" name="elCredit7_power" value="450" />
+                                    W
+                                </label>
+
+                                <label>
+                                    Tid i drift:
+                                    <input type="text" id="elCredit7_time" name="elCredit7_time" />
+                                    timmar/dag
+                                </label>
+
+                                <label>
+                                    Förbrukning:
+                                    <input type="text" id="elCredit7_kWhDaily" name="elCredit7_kWhDaily" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="elCredit7_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_elCredit8" class="elUnit">
+                                <h4>LAPTOP</h4>
+
+                                <label>
+                                    Effekt:
+                                    <input type="text" id="elCredit8_power" name="elCredit8_power" value="100" />
+                                    W
+                                </label>
+
+                                <label>
+                                    Tid i drift:
+                                    <input type="text" id="elCredit8_time" name="elCredit8_time" />
+                                    timmar/dag
+                                </label>
+
+                                <label>
+                                    Förbrukning:
+                                    <input type="text" id="elCredit8_kWhDaily" name="elCredit8_kWhDaily" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="elCredit8_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_elCredit9" class="elUnit">
+                                <h4>BELYSNING</h4>
+
+                                <label>
+                                    Effekt:
+                                    <input type="text" id="elCredit9_power" name="elCredit9_power" value="200" />
+                                    W
+                                </label>
+
+                                <label>
+                                    Tid i drift:
+                                    <input type="text" id="elCredit9_time" name="elCredit9_time" />
+                                    timmar/dag
+                                </label>
+
+                                <label>
+                                    Förbrukning:
+                                    <input type="text" id="elCredit9_kWhDaily" name="elCredit9_kWhDaily" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="elCredit9_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_elCredit10" class="elUnit">
+                                <h4>VATTENKOKARE</h4>
+
+                                <label>
+                                    Effekt:
+                                    <input type="text" id="elCredit10_power" name="elCredit10_power" value="3000" />
+                                    W
+                                </label>
+
+                                <label>
+                                    Tid i drift:
+                                    <input type="text" id="elCredit10_time" name="elCredit10_time" />
+                                    timmar/dag
+                                </label>
+
+                                <label>
+                                    Förbrukning:
+                                    <input type="text" id="elCredit10_kWhDaily" name="elCredit10_kWhDaily" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="elCredit10_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_elCredit11" class="elUnit">
+                                <h4>KÖKSFLÄKT</h4>
+
+                                <label>
+                                    Effekt:
+                                    <input type="text" id="elCredit11_power" name="elCredit11_power" value="200" />
+                                    W
+                                </label>
+
+                                <label>
+                                    Tid i drift:
+                                    <input type="text" id="elCredit11_time" name="elCredit11_time" />
+                                    timmar/dag
+                                </label>
+
+                                <label>
+                                    Förbrukning:
+                                    <input type="text" id="elCredit11_kWhDaily" name="elCredit11_kWhDaily" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="elCredit11_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_elCredit12" class="elUnit">
+                                <h4>ÖVRIGT</h4>
+
+                                <label>
+                                    Effekt:
+                                    <input type="text" id="elCredit12_power" name="elCredit12_power" />
+                                    W
+                                </label>
+
+                                <label>
+                                    Tid i drift:
+                                    <input type="text" id="elCredit12_time" name="elCredit12_time" />
+                                    timmar/dag
+                                </label>
+
+                                <label>
+                                    Förbrukning:
+                                    <input type="text" id="elCredit12_kWhDaily" name="elCredit12_kWhDaily" readonly />
+                                    kWh/dag
+                                </label>
+
+                                <label>
+                                    <button onclick="funcDeleteUnit(event)" type="button" id="elCredit12_delete">Ta
+                                        bort!</button>
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_elCreditNew"></fieldset>
+
+                            <fieldset id="fieldset_elCreditAdd">
+
+                                <h4>LÄGG TILL NY ENHET</h4>
+
+                                <input type="hidden" id="elCreditAdd_hidden" name="elCreditAdd_hidden"
+                                    value="last" />
+
+                                <label>
+                                    <button onclick="funcElAddUnit()" type="button" id="elCreditAdd_new">LÄGG
+                                        TILL!</button>
+                                </label>
+
+                            </fieldset>
+
+                            <h3>Totalt Elbehov</h3>
+
+                            <div class="totalruta">
+                                <fieldset id="fieldset_elCreditTotal">
+
+                                    <label>
+                                        Summa förbrukning:
+                                        <input type="text" id="elCreditTotal_kWhDaily" name="elCreditTotal_kWhDaily"
+                                            readonly />
+                                        kWh/dag
+                                    </label>
+
+                                </fieldset>
+                            </div>
+
+                        </form>
+                        <!-- ------------------------------------------------------------------------ -->
+                        <!-- ------------------------------------------------------------------------ -->
+                    </div>
+
+
+
+                    <div class="mainContentBottomLine">
+                        <hr class="greenLine">
+                    </div>
+
+                </div>
+                <!--end of mainContent-->
+
+
+                <div class="mainControls">
+
+                    <!-- only in index.html and step1-5.html-->
+                    <div class="mainControlsLeftLine1">
+                        <hr class="greenLine">
+                    </div>
+
+                    <!-- only in result.html
+                    <div class="mainControlsLeftLine2">
+                        <hr class="greenLine">
+                    </div> -->
+
+                    <!-- only in step1-step5.html and result.html-->
+                    <div class="mainControlsButton mainControlsRestart">
+                        <a href="index.html" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_restart_img','','images/control_restart_active.png',1)">
+                            <img id="id_restart_img" src="images/control_restart.png" alt="Restart Button">
+                        </a>
+                    </div>
+
+                    <!-- only in step1-step5.html and result.html-->
+                    <div class="mainControlsButton mainControlsBack">
+                        <a href="step1.html" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_back_img','','images/control_back_active.png',1)">
+                            <img id="id_back_img" src="images/control_back.png" alt="Back Button">
+                        </a>
+                    </div>
+
+                    <!-- only in index.html
+                    <div class="mainControlsStart">
+
+                        <div class="mainControlsStartLeft">
+                            <h3>KLICKA</h>
+                        </div>
+
+                        <div class="mainControlsButton mainControlsStartPlay">
+                            <a href="step1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('id_play_img','','images/control_play_active.png',1)">
+                                <img id="id_play_img" src="images/control_play.png" alt="Play Button">
+                            </a>
+                        </div>
+
+                        <div class="mainControlsStartRight">
+                            <h3>HÄR!</h3>
+                        </div>
+                    </div>-->
+
+                    <!-- only in step1-step5.html -->
+                    <div class="mainControlsButton mainControlsReload">
+                        <a href="#" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_reload_img','','images/control_reload_active.png',1)">
+                            <img id="id_reload_img" src="images/control_reload.png" alt="Reload Button">
+                        </a>
+                    </div>
+
+                    <!-- only in step1-step5.html-->
+                    <div class="mainControlsButton mainControlsNext">
+                        <a href="step3.html" onMouseOut="MM_swapImgRestore()"
+                            onMouseOver="MM_swapImage('id_next_img','','images/control_next_active.png',1)">
+                            <img id="id_next_img" src="images/control_next.png" alt="Next Button">
+                        </a>
+                    </div>
+
+                    <!-- only in result.html
+                    <div class="mainControlsRightLine2">
+                        <hr class="greenLine">
+                    </div>    -->
+
+                    <!-- only in index.html and step1-5.html-->
+                    <div class="mainControlsRightLine1">
+                        <hr class="greenLine">
+                    </div>
+
+                </div>
+                <!--end of mainControls-->
+
+            </main>
+            <!--end of mainPage-->
+        </div>
+        <!--end of wrapperNavMain-->
+
+
+        <aside class="asidePage">
+            <h4>Externa länkar:</h4>
+        </aside>
+
+
+    </div>
+    <!--end of wrapperMainAside-->
+
+
+
+    <footer class="footerPage">
+
+        <div class="footerInfo">
+            <div class="footerInfoName">
+                <h5> Rebeka Amanatidou</h5>
+            </div>
+            <div class="footerInfoProject">
+                <h5>Projektarbete i kursen Webbprogrammering</h5>
+            </div>
+        </div>
+
+
+        <div class="footerSchool">
+            <div class="footerSchoolLogo">
+                <a target="_blank" href="https://glimnet.se">
+                    <img src="images/logo_glimakra.png" alt="Glimåkra folkhöskola logo">
+                </a>
+            </div>
+            <div class="footerSchoolName">
+                <a target="_blank" href="https://glimnet.se">
+                    <h5>Glimåkra folkhögskola</h5>
+                </a>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!-- <script src="JS/functions.js"></script> -->
+
+    <script src="JS/func_language.js"></script>
+
+    <script src="JS/step2_dataLoad.js"></script>
+    <script src="JS/func_scenario.js"></script>
+
+    <script src="JS/step2_events.js"></script>
+    <script src="JS/step2_calculate.js"></script>
+
+    <script src="JS/func_controls.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+/* CLASSES IN FILE
+div.scenarioForm
+div.scenarioFormLine
+div.scenarioFormLineYes
+div.scenarioFormLineNo
+div.scenarioFormLineText */
+
+
+/* 1. TEXT */
+
+
+/* mobile */
+@media(min-width:320px),
+(max-width:320px) {
+
+    /* 1. TEXT */
+    form#form_scenario h4 {
+        font-size: 15px;
+    }
+
+    div.scenarioFormLine {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    form#form_scenario h4.scenarioTitle {
+        margin-left:20px;
+    }
+
+    div.scenarioFormLineText {
+        margin-top:20px;
+        margin-bottom:5px;
+    }
+
+    form#form_scenario {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    div.scenarioFormLineYesNo{
+        align-self:  center;
+    }
+
+}
+
+
+/* mobile landscape */
+@media(min-width:578px) {
+
+    /* 1. TEXT */
+    form#form_scenario h4 {
+        font-size: 18px;
+    }
+
+    div.scenarioFormLine {
+        display: flex;
+        flex-direction: row;
+    }
+
+    form#form_scenario h4.scenarioTitle {
+        margin-left: 80px;
+    }
+
+    div.scenarioFormLineText {
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+
+    form#form_scenario {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    div.scenarioFormLineYesNo{
+        align-self:  flex-start;
+    }
+
+}
+
+
+/* tablet */
+@media(min-width:768px) {
+
+    /* 1. TEXT */
+    form#form_scenario h4 {
+        font-size: 20px;
+    }
+
+    /* div.scenarioFormLine {
+        display: flex;
+        flex-direction: row;
+    } */
+
+    /* form#form_scenario h4.scenarioTitle {
+        margin-left:80px;
+    } */
+
+}
+
+
+
+/* screen */
+@media(min-width:1200px) {
+
+    /* 1. TEXT */
+    form#form_scenario h4 {
+        font-size: 24px;
+    }
+
+    /* div.scenarioFormLine {
+        display: flex;
+        flex-direction: row;
+    } */
+
+    /* form#form_scenario h4.scenarioTitle {
+        margin-left:80px;
+    } */
+
+}
+
+
+/* big screen */
+@media(min-width:1600px) {
+
+    /* 1. TEXT */
+    form#form_scenario h4 {
+        font-size: 24px;
+    }
+
+    /* div.scenarioFormLine {
+        display: flex;
+        flex-direction: row;
+    } */
+
+    /* form#form_scenario h4.scenarioTitle {
+        margin-left:80px;
+    } */
+
+}

@@ -1,0 +1,120 @@
+/* CLASSES IN FILE
+div.mainGeneralGreeting
+div.mainGeneralInfo
+div.mainGeneralInfoTitle
+div.mainGeneralInfoBody
+div.mainGeneralInfoBodyPre
+div.mainGeneralInfoBodyConditions
+div.mainGeneralInfoBodyConditionsLine
+div.mainGeneralInstructions
+div.mainGeneralInstructionsLine
+div.mainGeneralInstructionsLineText
+div.mainGeneralInstructionsLineIcon
+div.mainGeneralScenario
+div.mainGeneralResult */
+
+
+
+/*
+Code Sections:
+1.GENERAL GREETING
+2.GENERAL INFO 
+3.GENERAL INSTRUCTIONS
+4.GENERAL SCENARIO AND RESULT */
+
+
+
+
+
+
+
+/* mobile */
+@media(min-width:320px), (max-width:320px) {
+    
+    /* 1.GENERAL GREETING */
+
+    div.mainGeneralGreeting h3 {
+        font-size:18px;
+    }
+
+    /* 3.GENERAL INSTRUCTIONS */
+
+    div.mainGeneralInstructionsLineText h4 {
+        font-size:15px;
+    }
+
+
+}
+
+
+/* mobile landscape */
+@media(min-width:578px) {
+
+    /* 1.GENERAL GREETING */
+
+    div.mainGeneralGreeting h3 {
+        font-size: 26px;
+    }
+
+    /* 3.GENERAL INSTRUCTIONS */
+
+    div.mainGeneralInstructionsLineText h4 {
+        font-size:18px;
+    }
+
+}
+
+
+/* tablet */
+@media(min-width:768px) {
+    
+    /* 1.GENERAL GREETING */
+
+    div.mainGeneralGreeting h3 {
+        font-size:34px;
+    }
+
+    /* 3.GENERAL INSTRUCTIONS */
+
+    div.mainGeneralInstructionsLineText h4 {
+        font-size:20px;
+    }
+ 
+}
+
+
+
+/* screen */
+@media(min-width:1200px) {
+
+    /* 1.GENERAL GREETING */
+
+    div.mainGeneralGreeting h3 {
+        font-size:40px;
+    }
+
+    /* 3.GENERAL INSTRUCTIONS */
+
+    div.mainGeneralInstructionsLineText h4 {
+        font-size:24px;
+    }
+
+}
+
+
+/* big screen */
+@media(min-width:1600px) {
+
+    /* 1.GENERAL GREETING */
+
+    div.mainGeneralGreeting h3 {
+        font-size:40px;
+    }
+
+    /* 3.GENERAL INSTRUCTIONS */
+
+    div.mainGeneralInstructionsLineText h4 {
+        font-size:24px;
+    }
+
+}
